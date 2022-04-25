@@ -19,5 +19,10 @@
         "ext-soap": "*",
         "wsdltophp/packagebase": "~5.0",
         "wsdltophp/wssecurity": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "Maetva\\Chronopost\\": "src/"
+        }
     }
 }
