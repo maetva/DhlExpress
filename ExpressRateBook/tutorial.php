@@ -21,16 +21,16 @@
  */
 $options = [
     WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://wsbexpress.dhl.com/sndpt/expressRateBook?wsdl',
-    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\ClassMap::get(),
+    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Maetva\DhlExpress\Endpoint\ExpressRateBook\ClassMap::get(),
 ];
 /**
  * Samples for Service ServiceType
  */
-$service = new \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\ServiceType\Service($options);
+$service = new \Maetva\DhlExpress\Endpoint\ExpressRateBook\ServiceType\Service($options);
 /**
  * Sample call for createShipmentRequest operation/method
  */
-if ($service->createShipmentRequest(new \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType()) !== false) {
+if ($service->createShipmentRequest(new \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -38,7 +38,7 @@ if ($service->createShipmentRequest(new \Drupal\commerce_dhl_express\Endpoint\Ex
 /**
  * Sample call for getRateRequest operation/method
  */
-if ($service->getRateRequest(new \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType()) !== false) {
+if ($service->getRateRequest(new \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());
@@ -46,7 +46,7 @@ if ($service->getRateRequest(new \Drupal\commerce_dhl_express\Endpoint\ExpressRa
 /**
  * Sample call for deleteShipmentRequest operation/method
  */
-if ($service->deleteShipmentRequest(new \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType()) !== false) {
+if ($service->deleteShipmentRequest(new \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());

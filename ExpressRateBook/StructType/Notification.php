@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -67,7 +67,7 @@ class Notification extends AbstractStructBase
     /**
      * Set Message value
      * @param string $message
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification
      */
     public function setMessage(?string $message = null): self
     {
@@ -94,7 +94,7 @@ class Notification extends AbstractStructBase
     /**
      * Set DetailedMessage value
      * @param string $detailedMessage
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification
      */
     public function setDetailedMessage(?string $detailedMessage = null): self
     {
@@ -121,7 +121,7 @@ class Notification extends AbstractStructBase
     /**
      * Set Code value
      * @param string $code
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification
      */
     public function setCode(?string $code = null): self
     {

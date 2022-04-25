@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class OtherCharges extends AbstractStructBase
      * The OtherCharge
      * Meta information extracted from the WSDL
      * - documentation: Other Charge caption and its charge value
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge $OtherCharge = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge $OtherCharge = null;
     /**
      * Constructor method for OtherCharges
      * @uses OtherCharges::setOtherCharge()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge = null)
     {
         $this
             ->setOtherCharge($otherCharge);
     }
     /**
      * Get OtherCharge value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge|null
      */
-    public function getOtherCharge(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge
+    public function getOtherCharge(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge
     {
         return $this->OtherCharge;
     }
     /**
      * Set OtherCharge value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges
      */
-    public function setOtherCharge(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge = null): self
+    public function setOtherCharge(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge $otherCharge = null): self
     {
         $this->OtherCharge = $otherCharge;
         

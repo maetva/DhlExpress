@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class DocTypeRef_TrackingNumberBarcodes extends AbstractStructBase
      * The TrackingNumberBarcode
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[]
      */
     protected ?array $TrackingNumberBarcode = null;
     /**
      * Constructor method for docTypeRef_TrackingNumberBarcodes
      * @uses DocTypeRef_TrackingNumberBarcodes::setTrackingNumberBarcode()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[] $trackingNumberBarcode
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[] $trackingNumberBarcode
      */
     public function __construct(?array $trackingNumberBarcode = null)
     {
@@ -32,7 +32,7 @@ class DocTypeRef_TrackingNumberBarcodes extends AbstractStructBase
     }
     /**
      * Get TrackingNumberBarcode value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[]
      */
     public function getTrackingNumberBarcode(): ?array
     {
@@ -53,12 +53,12 @@ class DocTypeRef_TrackingNumberBarcodes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode) {
+            if (!$docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode) {
                 $invalidValues[] = is_object($docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem) ? get_class($docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem) : sprintf('%s(%s)', gettype($docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem), var_export($docTypeRef_TrackingNumberBarcodesTrackingNumberBarcodeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TrackingNumberBarcode property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TrackingNumberBarcode property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class DocTypeRef_TrackingNumberBarcodes extends AbstractStructBase
     /**
      * Set TrackingNumberBarcode value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[] $trackingNumberBarcode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode[] $trackingNumberBarcode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
      */
     public function setTrackingNumberBarcode(?array $trackingNumberBarcode = null): self
     {
@@ -87,14 +87,14 @@ class DocTypeRef_TrackingNumberBarcodes extends AbstractStructBase
     /**
      * Add item to TrackingNumberBarcode value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
      */
-    public function addToTrackingNumberBarcode(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode $item): self
+    public function addToTrackingNumberBarcode(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode) {
-            throw new InvalidArgumentException(sprintf('The TrackingNumberBarcode property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode) {
+            throw new InvalidArgumentException(sprintf('The TrackingNumberBarcode property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->TrackingNumberBarcode) && count($this->TrackingNumberBarcode) >= 999) {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class DocTypeRef_Charges extends AbstractStructBase
      * The Charge
      * Meta information extracted from the WSDL
      * - maxOccurs: 99
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     protected ?array $Charge = null;
     /**
      * Constructor method for docTypeRef_Charges
      * @uses DocTypeRef_Charges::setCharge()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
      */
     public function __construct(?array $charge = null)
     {
@@ -32,7 +32,7 @@ class DocTypeRef_Charges extends AbstractStructBase
     }
     /**
      * Get Charge value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     public function getCharge(): ?array
     {
@@ -53,12 +53,12 @@ class DocTypeRef_Charges extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ChargesChargeItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ChargesChargeItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            if (!$docTypeRef_ChargesChargeItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
                 $invalidValues[] = is_object($docTypeRef_ChargesChargeItem) ? get_class($docTypeRef_ChargesChargeItem) : sprintf('%s(%s)', gettype($docTypeRef_ChargesChargeItem), var_export($docTypeRef_ChargesChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Charge property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class DocTypeRef_Charges extends AbstractStructBase
     /**
      * Set Charge value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges
      */
     public function setCharge(?array $charge = null): self
     {
@@ -87,14 +87,14 @@ class DocTypeRef_Charges extends AbstractStructBase
     /**
      * Add item to Charge value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges
      */
-    public function addToCharge(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
+    public function addToCharge(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
-            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(99)
         if (is_array($this->Charge) && count($this->Charge) >= 99) {

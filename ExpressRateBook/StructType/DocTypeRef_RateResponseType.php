@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,33 +18,33 @@ class DocTypeRef_RateResponseType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $Provider = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $Provider = null;
     /**
      * Constructor method for docTypeRef_RateResponseType
      * @uses DocTypeRef_RateResponseType::setProvider()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider = null)
     {
         $this
             ->setProvider($provider);
     }
     /**
      * Get Provider value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType|null
      */
-    public function getProvider(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType
+    public function getProvider(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType
     {
         return $this->Provider;
     }
     /**
      * Set Provider value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType
      */
-    public function setProvider(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider = null): self
+    public function setProvider(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProviderType $provider = null): self
     {
         $this->Provider = $provider;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class OtherCharge extends AbstractStructBase
     /**
      * Set Caption value
      * @param string $caption
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge
      */
     public function setCaption(?string $caption = null): self
     {
@@ -95,7 +95,7 @@ class OtherCharge extends AbstractStructBase
     /**
      * Set ChargeValue value
      * @param float $chargeValue
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge
      */
     public function setChargeValue(?float $chargeValue = null): self
     {
@@ -125,17 +125,17 @@ class OtherCharge extends AbstractStructBase
     }
     /**
      * Set ChargeType value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ChargeType::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ChargeType::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ChargeType::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ChargeType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $chargeType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharge
      */
     public function setChargeType(?string $chargeType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ChargeType::valueIsValid($chargeType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ChargeType', is_array($chargeType) ? implode(', ', $chargeType) : var_export($chargeType, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ChargeType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ChargeType::valueIsValid($chargeType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ChargeType', is_array($chargeType) ? implode(', ', $chargeType) : var_export($chargeType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ChargeType::getValidValues())), __LINE__);
         }
         $this->ChargeType = $chargeType;
         

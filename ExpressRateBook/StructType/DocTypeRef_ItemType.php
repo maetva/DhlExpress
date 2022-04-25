@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,26 +24,26 @@ class DocTypeRef_ItemType extends AbstractStructBase
      * The Charge
      * Meta information extracted from the WSDL
      * - maxOccurs: 50
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     protected ?array $Charge = null;
     /**
      * The Notification
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification $Notification = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification $Notification = null;
     /**
      * Constructor method for docTypeRef_ItemType
      * @uses DocTypeRef_ItemType::setItemNumber()
      * @uses DocTypeRef_ItemType::setCharge()
      * @uses DocTypeRef_ItemType::setNotification()
      * @param int $itemNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification $notification
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification $notification
      */
-    public function __construct(?int $itemNumber = null, ?array $charge = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification $notification = null)
+    public function __construct(?int $itemNumber = null, ?array $charge = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification $notification = null)
     {
         $this
             ->setItemNumber($itemNumber)
@@ -61,7 +61,7 @@ class DocTypeRef_ItemType extends AbstractStructBase
     /**
      * Set ItemNumber value
      * @param int $itemNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
      */
     public function setItemNumber(?int $itemNumber = null): self
     {
@@ -75,7 +75,7 @@ class DocTypeRef_ItemType extends AbstractStructBase
     }
     /**
      * Get Charge value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     public function getCharge(): ?array
     {
@@ -96,12 +96,12 @@ class DocTypeRef_ItemType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ItemTypeChargeItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ItemTypeChargeItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            if (!$docTypeRef_ItemTypeChargeItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
                 $invalidValues[] = is_object($docTypeRef_ItemTypeChargeItem) ? get_class($docTypeRef_ItemTypeChargeItem) : sprintf('%s(%s)', gettype($docTypeRef_ItemTypeChargeItem), var_export($docTypeRef_ItemTypeChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Charge property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -110,8 +110,8 @@ class DocTypeRef_ItemType extends AbstractStructBase
     /**
      * Set Charge value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
      */
     public function setCharge(?array $charge = null): self
     {
@@ -130,14 +130,14 @@ class DocTypeRef_ItemType extends AbstractStructBase
     /**
      * Add item to Charge value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
      */
-    public function addToCharge(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
+    public function addToCharge(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
-            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(50)
         if (is_array($this->Charge) && count($this->Charge) >= 50) {
@@ -149,18 +149,18 @@ class DocTypeRef_ItemType extends AbstractStructBase
     }
     /**
      * Get Notification value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification|null
      */
-    public function getNotification(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification
+    public function getNotification(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification
     {
         return $this->Notification;
     }
     /**
      * Set Notification value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification $notification
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification $notification
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType
      */
-    public function setNotification(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Notification $notification = null): self
+    public function setNotification(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Notification $notification = null): self
     {
         $this->Notification = $notification;
         

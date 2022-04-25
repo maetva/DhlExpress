@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,17 +24,17 @@ class Status extends AbstractStructBase
      * The Condition
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $Condition = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $Condition = null;
     /**
      * Constructor method for Status
      * @uses Status::setActionStatus()
      * @uses Status::setCondition()
      * @param string $actionStatus
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition
      */
-    public function __construct(?string $actionStatus = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition = null)
+    public function __construct(?string $actionStatus = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition = null)
     {
         $this
             ->setActionStatus($actionStatus)
@@ -51,7 +51,7 @@ class Status extends AbstractStructBase
     /**
      * Set ActionStatus value
      * @param string $actionStatus
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Status
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Status
      */
     public function setActionStatus(?string $actionStatus = null): self
     {
@@ -65,18 +65,18 @@ class Status extends AbstractStructBase
     }
     /**
      * Get Condition value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition|null
      */
-    public function getCondition(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
+    public function getCondition(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
     {
         return $this->Condition;
     }
     /**
      * Set Condition value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Status
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Status
      */
-    public function setCondition(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition = null): self
+    public function setCondition(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition $condition = null): self
     {
         $this->Condition = $condition;
         

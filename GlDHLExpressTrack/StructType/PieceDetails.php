@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -201,7 +201,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set AWBNumber value
      * @param string $aWBNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setAWBNumber(?string $aWBNumber = null): self
     {
@@ -224,7 +224,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set LicensePlate value
      * @param string $licensePlate
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setLicensePlate(?string $licensePlate = null): self
     {
@@ -255,7 +255,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set PieceNumber value
      * @param string $pieceNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setPieceNumber(?string $pieceNumber = null): self
     {
@@ -278,7 +278,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set ActualDepth value
      * @param string $actualDepth
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setActualDepth(?string $actualDepth = null): self
     {
@@ -301,7 +301,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set ActualWidth value
      * @param string $actualWidth
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setActualWidth(?string $actualWidth = null): self
     {
@@ -324,7 +324,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set ActualHeight value
      * @param string $actualHeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setActualHeight(?string $actualHeight = null): self
     {
@@ -347,7 +347,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set ActualWeight value
      * @param string $actualWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setActualWeight(?string $actualWeight = null): self
     {
@@ -370,7 +370,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set Depth value
      * @param string $depth
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setDepth(?string $depth = null): self
     {
@@ -393,7 +393,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set Width value
      * @param string $width
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setWidth(?string $width = null): self
     {
@@ -416,7 +416,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set Height value
      * @param string $height
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setHeight(?string $height = null): self
     {
@@ -439,7 +439,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set Weight value
      * @param string $weight
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setWeight(?string $weight = null): self
     {
@@ -462,7 +462,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set PackageType value
      * @param string $packageType
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setPackageType(?string $packageType = null): self
     {
@@ -489,7 +489,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set DimWeight value
      * @param string $dimWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setDimWeight(?string $dimWeight = null): self
     {
@@ -512,7 +512,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set WeightUnit value
      * @param string $weightUnit
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setWeightUnit(?string $weightUnit = null): self
     {
@@ -535,7 +535,7 @@ class PieceDetails extends AbstractStructBase
     /**
      * Set PieceContents value
      * @param string $pieceContents
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
      */
     public function setPieceContents(?string $pieceContents = null): self
     {

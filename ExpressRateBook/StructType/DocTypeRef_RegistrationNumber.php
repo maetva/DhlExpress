@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class DocTypeRef_RegistrationNumber extends AbstractStructBase
     /**
      * Set Number value
      * @param string $number
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
      */
     public function setNumber(?string $number = null): self
     {
@@ -104,7 +104,7 @@ class DocTypeRef_RegistrationNumber extends AbstractStructBase
     /**
      * Set NumberTypeCode value
      * @param string $numberTypeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
      */
     public function setNumberTypeCode(?string $numberTypeCode = null): self
     {
@@ -135,7 +135,7 @@ class DocTypeRef_RegistrationNumber extends AbstractStructBase
     /**
      * Set NumberIssuerCountryCode value
      * @param string $numberIssuerCountryCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber
      */
     public function setNumberIssuerCountryCode(?string $numberIssuerCountryCode = null): self
     {

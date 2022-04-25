@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class InvoiceSignatureDetails extends AbstractStructBase
     /**
      * Set SignatureName value
      * @param string $signatureName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
      */
     public function setSignatureName(?string $signatureName = null): self
     {
@@ -99,7 +99,7 @@ class InvoiceSignatureDetails extends AbstractStructBase
     /**
      * Set SignatureTitle value
      * @param string $signatureTitle
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
      */
     public function setSignatureTitle(?string $signatureTitle = null): self
     {
@@ -126,7 +126,7 @@ class InvoiceSignatureDetails extends AbstractStructBase
     /**
      * Set SignatureImage value
      * @param string $signatureImage
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
      */
     public function setSignatureImage(?string $signatureImage = null): self
     {

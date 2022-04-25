@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -64,7 +64,7 @@ class CustomsDocument extends AbstractStructBase
     /**
      * Set CustomsDocumentType value
      * @param string $customsDocumentType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocument
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument
      */
     public function setCustomsDocumentType(?string $customsDocumentType = null): self
     {
@@ -95,7 +95,7 @@ class CustomsDocument extends AbstractStructBase
     /**
      * Set CustomsDocumentID value
      * @param string $customsDocumentID
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocument
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument
      */
     public function setCustomsDocumentID(?string $customsDocumentID = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -27,21 +27,21 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
      * The Request
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request $Request = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request $Request = null;
     /**
      * The ClientDetail
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $ClientDetail = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $ClientDetail = null;
     /**
      * The RequestedShipment
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $RequestedShipment = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $RequestedShipment = null;
     /**
      * Constructor method for docTypeRef_ProcessShipmentRequestType
      * @uses DocTypeRef_ProcessShipmentRequestType::setMessageId()
@@ -49,11 +49,11 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
      * @uses DocTypeRef_ProcessShipmentRequestType::setClientDetail()
      * @uses DocTypeRef_ProcessShipmentRequestType::setRequestedShipment()
      * @param string $messageId
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request $request
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request $request
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment
      */
-    public function __construct(?string $messageId = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request $request = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment = null)
+    public function __construct(?string $messageId = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request $request = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment = null)
     {
         $this
             ->setMessageId($messageId)
@@ -72,7 +72,7 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
     /**
      * Set MessageId value
      * @param string $messageId
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
      */
     public function setMessageId(?string $messageId = null): self
     {
@@ -90,18 +90,18 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
     }
     /**
      * Get Request value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request|null
      */
-    public function getRequest(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request
+    public function getRequest(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request
     {
         return $this->Request;
     }
     /**
      * Set Request value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request $request
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request $request
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
      */
-    public function setRequest(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request $request = null): self
+    public function setRequest(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request $request = null): self
     {
         $this->Request = $request;
         
@@ -109,18 +109,18 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
     }
     /**
      * Get ClientDetail value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2|null
      */
-    public function getClientDetail(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2
+    public function getClientDetail(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2
     {
         return $this->ClientDetail;
     }
     /**
      * Set ClientDetail value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
      */
-    public function setClientDetail(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail = null): self
+    public function setClientDetail(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType2 $clientDetail = null): self
     {
         $this->ClientDetail = $clientDetail;
         
@@ -128,18 +128,18 @@ class DocTypeRef_ProcessShipmentRequestType extends AbstractStructBase
     }
     /**
      * Get RequestedShipment value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType|null
      */
-    public function getRequestedShipment(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+    public function getRequestedShipment(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
     {
         return $this->RequestedShipment;
     }
     /**
      * Set RequestedShipment value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType
      */
-    public function setRequestedShipment(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment = null): self
+    public function setRequestedShipment(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType $requestedShipment = null): self
     {
         $this->RequestedShipment = $requestedShipment;
         

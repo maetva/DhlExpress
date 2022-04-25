@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class CustomerLogo extends AbstractStructBase
     /**
      * Set LogoImage value
      * @param string $logoImage
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerLogo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerLogo
      */
     public function setLogoImage(?string $logoImage = null): self
     {
@@ -79,17 +79,17 @@ class CustomerLogo extends AbstractStructBase
     }
     /**
      * Set LogoImageFormat value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::getValidValues()
      * @throws InvalidArgumentException
      * @param string $logoImageFormat
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerLogo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerLogo
      */
     public function setLogoImageFormat(?string $logoImageFormat = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::valueIsValid($logoImageFormat)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LogoImageFormat', is_array($logoImageFormat) ? implode(', ', $logoImageFormat) : var_export($logoImageFormat, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::valueIsValid($logoImageFormat)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LogoImageFormat', is_array($logoImageFormat) ? implode(', ', $logoImageFormat) : var_export($logoImageFormat, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LogoImageFormat::getValidValues())), __LINE__);
         }
         $this->LogoImageFormat = $logoImageFormat;
         

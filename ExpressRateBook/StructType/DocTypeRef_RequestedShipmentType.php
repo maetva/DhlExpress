@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,9 +15,9 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
 {
     /**
      * The ShipmentInfo
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $ShipmentInfo = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $ShipmentInfo = null;
     /**
      * The ShipTimestamp
      * Meta information extracted from the WSDL
@@ -75,16 +75,16 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
      * The InternationalDetail
      * Meta information extracted from the WSDL
      * - documentation: Conveys data elements for international shipping
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $InternationalDetail = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $InternationalDetail = null;
     /**
      * The OnDemandDeliveryOptions
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $OnDemandDeliveryOptions = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $OnDemandDeliveryOptions = null;
     /**
      * The OnDemandDeliveryURLRequest
      * Meta information extracted from the WSDL
@@ -95,21 +95,21 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     protected ?string $OnDemandDeliveryURLRequest = null;
     /**
      * The Ship
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
     /**
      * The Packages
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $Packages = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $Packages = null;
     /**
      * The DangerousGoods
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $DangerousGoods = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $DangerousGoods = null;
     /**
      * The GetRateEstimates
      * Meta information extracted from the WSDL
@@ -122,9 +122,9 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
      * The ShipmentNotifications
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $ShipmentNotifications = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $ShipmentNotifications = null;
     /**
      * Constructor method for docTypeRef_RequestedShipmentType
      * @uses DocTypeRef_RequestedShipmentType::setShipmentInfo()
@@ -141,22 +141,22 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
      * @uses DocTypeRef_RequestedShipmentType::setDangerousGoods()
      * @uses DocTypeRef_RequestedShipmentType::setGetRateEstimates()
      * @uses DocTypeRef_RequestedShipmentType::setShipmentNotifications()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo
      * @param string $shipTimestamp
      * @param string $pickupLocationCloseTime
      * @param string $specialPickupInstruction
      * @param string $pickupLocation
      * @param string $paymentInfo
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions
      * @param string $onDemandDeliveryURLRequest
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods
      * @param string $getRateEstimates
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo = null, ?string $shipTimestamp = null, ?string $pickupLocationCloseTime = null, ?string $specialPickupInstruction = null, ?string $pickupLocation = null, ?string $paymentInfo = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions = null, ?string $onDemandDeliveryURLRequest = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods = null, ?string $getRateEstimates = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo = null, ?string $shipTimestamp = null, ?string $pickupLocationCloseTime = null, ?string $specialPickupInstruction = null, ?string $pickupLocation = null, ?string $paymentInfo = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions = null, ?string $onDemandDeliveryURLRequest = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods = null, ?string $getRateEstimates = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications = null)
     {
         $this
             ->setShipmentInfo($shipmentInfo)
@@ -176,18 +176,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get ShipmentInfo value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType|null
      */
-    public function getShipmentInfo(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+    public function getShipmentInfo(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
     {
         return $this->ShipmentInfo;
     }
     /**
      * Set ShipmentInfo value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setShipmentInfo(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo = null): self
+    public function setShipmentInfo(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType $shipmentInfo = null): self
     {
         $this->ShipmentInfo = $shipmentInfo;
         
@@ -204,7 +204,7 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     /**
      * Set ShipTimestamp value
      * @param string $shipTimestamp
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setShipTimestamp(?string $shipTimestamp = null): self
     {
@@ -231,7 +231,7 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     /**
      * Set PickupLocationCloseTime value
      * @param string $pickupLocationCloseTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setPickupLocationCloseTime(?string $pickupLocationCloseTime = null): self
     {
@@ -258,7 +258,7 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     /**
      * Set SpecialPickupInstruction value
      * @param string $specialPickupInstruction
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setSpecialPickupInstruction(?string $specialPickupInstruction = null): self
     {
@@ -285,7 +285,7 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     /**
      * Set PickupLocation value
      * @param string $pickupLocation
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setPickupLocation(?string $pickupLocation = null): self
     {
@@ -311,17 +311,17 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Set PaymentInfo value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\PaymentInfo::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\PaymentInfo::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\PaymentInfo::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\PaymentInfo::getValidValues()
      * @throws InvalidArgumentException
      * @param string $paymentInfo
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setPaymentInfo(?string $paymentInfo = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\PaymentInfo::valueIsValid($paymentInfo)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\PaymentInfo', is_array($paymentInfo) ? implode(', ', $paymentInfo) : var_export($paymentInfo, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\PaymentInfo::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\PaymentInfo::valueIsValid($paymentInfo)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\PaymentInfo', is_array($paymentInfo) ? implode(', ', $paymentInfo) : var_export($paymentInfo, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\PaymentInfo::getValidValues())), __LINE__);
         }
         $this->PaymentInfo = $paymentInfo;
         
@@ -329,18 +329,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get InternationalDetail value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType|null
      */
-    public function getInternationalDetail(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType
+    public function getInternationalDetail(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType
     {
         return $this->InternationalDetail;
     }
     /**
      * Set InternationalDetail value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setInternationalDetail(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail = null): self
+    public function setInternationalDetail(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_InternationDetailType $internationalDetail = null): self
     {
         $this->InternationalDetail = $internationalDetail;
         
@@ -348,18 +348,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get OnDemandDeliveryOptions value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions|null
      */
-    public function getOnDemandDeliveryOptions(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+    public function getOnDemandDeliveryOptions(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
     {
         return $this->OnDemandDeliveryOptions;
     }
     /**
      * Set OnDemandDeliveryOptions value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setOnDemandDeliveryOptions(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions = null): self
+    public function setOnDemandDeliveryOptions(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions $onDemandDeliveryOptions = null): self
     {
         $this->OnDemandDeliveryOptions = $onDemandDeliveryOptions;
         
@@ -375,17 +375,17 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Set OnDemandDeliveryURLRequest value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::getValidValues()
      * @throws InvalidArgumentException
      * @param string $onDemandDeliveryURLRequest
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setOnDemandDeliveryURLRequest(?string $onDemandDeliveryURLRequest = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::valueIsValid($onDemandDeliveryURLRequest)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest', is_array($onDemandDeliveryURLRequest) ? implode(', ', $onDemandDeliveryURLRequest) : var_export($onDemandDeliveryURLRequest, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::valueIsValid($onDemandDeliveryURLRequest)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest', is_array($onDemandDeliveryURLRequest) ? implode(', ', $onDemandDeliveryURLRequest) : var_export($onDemandDeliveryURLRequest, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\OnDemandDeliveryURLRequest::getValidValues())), __LINE__);
         }
         $this->OnDemandDeliveryURLRequest = $onDemandDeliveryURLRequest;
         
@@ -393,18 +393,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get Ship value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    public function getShip(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType
+    public function getShip(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType
     {
         return $this->Ship;
     }
     /**
      * Set Ship value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setShip(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
+    public function setShip(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
     {
         $this->Ship = $ship;
         
@@ -412,18 +412,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get Packages value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType|null
      */
-    public function getPackages(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType
+    public function getPackages(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType
     {
         return $this->Packages;
     }
     /**
      * Set Packages value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setPackages(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages = null): self
+    public function setPackages(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType $packages = null): self
     {
         $this->Packages = $packages;
         
@@ -431,18 +431,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get DangerousGoods value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods|null
      */
-    public function getDangerousGoods(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods
+    public function getDangerousGoods(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods
     {
         return $this->DangerousGoods;
     }
     /**
      * Set DangerousGoods value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setDangerousGoods(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods = null): self
+    public function setDangerousGoods(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DangerousGoods $dangerousGoods = null): self
     {
         $this->DangerousGoods = $dangerousGoods;
         
@@ -458,17 +458,17 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Set GetRateEstimates value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::getValidValues()
      * @throws InvalidArgumentException
      * @param string $getRateEstimates
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
     public function setGetRateEstimates(?string $getRateEstimates = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::valueIsValid($getRateEstimates)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetRateEstimates', is_array($getRateEstimates) ? implode(', ', $getRateEstimates) : var_export($getRateEstimates, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::valueIsValid($getRateEstimates)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetRateEstimates', is_array($getRateEstimates) ? implode(', ', $getRateEstimates) : var_export($getRateEstimates, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetRateEstimates::getValidValues())), __LINE__);
         }
         $this->GetRateEstimates = $getRateEstimates;
         
@@ -476,18 +476,18 @@ class DocTypeRef_RequestedShipmentType extends AbstractStructBase
     }
     /**
      * Get ShipmentNotifications value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications|null
      */
-    public function getShipmentNotifications(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications
+    public function getShipmentNotifications(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications
     {
         return $this->ShipmentNotifications;
     }
     /**
      * Set ShipmentNotifications value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedShipmentType
      */
-    public function setShipmentNotifications(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications = null): self
+    public function setShipmentNotifications(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications $shipmentNotifications = null): self
     {
         $this->ShipmentNotifications = $shipmentNotifications;
         

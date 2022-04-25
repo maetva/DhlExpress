@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -45,7 +45,7 @@ class TrackedBy extends AbstractStructBase
     /**
      * Set LPNumber value
      * @param string $lPNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackedBy
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackedBy
      */
     public function setLPNumber(?string $lPNumber = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class DocTypeRef_ShipmentNotifications extends AbstractStructBase
 {
     /**
      * The ShipmentNotification
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $ShipmentNotification = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $ShipmentNotification = null;
     /**
      * Constructor method for docTypeRef_ShipmentNotifications
      * @uses DocTypeRef_ShipmentNotifications::setShipmentNotification()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification = null)
     {
         $this
             ->setShipmentNotification($shipmentNotification);
     }
     /**
      * Get ShipmentNotification value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification|null
      */
-    public function getShipmentNotification(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+    public function getShipmentNotification(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
     {
         return $this->ShipmentNotification;
     }
     /**
      * Set ShipmentNotification value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotifications
      */
-    public function setShipmentNotification(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification = null): self
+    public function setShipmentNotification(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification $shipmentNotification = null): self
     {
         $this->ShipmentNotification = $shipmentNotification;
         

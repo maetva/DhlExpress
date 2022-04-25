@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class EstimatedDeliveryDate extends AbstractStructBase
     /**
      * Set EstimatedDeliveryDate value
      * @param string $estimatedDeliveryDate
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate
      */
     public function setEstimatedDeliveryDate(?string $estimatedDeliveryDate = null): self
     {
@@ -73,17 +73,17 @@ class EstimatedDeliveryDate extends AbstractStructBase
     }
     /**
      * Set EstimatedDeliveryType value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $estimatedDeliveryType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate
      */
     public function setEstimatedDeliveryType(?string $estimatedDeliveryType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::valueIsValid($estimatedDeliveryType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType', is_array($estimatedDeliveryType) ? implode(', ', $estimatedDeliveryType) : var_export($estimatedDeliveryType, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::valueIsValid($estimatedDeliveryType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType', is_array($estimatedDeliveryType) ? implode(', ', $estimatedDeliveryType) : var_export($estimatedDeliveryType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryType::getValidValues())), __LINE__);
         }
         $this->EstimatedDeliveryType = $estimatedDeliveryType;
         

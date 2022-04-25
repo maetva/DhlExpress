@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class ItemsType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Repeating Line Items and their corresponding details e.g as stated in a Commercial Invoice
      * - maxOccurs: 1000
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType[]
      */
     protected ?array $Item = null;
     /**
      * Constructor method for ItemsType
      * @uses ItemsType::setItem()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType[] $item
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType[] $item
      */
     public function __construct(?array $item = null)
     {
@@ -33,7 +33,7 @@ class ItemsType extends AbstractStructBase
     }
     /**
      * Get Item value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType[]
      */
     public function getItem(): ?array
     {
@@ -54,12 +54,12 @@ class ItemsType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $itemsTypeItemItem) {
             // validation for constraint: itemType
-            if (!$itemsTypeItemItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType) {
+            if (!$itemsTypeItemItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType) {
                 $invalidValues[] = is_object($itemsTypeItemItem) ? get_class($itemsTypeItemItem) : sprintf('%s(%s)', gettype($itemsTypeItemItem), var_export($itemsTypeItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Item property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Item property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class ItemsType extends AbstractStructBase
     /**
      * Set Item value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType[] $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType[] $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType
      */
     public function setItem(?array $item = null): self
     {
@@ -88,14 +88,14 @@ class ItemsType extends AbstractStructBase
     /**
      * Add item to Item value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType
      */
-    public function addToItem(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType $item): self
+    public function addToItem(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType) {
-            throw new InvalidArgumentException(sprintf('The Item property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType) {
+            throw new InvalidArgumentException(sprintf('The Item property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(1000)
         if (is_array($this->Item) && count($this->Item) >= 1000) {

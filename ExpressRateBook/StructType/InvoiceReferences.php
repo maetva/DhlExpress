@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class InvoiceReferences extends AbstractStructBase
      * The InvoiceReference
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice Reference entry
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference $InvoiceReference = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference $InvoiceReference = null;
     /**
      * Constructor method for InvoiceReferences
      * @uses InvoiceReferences::setInvoiceReference()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference = null)
     {
         $this
             ->setInvoiceReference($invoiceReference);
     }
     /**
      * Get InvoiceReference value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference|null
      */
-    public function getInvoiceReference(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference
+    public function getInvoiceReference(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference
     {
         return $this->InvoiceReference;
     }
     /**
      * Set InvoiceReference value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences
      */
-    public function setInvoiceReference(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference = null): self
+    public function setInvoiceReference(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference $invoiceReference = null): self
     {
         $this->InvoiceReference = $invoiceReference;
         

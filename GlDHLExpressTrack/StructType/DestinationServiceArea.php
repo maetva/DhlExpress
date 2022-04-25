@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -84,7 +84,7 @@ class DestinationServiceArea extends AbstractStructBase
     /**
      * Set ServiceAreaCode value
      * @param string $serviceAreaCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
      */
     public function setServiceAreaCode(?string $serviceAreaCode = null): self
     {
@@ -111,7 +111,7 @@ class DestinationServiceArea extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
      */
     public function setDescription(?string $description = null): self
     {
@@ -134,7 +134,7 @@ class DestinationServiceArea extends AbstractStructBase
     /**
      * Set FacilityCode value
      * @param string $facilityCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
      */
     public function setFacilityCode(?string $facilityCode = null): self
     {
@@ -161,7 +161,7 @@ class DestinationServiceArea extends AbstractStructBase
     /**
      * Set InboundSortCode value
      * @param string $inboundSortCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
      */
     public function setInboundSortCode(?string $inboundSortCode = null): self
     {

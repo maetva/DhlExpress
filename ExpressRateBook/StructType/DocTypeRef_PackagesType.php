@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,33 +15,33 @@ class DocTypeRef_PackagesType extends AbstractStructBase
 {
     /**
      * The RequestedPackages
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $RequestedPackages = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $RequestedPackages = null;
     /**
      * Constructor method for docTypeRef_PackagesType
      * @uses DocTypeRef_PackagesType::setRequestedPackages()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages = null)
     {
         $this
             ->setRequestedPackages($requestedPackages);
     }
     /**
      * Get RequestedPackages value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType|null
      */
-    public function getRequestedPackages(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+    public function getRequestedPackages(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
     {
         return $this->RequestedPackages;
     }
     /**
      * Set RequestedPackages value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesType
      */
-    public function setRequestedPackages(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages = null): self
+    public function setRequestedPackages(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType $requestedPackages = null): self
     {
         $this->RequestedPackages = $requestedPackages;
         

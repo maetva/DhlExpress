@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -70,7 +70,7 @@ class OriginServiceArea extends AbstractStructBase
     /**
      * Set ServiceAreaCode value
      * @param string $serviceAreaCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
      */
     public function setServiceAreaCode(?string $serviceAreaCode = null): self
     {
@@ -97,7 +97,7 @@ class OriginServiceArea extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
      */
     public function setDescription(?string $description = null): self
     {
@@ -120,7 +120,7 @@ class OriginServiceArea extends AbstractStructBase
     /**
      * Set OutboundSortCode value
      * @param string $outboundSortCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
      */
     public function setOutboundSortCode(?string $outboundSortCode = null): self
     {

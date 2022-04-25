@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\ServiceType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -18,10 +18,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType|bool
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType|bool
      */
-    public function createShipmentRequest(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters)
+    public function createShipmentRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters)
     {
         try {
             $this->setResult($resultCreateShipmentRequest = $this->getSoapClient()->__soapCall('createShipmentRequest', [
@@ -40,10 +40,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|bool
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|bool
      */
-    public function getRateRequest(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters)
+    public function getRateRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters)
     {
         try {
             $this->setResult($resultGetRateRequest = $this->getSoapClient()->__soapCall('getRateRequest', [
@@ -62,10 +62,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|bool
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|bool
      */
-    public function deleteShipmentRequest(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters)
+    public function deleteShipmentRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters)
     {
         try {
             $this->setResult($resultDeleteShipmentRequest = $this->getSoapClient()->__soapCall('deleteShipmentRequest', [
@@ -82,7 +82,7 @@ class Service extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function getResult()
     {

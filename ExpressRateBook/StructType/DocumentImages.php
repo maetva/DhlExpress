@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DocumentImages extends AbstractStructBase
 {
     /**
      * The DocumentImage
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage $DocumentImage = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage $DocumentImage = null;
     /**
      * Constructor method for DocumentImages
      * @uses DocumentImages::setDocumentImage()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage = null)
     {
         $this
             ->setDocumentImage($documentImage);
     }
     /**
      * Get DocumentImage value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage|null
      */
-    public function getDocumentImage(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage
+    public function getDocumentImage(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage
     {
         return $this->DocumentImage;
     }
     /**
      * Set DocumentImage value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImages
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages
      */
-    public function setDocumentImage(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage = null): self
+    public function setDocumentImage(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImage $documentImage = null): self
     {
         $this->DocumentImage = $documentImage;
         

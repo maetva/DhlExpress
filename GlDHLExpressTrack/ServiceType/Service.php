@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ServiceType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -18,10 +18,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequest $parameters
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequestResponse|bool
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequest $parameters
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequestResponse|bool
      */
-    public function trackShipmentRequest(\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequest $parameters)
+    public function trackShipmentRequest(\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequest $parameters)
     {
         try {
             $this->setResult($resultTrackShipmentRequest = $this->getSoapClient()->__soapCall('trackShipmentRequest', [
@@ -38,7 +38,7 @@ class Service extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequestResponse
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequestResponse
      */
     public function getResult()
     {

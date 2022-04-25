@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
      * The TotalChargeType
      * Meta information extracted from the WSDL
      * - maxOccurs: 99
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType[]
      */
     protected ?array $TotalChargeType = null;
     /**
@@ -40,7 +40,7 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
      * @uses DocTypeRef_TotalChargeTypes::setTotalChargeType()
      * @uses DocTypeRef_TotalChargeTypes::setType()
      * @param string $currency
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType[] $totalChargeType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType[] $totalChargeType
      * @param string $type
      */
     public function __construct(?string $currency = null, ?array $totalChargeType = null, ?string $type = null)
@@ -61,7 +61,7 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -75,7 +75,7 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
     }
     /**
      * Get TotalChargeType value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType[]
      */
     public function getTotalChargeType(): ?array
     {
@@ -96,12 +96,12 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_TotalChargeTypesTotalChargeTypeItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_TotalChargeTypesTotalChargeTypeItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType) {
+            if (!$docTypeRef_TotalChargeTypesTotalChargeTypeItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType) {
                 $invalidValues[] = is_object($docTypeRef_TotalChargeTypesTotalChargeTypeItem) ? get_class($docTypeRef_TotalChargeTypesTotalChargeTypeItem) : sprintf('%s(%s)', gettype($docTypeRef_TotalChargeTypesTotalChargeTypeItem), var_export($docTypeRef_TotalChargeTypesTotalChargeTypeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TotalChargeType property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TotalChargeType property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -110,8 +110,8 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
     /**
      * Set TotalChargeType value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType[] $totalChargeType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType[] $totalChargeType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
      */
     public function setTotalChargeType(?array $totalChargeType = null): self
     {
@@ -130,14 +130,14 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
     /**
      * Add item to TotalChargeType value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
      */
-    public function addToTotalChargeType(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType $item): self
+    public function addToTotalChargeType(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType) {
-            throw new InvalidArgumentException(sprintf('The TotalChargeType property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType) {
+            throw new InvalidArgumentException(sprintf('The TotalChargeType property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(99)
         if (is_array($this->TotalChargeType) && count($this->TotalChargeType) >= 99) {
@@ -158,7 +158,7 @@ class DocTypeRef_TotalChargeTypes extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalChargeTypes
      */
     public function setType(?string $type = null): self
     {

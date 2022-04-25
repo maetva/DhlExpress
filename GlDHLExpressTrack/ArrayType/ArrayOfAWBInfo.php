@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -17,13 +17,13 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
      * The ArrayOfAWBInfoItem
      * Meta information extracted from the WSDL
      * - maxOccurs: 100
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[]
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[]
      */
     protected ?array $ArrayOfAWBInfoItem = null;
     /**
      * Constructor method for ArrayOfAWBInfo
      * @uses ArrayOfAWBInfo::setArrayOfAWBInfoItem()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[] $arrayOfAWBInfoItem
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[] $arrayOfAWBInfoItem
      */
     public function __construct(?array $arrayOfAWBInfoItem = null)
     {
@@ -32,7 +32,7 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
     }
     /**
      * Get ArrayOfAWBInfoItem value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[]
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[]
      */
     public function getArrayOfAWBInfoItem(): ?array
     {
@@ -53,12 +53,12 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfAWBInfoArrayOfAWBInfoItemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfAWBInfoArrayOfAWBInfoItemItem instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo) {
+            if (!$arrayOfAWBInfoArrayOfAWBInfoItemItem instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo) {
                 $invalidValues[] = is_object($arrayOfAWBInfoArrayOfAWBInfoItemItem) ? get_class($arrayOfAWBInfoArrayOfAWBInfoItemItem) : sprintf('%s(%s)', gettype($arrayOfAWBInfoArrayOfAWBInfoItemItem), var_export($arrayOfAWBInfoArrayOfAWBInfoItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ArrayOfAWBInfoItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ArrayOfAWBInfoItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
     /**
      * Set ArrayOfAWBInfoItem value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[] $arrayOfAWBInfoItem
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo[] $arrayOfAWBInfoItem
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBInfo
      */
     public function setArrayOfAWBInfoItem(?array $arrayOfAWBInfoItem = null): self
     {
@@ -87,9 +87,9 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
      */
-    public function current(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
+    public function current(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
     {
         return parent::current();
     }
@@ -97,27 +97,27 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
      */
-    public function item($index): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
+    public function item($index): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
     {
         return parent::item($index);
     }
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
      */
-    public function first(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
+    public function first(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
     {
         return parent::first();
     }
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
      */
-    public function last(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
+    public function last(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
     {
         return parent::last();
     }
@@ -125,9 +125,9 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo|null
      */
-    public function offsetGet($offset): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
+    public function offsetGet($offset): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo
     {
         return parent::offsetGet($offset);
     }
@@ -135,14 +135,14 @@ class ArrayOfAWBInfo extends AbstractStructArrayBase
      * Add element to array
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo $item
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBInfo
      */
     public function add($item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo) {
-            throw new InvalidArgumentException(sprintf('The ArrayOfAWBInfoItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\AWBInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo) {
+            throw new InvalidArgumentException(sprintf('The ArrayOfAWBInfoItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\AWBInfo, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         return parent::add($item);
     }

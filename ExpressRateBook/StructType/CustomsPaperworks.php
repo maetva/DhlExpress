@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class CustomsPaperworks extends AbstractStructBase
      * The CustomsPaperwork
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice Reference entry
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $CustomsPaperwork = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $CustomsPaperwork = null;
     /**
      * Constructor method for CustomsPaperworks
      * @uses CustomsPaperworks::setCustomsPaperwork()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork = null)
     {
         $this
             ->setCustomsPaperwork($customsPaperwork);
     }
     /**
      * Get CustomsPaperwork value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork|null
      */
-    public function getCustomsPaperwork(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork
+    public function getCustomsPaperwork(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork
     {
         return $this->CustomsPaperwork;
     }
     /**
      * Set CustomsPaperwork value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperworks
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks
      */
-    public function setCustomsPaperwork(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork = null): self
+    public function setCustomsPaperwork(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork $customsPaperwork = null): self
     {
         $this->CustomsPaperwork = $customsPaperwork;
         

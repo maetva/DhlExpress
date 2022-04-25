@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class TotalChargeType extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType
      */
     public function setType(?string $type = null): self
     {
@@ -74,7 +74,7 @@ class TotalChargeType extends AbstractStructBase
     /**
      * Set Amount value
      * @param string $amount
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\TotalChargeType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\TotalChargeType
      */
     public function setAmount(?string $amount = null): self
     {

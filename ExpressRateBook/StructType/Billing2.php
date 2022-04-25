@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class Billing2 extends AbstractStructBase
     /**
      * Set ShipperAccountNumber value
      * @param string $shipperAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing2
      */
     public function setShipperAccountNumber(?string $shipperAccountNumber = null): self
     {
@@ -98,17 +98,17 @@ class Billing2 extends AbstractStructBase
     }
     /**
      * Set ShippingPaymentType value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shippingPaymentType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing2
      */
     public function setShippingPaymentType(?string $shippingPaymentType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::valueIsValid($shippingPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2', is_array($shippingPaymentType) ? implode(', ', $shippingPaymentType) : var_export($shippingPaymentType, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::valueIsValid($shippingPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2', is_array($shippingPaymentType) ? implode(', ', $shippingPaymentType) : var_export($shippingPaymentType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType2::getValidValues())), __LINE__);
         }
         $this->ShippingPaymentType = $shippingPaymentType;
         
@@ -125,7 +125,7 @@ class Billing2 extends AbstractStructBase
     /**
      * Set BillingAccountNumber value
      * @param string $billingAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing2
      */
     public function setBillingAccountNumber(?string $billingAccountNumber = null): self
     {

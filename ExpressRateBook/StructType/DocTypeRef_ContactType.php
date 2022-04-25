@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,7 +103,7 @@ class DocTypeRef_ContactType extends AbstractStructBase
     /**
      * Set PersonName value
      * @param string $personName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
      */
     public function setPersonName(?string $personName = null): self
     {
@@ -134,7 +134,7 @@ class DocTypeRef_ContactType extends AbstractStructBase
     /**
      * Set CompanyName value
      * @param string $companyName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
      */
     public function setCompanyName(?string $companyName = null): self
     {
@@ -165,7 +165,7 @@ class DocTypeRef_ContactType extends AbstractStructBase
     /**
      * Set PhoneNumber value
      * @param string $phoneNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
      */
     public function setPhoneNumber(?string $phoneNumber = null): self
     {
@@ -196,7 +196,7 @@ class DocTypeRef_ContactType extends AbstractStructBase
     /**
      * Set EmailAddress value
      * @param string $emailAddress
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
      */
     public function setEmailAddress(?string $emailAddress = null): self
     {
@@ -227,7 +227,7 @@ class DocTypeRef_ContactType extends AbstractStructBase
     /**
      * Set MobilePhoneNumber value
      * @param string $mobilePhoneNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
      */
     public function setMobilePhoneNumber(?string $mobilePhoneNumber = null): self
     {

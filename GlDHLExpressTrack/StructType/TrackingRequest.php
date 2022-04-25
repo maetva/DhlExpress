@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,14 +19,14 @@ class TrackingRequest extends AbstractStructBase
      * The ClientDetail
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $ClientDetail = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $ClientDetail = null;
     /**
      * The Request
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request $Request = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request $Request = null;
     /**
      * The LanguageCode
      * Meta information extracted from the WSDL
@@ -67,24 +67,24 @@ class TrackingRequest extends AbstractStructBase
      * The AWBNumber
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $AWBNumber = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $AWBNumber = null;
     /**
      * The LPNumber
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $LPNumber = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $LPNumber = null;
     /**
      * The ReferenceQuery
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $ReferenceQuery = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $ReferenceQuery = null;
     /**
      * The LevelOfDetails
      * Meta information extracted from the WSDL
@@ -121,19 +121,19 @@ class TrackingRequest extends AbstractStructBase
      * @uses TrackingRequest::setLevelOfDetails()
      * @uses TrackingRequest::setPiecesEnabled()
      * @uses TrackingRequest::setEstimatedDeliveryDateEnabled()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request $request
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request $request
      * @param string $languageCode
      * @param string $languageScriptCode
      * @param string $languageCountryCode
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery
      * @param string $levelOfDetails
      * @param string $piecesEnabled
      * @param bool $estimatedDeliveryDateEnabled
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request $request = null, ?string $languageCode = null, ?string $languageScriptCode = null, ?string $languageCountryCode = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery = null, ?string $levelOfDetails = null, ?string $piecesEnabled = null, ?bool $estimatedDeliveryDateEnabled = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request $request = null, ?string $languageCode = null, ?string $languageScriptCode = null, ?string $languageCountryCode = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery = null, ?string $levelOfDetails = null, ?string $piecesEnabled = null, ?bool $estimatedDeliveryDateEnabled = null)
     {
         $this
             ->setClientDetail($clientDetail)
@@ -150,18 +150,18 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Get ClientDetail value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType|null
      */
-    public function getClientDetail(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
+    public function getClientDetail(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
     {
         return $this->ClientDetail;
     }
     /**
      * Set ClientDetail value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
-    public function setClientDetail(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail = null): self
+    public function setClientDetail(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType $clientDetail = null): self
     {
         $this->ClientDetail = $clientDetail;
         
@@ -169,18 +169,18 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Get Request value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request|null
      */
-    public function getRequest(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request
+    public function getRequest(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request
     {
         return $this->Request;
     }
     /**
      * Set Request value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request $request
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request $request
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
-    public function setRequest(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Request $request = null): self
+    public function setRequest(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Request $request = null): self
     {
         $this->Request = $request;
         
@@ -197,7 +197,7 @@ class TrackingRequest extends AbstractStructBase
     /**
      * Set LanguageCode value
      * @param string $languageCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setLanguageCode(?string $languageCode = null): self
     {
@@ -228,7 +228,7 @@ class TrackingRequest extends AbstractStructBase
     /**
      * Set LanguageScriptCode value
      * @param string $languageScriptCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setLanguageScriptCode(?string $languageScriptCode = null): self
     {
@@ -259,7 +259,7 @@ class TrackingRequest extends AbstractStructBase
     /**
      * Set LanguageCountryCode value
      * @param string $languageCountryCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setLanguageCountryCode(?string $languageCountryCode = null): self
     {
@@ -281,18 +281,18 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Get AWBNumber value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber|null
      */
-    public function getAWBNumber(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
+    public function getAWBNumber(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
     {
         return $this->AWBNumber;
     }
     /**
      * Set AWBNumber value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
-    public function setAWBNumber(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber = null): self
+    public function setAWBNumber(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber $aWBNumber = null): self
     {
         $this->AWBNumber = $aWBNumber;
         
@@ -300,18 +300,18 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Get LPNumber value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID|null
      */
-    public function getLPNumber(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
+    public function getLPNumber(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
     {
         return $this->LPNumber;
     }
     /**
      * Set LPNumber value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
-    public function setLPNumber(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber = null): self
+    public function setLPNumber(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID $lPNumber = null): self
     {
         $this->LPNumber = $lPNumber;
         
@@ -319,18 +319,18 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Get ReferenceQuery value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery|null
      */
-    public function getReferenceQuery(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
+    public function getReferenceQuery(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
     {
         return $this->ReferenceQuery;
     }
     /**
      * Set ReferenceQuery value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
-    public function setReferenceQuery(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery = null): self
+    public function setReferenceQuery(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery $referenceQuery = null): self
     {
         $this->ReferenceQuery = $referenceQuery;
         
@@ -346,17 +346,17 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Set LevelOfDetails value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::getValidValues()
      * @throws InvalidArgumentException
      * @param string $levelOfDetails
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setLevelOfDetails(?string $levelOfDetails = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::valueIsValid($levelOfDetails)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails', is_array($levelOfDetails) ? implode(', ', $levelOfDetails) : var_export($levelOfDetails, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::valueIsValid($levelOfDetails)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails', is_array($levelOfDetails) ? implode(', ', $levelOfDetails) : var_export($levelOfDetails, true), implode(', ', \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\LevelOfDetails::getValidValues())), __LINE__);
         }
         $this->LevelOfDetails = $levelOfDetails;
         
@@ -372,17 +372,17 @@ class TrackingRequest extends AbstractStructBase
     }
     /**
      * Set PiecesEnabled value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::getValidValues()
      * @throws InvalidArgumentException
      * @param string $piecesEnabled
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setPiecesEnabled(?string $piecesEnabled = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::valueIsValid($piecesEnabled)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled', is_array($piecesEnabled) ? implode(', ', $piecesEnabled) : var_export($piecesEnabled, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::valueIsValid($piecesEnabled)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled', is_array($piecesEnabled) ? implode(', ', $piecesEnabled) : var_export($piecesEnabled, true), implode(', ', \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\PiecesEnabled::getValidValues())), __LINE__);
         }
         $this->PiecesEnabled = $piecesEnabled;
         
@@ -399,7 +399,7 @@ class TrackingRequest extends AbstractStructBase
     /**
      * Set EstimatedDeliveryDateEnabled value
      * @param bool $estimatedDeliveryDateEnabled
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackingRequest
      */
     public function setEstimatedDeliveryDateEnabled(?bool $estimatedDeliveryDateEnabled = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DocTypeRef_TrackingNumberBarcode extends AbstractStructBase
     /**
      * Set TrackingNumberBarcodeContent value
      * @param string $trackingNumberBarcodeContent
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode
      */
     public function setTrackingNumberBarcodeContent(?string $trackingNumberBarcodeContent = null): self
     {
@@ -78,7 +78,7 @@ class DocTypeRef_TrackingNumberBarcode extends AbstractStructBase
     /**
      * Set number value
      * @param int $number
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcode
      */
     public function setNumber(?int $number = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -172,17 +172,17 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     }
     /**
      * Set DeliveryOption value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DeliveryOption::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DeliveryOption::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DeliveryOption::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DeliveryOption::getValidValues()
      * @throws InvalidArgumentException
      * @param string $deliveryOption
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setDeliveryOption(string $deliveryOption): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DeliveryOption::valueIsValid($deliveryOption)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DeliveryOption', is_array($deliveryOption) ? implode(', ', $deliveryOption) : var_export($deliveryOption, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DeliveryOption::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DeliveryOption::valueIsValid($deliveryOption)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DeliveryOption', is_array($deliveryOption) ? implode(', ', $deliveryOption) : var_export($deliveryOption, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DeliveryOption::getValidValues())), __LINE__);
         }
         $this->DeliveryOption = $deliveryOption;
         
@@ -199,7 +199,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set Location value
      * @param string $location
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setLocation(?string $location = null): self
     {
@@ -230,7 +230,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set Instructions value
      * @param string $instructions
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setInstructions(?string $instructions = null): self
     {
@@ -261,7 +261,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set GateCode value
      * @param string $gateCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setGateCode(?string $gateCode = null): self
     {
@@ -291,17 +291,17 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     }
     /**
      * Set LWNTypeCode value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::getValidValues()
      * @throws InvalidArgumentException
      * @param string $lWNTypeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setLWNTypeCode(?string $lWNTypeCode = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::valueIsValid($lWNTypeCode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LWNTypeCode', is_array($lWNTypeCode) ? implode(', ', $lWNTypeCode) : var_export($lWNTypeCode, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::valueIsValid($lWNTypeCode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LWNTypeCode', is_array($lWNTypeCode) ? implode(', ', $lWNTypeCode) : var_export($lWNTypeCode, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LWNTypeCode::getValidValues())), __LINE__);
         }
         $this->LWNTypeCode = $lWNTypeCode;
         
@@ -318,7 +318,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set NeighbourName value
      * @param string $neighbourName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setNeighbourName(?string $neighbourName = null): self
     {
@@ -349,7 +349,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set NeighbourHouseNumber value
      * @param string $neighbourHouseNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setNeighbourHouseNumber(?string $neighbourHouseNumber = null): self
     {
@@ -380,7 +380,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set AuthorizerName value
      * @param string $authorizerName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setAuthorizerName(?string $authorizerName = null): self
     {
@@ -411,7 +411,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set SelectedServicePointID value
      * @param string $selectedServicePointID
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setSelectedServicePointID(?string $selectedServicePointID = null): self
     {
@@ -442,7 +442,7 @@ class DocTypeRef_OnDemandDeliveryOptions extends AbstractStructBase
     /**
      * Set RequestedDeliveryDate value
      * @param string $requestedDeliveryDate
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OnDemandDeliveryOptions
      */
     public function setRequestedDeliveryDate(?string $requestedDeliveryDate = null): self
     {

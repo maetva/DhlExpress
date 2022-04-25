@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,7 +51,7 @@ class ShipmentDate extends AbstractStructBase
     /**
      * Set From value
      * @param string $from
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
      */
     public function setFrom(?string $from = null): self
     {
@@ -74,7 +74,7 @@ class ShipmentDate extends AbstractStructBase
     /**
      * Set To value
      * @param string $to
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
      */
     public function setTo(?string $to = null): self
     {

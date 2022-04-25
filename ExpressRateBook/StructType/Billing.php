@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,9 +57,9 @@ class Billing extends AbstractStructBase
      * The ShipmentPrepaidTotalCharge
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $ShipmentPrepaidTotalCharge = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $ShipmentPrepaidTotalCharge = null;
     /**
      * Constructor method for Billing
      * @uses Billing::setShipperAccountNumber()
@@ -71,9 +71,9 @@ class Billing extends AbstractStructBase
      * @param string $shippingPaymentType
      * @param string $billingAccountNumber
      * @param string $dutyAndTaxPayerAccountNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge
      */
-    public function __construct(?string $shipperAccountNumber = null, ?string $shippingPaymentType = null, ?string $billingAccountNumber = null, ?string $dutyAndTaxPayerAccountNumber = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge = null)
+    public function __construct(?string $shipperAccountNumber = null, ?string $shippingPaymentType = null, ?string $billingAccountNumber = null, ?string $dutyAndTaxPayerAccountNumber = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge = null)
     {
         $this
             ->setShipperAccountNumber($shipperAccountNumber)
@@ -93,7 +93,7 @@ class Billing extends AbstractStructBase
     /**
      * Set ShipperAccountNumber value
      * @param string $shipperAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
      */
     public function setShipperAccountNumber(?string $shipperAccountNumber = null): self
     {
@@ -123,17 +123,17 @@ class Billing extends AbstractStructBase
     }
     /**
      * Set ShippingPaymentType value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shippingPaymentType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
      */
     public function setShippingPaymentType(?string $shippingPaymentType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::valueIsValid($shippingPaymentType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType', is_array($shippingPaymentType) ? implode(', ', $shippingPaymentType) : var_export($shippingPaymentType, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::valueIsValid($shippingPaymentType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType', is_array($shippingPaymentType) ? implode(', ', $shippingPaymentType) : var_export($shippingPaymentType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPaymentType::getValidValues())), __LINE__);
         }
         $this->ShippingPaymentType = $shippingPaymentType;
         
@@ -150,7 +150,7 @@ class Billing extends AbstractStructBase
     /**
      * Set BillingAccountNumber value
      * @param string $billingAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
      */
     public function setBillingAccountNumber(?string $billingAccountNumber = null): self
     {
@@ -181,7 +181,7 @@ class Billing extends AbstractStructBase
     /**
      * Set DutyAndTaxPayerAccountNumber value
      * @param string $dutyAndTaxPayerAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
      */
     public function setDutyAndTaxPayerAccountNumber(?string $dutyAndTaxPayerAccountNumber = null): self
     {
@@ -203,18 +203,18 @@ class Billing extends AbstractStructBase
     }
     /**
      * Get ShipmentPrepaidTotalCharge value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge|null
      */
-    public function getShipmentPrepaidTotalCharge(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
+    public function getShipmentPrepaidTotalCharge(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
     {
         return $this->ShipmentPrepaidTotalCharge;
     }
     /**
      * Set ShipmentPrepaidTotalCharge value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Billing
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
      */
-    public function setShipmentPrepaidTotalCharge(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge = null): self
+    public function setShipmentPrepaidTotalCharge(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge $shipmentPrepaidTotalCharge = null): self
     {
         $this->ShipmentPrepaidTotalCharge = $shipmentPrepaidTotalCharge;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class DocTypeRef_ItemsType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[]
      */
     protected ?array $Item = null;
     /**
      * Constructor method for docTypeRef_ItemsType
      * @uses DocTypeRef_ItemsType::setItem()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[] $item
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[] $item
      */
     public function __construct(?array $item = null)
     {
@@ -33,7 +33,7 @@ class DocTypeRef_ItemsType extends AbstractStructBase
     }
     /**
      * Get Item value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[]
      */
     public function getItem(): ?array
     {
@@ -54,12 +54,12 @@ class DocTypeRef_ItemsType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ItemsTypeItemItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ItemsTypeItemItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType) {
+            if (!$docTypeRef_ItemsTypeItemItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType) {
                 $invalidValues[] = is_object($docTypeRef_ItemsTypeItemItem) ? get_class($docTypeRef_ItemsTypeItemItem) : sprintf('%s(%s)', gettype($docTypeRef_ItemsTypeItemItem), var_export($docTypeRef_ItemsTypeItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Item property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Item property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class DocTypeRef_ItemsType extends AbstractStructBase
     /**
      * Set Item value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[] $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType[] $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemsType
      */
     public function setItem(?array $item = null): self
     {
@@ -88,14 +88,14 @@ class DocTypeRef_ItemsType extends AbstractStructBase
     /**
      * Add item to Item value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemsType
      */
-    public function addToItem(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType $item): self
+    public function addToItem(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType) {
-            throw new InvalidArgumentException(sprintf('The Item property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType) {
+            throw new InvalidArgumentException(sprintf('The Item property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ItemType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->Item) && count($this->Item) >= 999) {

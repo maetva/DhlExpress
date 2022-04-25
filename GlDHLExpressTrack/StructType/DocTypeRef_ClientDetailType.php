@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class DocTypeRef_ClientDetailType extends AbstractStructBase
     /**
      * Set sso value
      * @param string $sso
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
      */
     public function setSso(?string $sso = null): self
     {
@@ -78,7 +78,7 @@ class DocTypeRef_ClientDetailType extends AbstractStructBase
     /**
      * Set plant value
      * @param string $plant
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DocTypeRef_ClientDetailType
      */
     public function setPlant(?string $plant = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

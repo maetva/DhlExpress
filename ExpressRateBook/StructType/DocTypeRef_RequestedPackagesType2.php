@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,14 +15,14 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
 {
     /**
      * The Weight
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $Weight = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $Weight = null;
     /**
      * The Dimensions
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $Dimensions = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $Dimensions = null;
     /**
      * The PackageTypeCode
      * Meta information extracted from the WSDL
@@ -51,12 +51,12 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
      * @uses DocTypeRef_RequestedPackagesType2::setDimensions()
      * @uses DocTypeRef_RequestedPackagesType2::setPackageTypeCode()
      * @uses DocTypeRef_RequestedPackagesType2::setNumber()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions
      * @param string $packageTypeCode
      * @param int $number
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions = null, ?string $packageTypeCode = null, ?int $number = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions = null, ?string $packageTypeCode = null, ?int $number = null)
     {
         $this
             ->setWeight($weight)
@@ -66,18 +66,18 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
     }
     /**
      * Get Weight value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType|null
      */
-    public function getWeight(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType
+    public function getWeight(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType
     {
         return $this->Weight;
     }
     /**
      * Set Weight value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
      */
-    public function setWeight(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight = null): self
+    public function setWeight(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType $weight = null): self
     {
         $this->Weight = $weight;
 
@@ -85,18 +85,18 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
     }
     /**
      * Get Dimensions value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2|null
      */
-    public function getDimensions(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
+    public function getDimensions(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
     {
         return $this->Dimensions;
     }
     /**
      * Set Dimensions value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
      */
-    public function setDimensions(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions = null): self
+    public function setDimensions(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2 $dimensions = null): self
     {
         $this->Dimensions = $dimensions;
 
@@ -113,7 +113,7 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
     /**
      * Set PackageTypeCode value
      * @param string $packageTypeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
      */
     public function setPackageTypeCode(?string $packageTypeCode = null): self
     {
@@ -144,7 +144,7 @@ class DocTypeRef_RequestedPackagesType2 extends AbstractStructBase
     /**
      * Set number value
      * @param int $number
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType2
      */
     public function setNumber(?int $number = null): self
     {

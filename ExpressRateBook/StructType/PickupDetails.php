@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -133,7 +133,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set CutoffTime value
      * @param string $cutoffTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setCutoffTime(?string $cutoffTime = null): self
     {
@@ -156,7 +156,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set CutoffTimeGMT value
      * @param string $cutoffTimeGMT
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setCutoffTimeGMT(?string $cutoffTimeGMT = null): self
     {
@@ -179,7 +179,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set CutoffTimeOffset value
      * @param string $cutoffTimeOffset
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setCutoffTimeOffset(?string $cutoffTimeOffset = null): self
     {
@@ -202,7 +202,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set PickupWindowEarliestTime value
      * @param string $pickupWindowEarliestTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setPickupWindowEarliestTime(?string $pickupWindowEarliestTime = null): self
     {
@@ -225,7 +225,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set PickupWindowLatestTime value
      * @param string $pickupWindowLatestTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setPickupWindowLatestTime(?string $pickupWindowLatestTime = null): self
     {
@@ -248,7 +248,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set TotalTransitDays value
      * @param string $totalTransitDays
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setTotalTransitDays(?string $totalTransitDays = null): self
     {
@@ -271,7 +271,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set PickupAdditionalDays value
      * @param string $pickupAdditionalDays
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setPickupAdditionalDays(?string $pickupAdditionalDays = null): self
     {
@@ -294,7 +294,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set DeliveryAdditionalDays value
      * @param string $deliveryAdditionalDays
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setDeliveryAdditionalDays(?string $deliveryAdditionalDays = null): self
     {
@@ -317,7 +317,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set PickupDayOfWeek value
      * @param string $pickupDayOfWeek
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setPickupDayOfWeek(?string $pickupDayOfWeek = null): self
     {
@@ -340,7 +340,7 @@ class PickupDetails extends AbstractStructBase
     /**
      * Set DestinationDayOfWeek value
      * @param string $destinationDayOfWeek
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PickupDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
      */
     public function setDestinationDayOfWeek(?string $destinationDayOfWeek = null): self
     {

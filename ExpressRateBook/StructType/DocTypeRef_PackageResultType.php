@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,9 +39,9 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: This field contains the individual package's QR code details.
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode $QRCode = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode $QRCode = null;
     /**
      * The number
      * Meta information extracted from the WSDL
@@ -59,10 +59,10 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
      * @uses DocTypeRef_PackageResultType::setNumber()
      * @param string $trackingNumber
      * @param float $volumetricWeight
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode $qRCode
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode $qRCode
      * @param int $number
      */
-    public function __construct(?string $trackingNumber = null, ?float $volumetricWeight = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode $qRCode = null, ?int $number = null)
+    public function __construct(?string $trackingNumber = null, ?float $volumetricWeight = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode $qRCode = null, ?int $number = null)
     {
         $this
             ->setTrackingNumber($trackingNumber)
@@ -81,7 +81,7 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
     /**
      * Set TrackingNumber value
      * @param string $trackingNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
      */
     public function setTrackingNumber(?string $trackingNumber = null): self
     {
@@ -112,7 +112,7 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
     /**
      * Set VolumetricWeight value
      * @param float $volumetricWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
      */
     public function setVolumetricWeight(?float $volumetricWeight = null): self
     {
@@ -134,18 +134,18 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
     }
     /**
      * Get QRCode value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode|null
      */
-    public function getQRCode(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode
+    public function getQRCode(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode
     {
         return $this->QRCode;
     }
     /**
      * Set QRCode value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode $qRCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode $qRCode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
      */
-    public function setQRCode(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode $qRCode = null): self
+    public function setQRCode(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode $qRCode = null): self
     {
         $this->QRCode = $qRCode;
         
@@ -162,7 +162,7 @@ class DocTypeRef_PackageResultType extends AbstractStructBase
     /**
      * Set number value
      * @param int $number
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackageResultType
      */
     public function setNumber(?int $number = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,23 +36,23 @@ class AdditionalInformation extends AbstractStructBase
      * The OriginServiceArea
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $OriginServiceArea = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $OriginServiceArea = null;
     /**
      * The DestinationServiceArea
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $DestinationServiceArea = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $DestinationServiceArea = null;
     /**
      * The Ship
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
     /**
      * The VolumetricWeight
      * Meta information extracted from the WSDL
@@ -95,9 +95,9 @@ class AdditionalInformation extends AbstractStructBase
      * The ServiceHandlingFeatureCodes
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $ServiceHandlingFeatureCodes = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $ServiceHandlingFeatureCodes = null;
     /**
      * The DeliveryDateCode
      * Meta information extracted from the WSDL
@@ -130,18 +130,18 @@ class AdditionalInformation extends AbstractStructBase
      * @uses AdditionalInformation::setDeliveryTimeCode()
      * @param string $additionalInformationText
      * @param string $billingCode
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
      * @param float $volumetricWeight
      * @param string $dHLRoutingCode
      * @param string $dHLRoutingDataID
      * @param string $serviceContentCode
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
      * @param string $deliveryDateCode
      * @param string $deliveryTimeCode
      */
-    public function __construct(?string $additionalInformationText = null, ?string $billingCode = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?float $volumetricWeight = null, ?string $dHLRoutingCode = null, ?string $dHLRoutingDataID = null, ?string $serviceContentCode = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null, ?string $deliveryDateCode = null, ?string $deliveryTimeCode = null)
+    public function __construct(?string $additionalInformationText = null, ?string $billingCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?float $volumetricWeight = null, ?string $dHLRoutingCode = null, ?string $dHLRoutingDataID = null, ?string $serviceContentCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null, ?string $deliveryDateCode = null, ?string $deliveryTimeCode = null)
     {
         $this
             ->setAdditionalInformationText($additionalInformationText)
@@ -168,7 +168,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set AdditionalInformationText value
      * @param string $additionalInformationText
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setAdditionalInformationText(?string $additionalInformationText = null): self
     {
@@ -191,7 +191,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set BillingCode value
      * @param string $billingCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setBillingCode(?string $billingCode = null): self
     {
@@ -209,18 +209,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get OriginServiceArea value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
      */
-    public function getOriginServiceArea(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
+    public function getOriginServiceArea(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
     {
         return $this->OriginServiceArea;
     }
     /**
      * Set OriginServiceArea value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setOriginServiceArea(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null): self
+    public function setOriginServiceArea(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null): self
     {
         $this->OriginServiceArea = $originServiceArea;
 
@@ -228,18 +228,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get DestinationServiceArea value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
      */
-    public function getDestinationServiceArea(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType
+    public function getDestinationServiceArea(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType
     {
         return $this->DestinationServiceArea;
     }
     /**
      * Set DestinationServiceArea value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setDestinationServiceArea(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null): self
+    public function setDestinationServiceArea(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null): self
     {
         $this->DestinationServiceArea = $destinationServiceArea;
 
@@ -247,18 +247,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get Ship value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    public function getShip(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType
+    public function getShip(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType
     {
         return $this->Ship;
     }
     /**
      * Set Ship value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setShip(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
+    public function setShip(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
     {
         $this->Ship = $ship;
 
@@ -275,7 +275,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set VolumetricWeight value
      * @param float $volumetricWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setVolumetricWeight(?float $volumetricWeight = null): self
     {
@@ -306,7 +306,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DHLRoutingCode value
      * @param string $dHLRoutingCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDHLRoutingCode(?string $dHLRoutingCode = null): self
     {
@@ -329,7 +329,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DHLRoutingDataID value
      * @param string $dHLRoutingDataID
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDHLRoutingDataID(?string $dHLRoutingDataID = null): self
     {
@@ -352,7 +352,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set ServiceContentCode value
      * @param string $serviceContentCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setServiceContentCode(?string $serviceContentCode = null): self
     {
@@ -370,18 +370,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get ServiceHandlingFeatureCodes value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
      */
-    public function getServiceHandlingFeatureCodes(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
+    public function getServiceHandlingFeatureCodes(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
     {
         return $this->ServiceHandlingFeatureCodes;
     }
     /**
      * Set ServiceHandlingFeatureCodes value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setServiceHandlingFeatureCodes(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null): self
+    public function setServiceHandlingFeatureCodes(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null): self
     {
         $this->ServiceHandlingFeatureCodes = $serviceHandlingFeatureCodes;
 
@@ -398,7 +398,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DeliveryDateCode value
      * @param string $deliveryDateCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDeliveryDateCode(?string $deliveryDateCode = null): self
     {
@@ -421,7 +421,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DeliveryTimeCode value
      * @param string $deliveryTimeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDeliveryTimeCode(?string $deliveryTimeCode = null): self
     {

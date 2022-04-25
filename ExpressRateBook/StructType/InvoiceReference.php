@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -60,7 +60,7 @@ class InvoiceReference extends AbstractStructBase
     /**
      * Set InvoiceReferenceType value
      * @param string $invoiceReferenceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference
      */
     public function setInvoiceReferenceType(?string $invoiceReferenceType = null): self
     {
@@ -91,7 +91,7 @@ class InvoiceReference extends AbstractStructBase
     /**
      * Set InvoiceReferenceNumber value
      * @param string $invoiceReferenceNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReference
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReference
      */
     public function setInvoiceReferenceNumber(?string $invoiceReferenceNumber = null): self
     {

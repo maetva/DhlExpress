@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,13 +19,13 @@ class AdditionalQuantityDefinitionsType extends AbstractStructBase
      * - documentation: Additional quantities for the line item
      * - maxOccurs: 100
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[]
      */
     protected ?array $AdditionalQuantityDefinition = null;
     /**
      * Constructor method for AdditionalQuantityDefinitionsType
      * @uses AdditionalQuantityDefinitionsType::setAdditionalQuantityDefinition()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[] $additionalQuantityDefinition
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[] $additionalQuantityDefinition
      */
     public function __construct(?array $additionalQuantityDefinition = null)
     {
@@ -34,7 +34,7 @@ class AdditionalQuantityDefinitionsType extends AbstractStructBase
     }
     /**
      * Get AdditionalQuantityDefinition value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[]
      */
     public function getAdditionalQuantityDefinition(): ?array
     {
@@ -55,12 +55,12 @@ class AdditionalQuantityDefinitionsType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem) {
             // validation for constraint: itemType
-            if (!$additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType) {
+            if (!$additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType) {
                 $invalidValues[] = is_object($additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem) ? get_class($additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem) : sprintf('%s(%s)', gettype($additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem), var_export($additionalQuantityDefinitionsTypeAdditionalQuantityDefinitionItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The AdditionalQuantityDefinition property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The AdditionalQuantityDefinition property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -69,8 +69,8 @@ class AdditionalQuantityDefinitionsType extends AbstractStructBase
     /**
      * Set AdditionalQuantityDefinition value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[] $additionalQuantityDefinition
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType[] $additionalQuantityDefinition
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
      */
     public function setAdditionalQuantityDefinition(?array $additionalQuantityDefinition = null): self
     {
@@ -89,14 +89,14 @@ class AdditionalQuantityDefinitionsType extends AbstractStructBase
     /**
      * Add item to AdditionalQuantityDefinition value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
      */
-    public function addToAdditionalQuantityDefinition(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType $item): self
+    public function addToAdditionalQuantityDefinition(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType) {
-            throw new InvalidArgumentException(sprintf('The AdditionalQuantityDefinition property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType) {
+            throw new InvalidArgumentException(sprintf('The AdditionalQuantityDefinition property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(100)
         if (is_array($this->AdditionalQuantityDefinition) && count($this->AdditionalQuantityDefinition) >= 100) {

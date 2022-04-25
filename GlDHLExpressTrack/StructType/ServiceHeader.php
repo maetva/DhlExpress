@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -125,7 +125,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set MessageTime value
      * @param string $messageTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setMessageTime(?string $messageTime = null): self
     {
@@ -148,7 +148,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set MessageReference value
      * @param string $messageReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setMessageReference(?string $messageReference = null): self
     {
@@ -179,7 +179,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set WebstorePlatform value
      * @param string $webstorePlatform
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setWebstorePlatform(?string $webstorePlatform = null): self
     {
@@ -206,7 +206,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set WebstorePlatformVersion value
      * @param string $webstorePlatformVersion
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setWebstorePlatformVersion(?string $webstorePlatformVersion = null): self
     {
@@ -233,7 +233,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set ShippingSystemPlatform value
      * @param string $shippingSystemPlatform
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setShippingSystemPlatform(?string $shippingSystemPlatform = null): self
     {
@@ -260,7 +260,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set ShippingSystemPlatformVersion value
      * @param string $shippingSystemPlatformVersion
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setShippingSystemPlatformVersion(?string $shippingSystemPlatformVersion = null): self
     {
@@ -287,7 +287,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set PlugIn value
      * @param string $plugIn
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setPlugIn(?string $plugIn = null): self
     {
@@ -314,7 +314,7 @@ class ServiceHeader extends AbstractStructBase
     /**
      * Set PlugInVersion value
      * @param string $plugInVersion
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceHeader
      */
     public function setPlugInVersion(?string $plugInVersion = null): self
     {

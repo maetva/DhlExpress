@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -17,13 +17,13 @@ class ArrayOfCondition extends AbstractStructArrayBase
      * The ArrayOfConditionItem
      * Meta information extracted from the WSDL
      * - maxOccurs: 100
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition[]
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition[]
      */
     protected ?array $ArrayOfConditionItem = null;
     /**
      * Constructor method for ArrayOfCondition
      * @uses ArrayOfCondition::setArrayOfConditionItem()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition[] $arrayOfConditionItem
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition[] $arrayOfConditionItem
      */
     public function __construct(?array $arrayOfConditionItem = null)
     {
@@ -32,7 +32,7 @@ class ArrayOfCondition extends AbstractStructArrayBase
     }
     /**
      * Get ArrayOfConditionItem value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition[]
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition[]
      */
     public function getArrayOfConditionItem(): ?array
     {
@@ -53,12 +53,12 @@ class ArrayOfCondition extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfConditionArrayOfConditionItemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfConditionArrayOfConditionItemItem instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition) {
+            if (!$arrayOfConditionArrayOfConditionItemItem instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition) {
                 $invalidValues[] = is_object($arrayOfConditionArrayOfConditionItemItem) ? get_class($arrayOfConditionArrayOfConditionItemItem) : sprintf('%s(%s)', gettype($arrayOfConditionArrayOfConditionItemItem), var_export($arrayOfConditionArrayOfConditionItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ArrayOfConditionItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ArrayOfConditionItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class ArrayOfCondition extends AbstractStructArrayBase
     /**
      * Set ArrayOfConditionItem value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition[] $arrayOfConditionItem
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition[] $arrayOfConditionItem
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
      */
     public function setArrayOfConditionItem(?array $arrayOfConditionItem = null): self
     {
@@ -87,9 +87,9 @@ class ArrayOfCondition extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition|null
      */
-    public function current(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition
+    public function current(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
     {
         return parent::current();
     }
@@ -97,27 +97,27 @@ class ArrayOfCondition extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition|null
      */
-    public function item($index): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition
+    public function item($index): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
     {
         return parent::item($index);
     }
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition|null
      */
-    public function first(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition
+    public function first(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
     {
         return parent::first();
     }
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition|null
      */
-    public function last(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition
+    public function last(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
     {
         return parent::last();
     }
@@ -125,9 +125,9 @@ class ArrayOfCondition extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition|null
      */
-    public function offsetGet($offset): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition
+    public function offsetGet($offset): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
     {
         return parent::offsetGet($offset);
     }
@@ -135,14 +135,14 @@ class ArrayOfCondition extends AbstractStructArrayBase
      * Add element to array
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition $item
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfCondition
      */
     public function add($item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition) {
-            throw new InvalidArgumentException(sprintf('The ArrayOfConditionItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Condition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition) {
+            throw new InvalidArgumentException(sprintf('The ArrayOfConditionItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         return parent::add($item);
     }

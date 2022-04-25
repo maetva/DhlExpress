@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -60,7 +60,7 @@ class Reference extends AbstractStructBase
     /**
      * Set ShipmentReference value
      * @param string $shipmentReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference
      */
     public function setShipmentReference(?string $shipmentReference = null): self
     {
@@ -91,7 +91,7 @@ class Reference extends AbstractStructBase
     /**
      * Set ShipmentReferenceType value
      * @param string $shipmentReferenceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference
      */
     public function setShipmentReferenceType(?string $shipmentReferenceType = null): self
     {

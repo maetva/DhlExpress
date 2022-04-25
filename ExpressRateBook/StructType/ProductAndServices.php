@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -39,9 +39,9 @@ class ProductAndServices extends AbstractStructBase
      * The SpecialServices
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2 $SpecialServices = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2 $SpecialServices = null;
     /**
      * Constructor method for ProductAndServices
      * @uses ProductAndServices::setServiceType()
@@ -49,9 +49,9 @@ class ProductAndServices extends AbstractStructBase
      * @uses ProductAndServices::setSpecialServices()
      * @param string $serviceType
      * @param string $localServiceType
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2 $specialServices
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2 $specialServices
      */
-    public function __construct(?string $serviceType = null, ?string $localServiceType = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2 $specialServices = null)
+    public function __construct(?string $serviceType = null, ?string $localServiceType = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2 $specialServices = null)
     {
         $this
             ->setServiceType($serviceType)
@@ -69,7 +69,7 @@ class ProductAndServices extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices
      */
     public function setServiceType(?string $serviceType = null): self
     {
@@ -100,7 +100,7 @@ class ProductAndServices extends AbstractStructBase
     /**
      * Set LocalServiceType value
      * @param string $localServiceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices
      */
     public function setLocalServiceType(?string $localServiceType = null): self
     {
@@ -122,18 +122,18 @@ class ProductAndServices extends AbstractStructBase
     }
     /**
      * Get SpecialServices value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2|null
      */
-    public function getSpecialServices(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2
+    public function getSpecialServices(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2
     {
         return $this->SpecialServices;
     }
     /**
      * Set SpecialServices value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2 $specialServices
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2 $specialServices
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices
      */
-    public function setSpecialServices(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Services2 $specialServices = null): self
+    public function setSpecialServices(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services2 $specialServices = null): self
     {
         $this->SpecialServices = $specialServices;
         

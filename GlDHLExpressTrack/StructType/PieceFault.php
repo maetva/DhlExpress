@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set PieceID value
      * @param string $pieceID
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setPieceID(?string $pieceID = null): self
     {
@@ -96,7 +96,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set ConditionCode value
      * @param string $conditionCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setConditionCode(?string $conditionCode = null): self
     {
@@ -119,7 +119,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set ConditionData value
      * @param string $conditionData
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setConditionData(?string $conditionData = null): self
     {

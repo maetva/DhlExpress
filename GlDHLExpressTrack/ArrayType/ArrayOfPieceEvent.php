@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -18,13 +18,13 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 100
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[]
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[]
      */
     protected ?array $ArrayOfPieceEventItem = null;
     /**
      * Constructor method for ArrayOfPieceEvent
      * @uses ArrayOfPieceEvent::setArrayOfPieceEventItem()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[] $arrayOfPieceEventItem
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[] $arrayOfPieceEventItem
      */
     public function __construct(?array $arrayOfPieceEventItem = null)
     {
@@ -33,7 +33,7 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
     }
     /**
      * Get ArrayOfPieceEventItem value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[]
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[]
      */
     public function getArrayOfPieceEventItem(): ?array
     {
@@ -54,12 +54,12 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfPieceEventArrayOfPieceEventItemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfPieceEventArrayOfPieceEventItemItem instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent) {
+            if (!$arrayOfPieceEventArrayOfPieceEventItemItem instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent) {
                 $invalidValues[] = is_object($arrayOfPieceEventArrayOfPieceEventItemItem) ? get_class($arrayOfPieceEventArrayOfPieceEventItemItem) : sprintf('%s(%s)', gettype($arrayOfPieceEventArrayOfPieceEventItemItem), var_export($arrayOfPieceEventArrayOfPieceEventItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ArrayOfPieceEventItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ArrayOfPieceEventItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
     /**
      * Set ArrayOfPieceEventItem value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[] $arrayOfPieceEventItem
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent[] $arrayOfPieceEventItem
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
      */
     public function setArrayOfPieceEventItem(?array $arrayOfPieceEventItem = null): self
     {
@@ -88,9 +88,9 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
      */
-    public function current(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
+    public function current(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
     {
         return parent::current();
     }
@@ -98,27 +98,27 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
      */
-    public function item($index): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
+    public function item($index): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
     {
         return parent::item($index);
     }
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
      */
-    public function first(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
+    public function first(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
     {
         return parent::first();
     }
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
      */
-    public function last(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
+    public function last(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
     {
         return parent::last();
     }
@@ -126,9 +126,9 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent|null
      */
-    public function offsetGet($offset): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
+    public function offsetGet($offset): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent
     {
         return parent::offsetGet($offset);
     }
@@ -136,14 +136,14 @@ class ArrayOfPieceEvent extends AbstractStructArrayBase
      * Add element to array
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent $item
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
      */
     public function add($item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent) {
-            throw new InvalidArgumentException(sprintf('The ArrayOfPieceEventItem property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\PieceEvent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent) {
+            throw new InvalidArgumentException(sprintf('The ArrayOfPieceEventItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceEvent, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         return parent::add($item);
     }

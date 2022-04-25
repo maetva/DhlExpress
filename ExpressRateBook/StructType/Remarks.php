@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class Remarks extends AbstractStructBase
 {
     /**
      * The Remark
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark $Remark = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark $Remark = null;
     /**
      * Constructor method for Remarks
      * @uses Remarks::setRemark()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark $remark
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark $remark
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark $remark = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark $remark = null)
     {
         $this
             ->setRemark($remark);
     }
     /**
      * Get Remark value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark|null
      */
-    public function getRemark(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark
+    public function getRemark(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark
     {
         return $this->Remark;
     }
     /**
      * Set Remark value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark $remark
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark $remark
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks
      */
-    public function setRemark(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remark $remark = null): self
+    public function setRemark(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark $remark = null): self
     {
         $this->Remark = $remark;
         

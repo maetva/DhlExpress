@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -51,9 +51,9 @@ class ExportDeclaration extends AbstractStructBase
      * The ExportLineItems
      * Meta information extracted from the WSDL
      * - documentation: Specifics about each of the export line item
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems $ExportLineItems = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems $ExportLineItems = null;
     /**
      * The ExportReasonType
      * Meta information extracted from the WSDL
@@ -104,9 +104,9 @@ class ExportDeclaration extends AbstractStructBase
      * The InvoiceDeclarationTexts
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $InvoiceDeclarationTexts = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $InvoiceDeclarationTexts = null;
     /**
      * The PlaceOfIncoterm
      * Meta information extracted from the WSDL
@@ -138,23 +138,23 @@ class ExportDeclaration extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Associated documents for Customs
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments $CustomsDocuments = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments $CustomsDocuments = null;
     /**
      * The InvoiceSignatureDetails
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $InvoiceSignatureDetails = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $InvoiceSignatureDetails = null;
     /**
      * The OtherCharges
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges $OtherCharges = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges $OtherCharges = null;
     /**
      * The PackageMarks
      * Meta information extracted from the WSDL
@@ -183,9 +183,9 @@ class ExportDeclaration extends AbstractStructBase
      * The Remarks
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks $Remarks = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks $Remarks = null;
     /**
      * The TermsOfPayment
      * Meta information extracted from the WSDL
@@ -229,17 +229,17 @@ class ExportDeclaration extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice's Customer Data Text Entries. This will be printed in Customs Invoice's template COMMERCIAL_INVOICE_04 (note: only to be used for preparing Loose BBX shipments)
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $CustomerDataTextEntries = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $CustomerDataTextEntries = null;
     /**
      * The InvoiceReferences
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice Reference Numbers and their type codes.
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences $InvoiceReferences = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences $InvoiceReferences = null;
     /**
      * Constructor method for ExportDeclaration
      * @uses ExportDeclaration::setDestinationPort()
@@ -273,31 +273,31 @@ class ExportDeclaration extends AbstractStructBase
      * @param string $exporterCode
      * @param string $exporterID
      * @param string $exportLicense
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems
      * @param string $exportReasonType
      * @param string $exportReason
      * @param string $importLicense
      * @param string $invoiceDate
      * @param string $invoiceNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts
      * @param string $placeOfIncoterm
      * @param string $shipmentPurpose
      * @param string $documentFunction
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges
      * @param string $packageMarks
      * @param string $payerGSTVAT
      * @param string $recipientReference
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks $remarks
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks $remarks
      * @param string $termsOfPayment
      * @param float $invoiceTotalNetWeight
      * @param float $invoiceTotalGrossWeight
      * @param string $invoiceInstructions
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences
      */
-    public function __construct(?string $destinationPort = null, ?string $exporterCode = null, ?string $exporterID = null, ?string $exportLicense = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems = null, ?string $exportReasonType = null, ?string $exportReason = null, ?string $importLicense = null, ?string $invoiceDate = null, ?string $invoiceNumber = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts = null, ?string $placeOfIncoterm = null, ?string $shipmentPurpose = null, ?string $documentFunction = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges = null, ?string $packageMarks = null, ?string $payerGSTVAT = null, ?string $recipientReference = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks $remarks = null, ?string $termsOfPayment = null, ?float $invoiceTotalNetWeight = null, ?float $invoiceTotalGrossWeight = null, ?string $invoiceInstructions = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences = null)
+    public function __construct(?string $destinationPort = null, ?string $exporterCode = null, ?string $exporterID = null, ?string $exportLicense = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems = null, ?string $exportReasonType = null, ?string $exportReason = null, ?string $importLicense = null, ?string $invoiceDate = null, ?string $invoiceNumber = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts = null, ?string $placeOfIncoterm = null, ?string $shipmentPurpose = null, ?string $documentFunction = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges = null, ?string $packageMarks = null, ?string $payerGSTVAT = null, ?string $recipientReference = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks $remarks = null, ?string $termsOfPayment = null, ?float $invoiceTotalNetWeight = null, ?float $invoiceTotalGrossWeight = null, ?string $invoiceInstructions = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences = null)
     {
         $this
             ->setDestinationPort($destinationPort)
@@ -339,7 +339,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set DestinationPort value
      * @param string $destinationPort
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setDestinationPort(?string $destinationPort = null): self
     {
@@ -362,7 +362,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ExporterCode value
      * @param string $exporterCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setExporterCode(?string $exporterCode = null): self
     {
@@ -385,7 +385,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ExporterID value
      * @param string $exporterID
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setExporterID(?string $exporterID = null): self
     {
@@ -408,7 +408,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ExportLicense value
      * @param string $exportLicense
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setExportLicense(?string $exportLicense = null): self
     {
@@ -426,18 +426,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get ExportLineItems value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems|null
      */
-    public function getExportLineItems(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems
+    public function getExportLineItems(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems
     {
         return $this->ExportLineItems;
     }
     /**
      * Set ExportLineItems value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setExportLineItems(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems = null): self
+    public function setExportLineItems(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItems $exportLineItems = null): self
     {
         $this->ExportLineItems = $exportLineItems;
         
@@ -454,7 +454,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ExportReasonType value
      * @param string $exportReasonType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setExportReasonType(?string $exportReasonType = null): self
     {
@@ -477,7 +477,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ExportReason value
      * @param string $exportReason
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setExportReason(?string $exportReason = null): self
     {
@@ -504,7 +504,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set ImportLicense value
      * @param string $importLicense
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setImportLicense(?string $importLicense = null): self
     {
@@ -531,7 +531,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set InvoiceDate value
      * @param string $invoiceDate
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setInvoiceDate(?string $invoiceDate = null): self
     {
@@ -554,7 +554,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set InvoiceNumber value
      * @param string $invoiceNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setInvoiceNumber(?string $invoiceNumber = null): self
     {
@@ -568,18 +568,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get InvoiceDeclarationTexts value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts|null
      */
-    public function getInvoiceDeclarationTexts(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts
+    public function getInvoiceDeclarationTexts(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts
     {
         return $this->InvoiceDeclarationTexts;
     }
     /**
      * Set InvoiceDeclarationTexts value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setInvoiceDeclarationTexts(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts = null): self
+    public function setInvoiceDeclarationTexts(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts $invoiceDeclarationTexts = null): self
     {
         $this->InvoiceDeclarationTexts = $invoiceDeclarationTexts;
         
@@ -596,7 +596,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set PlaceOfIncoterm value
      * @param string $placeOfIncoterm
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setPlaceOfIncoterm(?string $placeOfIncoterm = null): self
     {
@@ -622,17 +622,17 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Set ShipmentPurpose value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shipmentPurpose
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setShipmentPurpose(?string $shipmentPurpose = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::valueIsValid($shipmentPurpose)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose', is_array($shipmentPurpose) ? implode(', ', $shipmentPurpose) : var_export($shipmentPurpose, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::valueIsValid($shipmentPurpose)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose', is_array($shipmentPurpose) ? implode(', ', $shipmentPurpose) : var_export($shipmentPurpose, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose::getValidValues())), __LINE__);
         }
         $this->ShipmentPurpose = $shipmentPurpose;
         
@@ -648,17 +648,17 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Set DocumentFunction value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DocumentFunction::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DocumentFunction::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DocumentFunction::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DocumentFunction::getValidValues()
      * @throws InvalidArgumentException
      * @param string $documentFunction
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setDocumentFunction(?string $documentFunction = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DocumentFunction::valueIsValid($documentFunction)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DocumentFunction', is_array($documentFunction) ? implode(', ', $documentFunction) : var_export($documentFunction, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\DocumentFunction::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DocumentFunction::valueIsValid($documentFunction)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DocumentFunction', is_array($documentFunction) ? implode(', ', $documentFunction) : var_export($documentFunction, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DocumentFunction::getValidValues())), __LINE__);
         }
         $this->DocumentFunction = $documentFunction;
         
@@ -666,18 +666,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get CustomsDocuments value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments|null
      */
-    public function getCustomsDocuments(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments
+    public function getCustomsDocuments(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments
     {
         return $this->CustomsDocuments;
     }
     /**
      * Set CustomsDocuments value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setCustomsDocuments(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments = null): self
+    public function setCustomsDocuments(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments $customsDocuments = null): self
     {
         $this->CustomsDocuments = $customsDocuments;
         
@@ -685,18 +685,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get InvoiceSignatureDetails value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails|null
      */
-    public function getInvoiceSignatureDetails(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
+    public function getInvoiceSignatureDetails(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails
     {
         return $this->InvoiceSignatureDetails;
     }
     /**
      * Set InvoiceSignatureDetails value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setInvoiceSignatureDetails(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails = null): self
+    public function setInvoiceSignatureDetails(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceSignatureDetails $invoiceSignatureDetails = null): self
     {
         $this->InvoiceSignatureDetails = $invoiceSignatureDetails;
         
@@ -704,18 +704,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get OtherCharges value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges|null
      */
-    public function getOtherCharges(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges
+    public function getOtherCharges(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges
     {
         return $this->OtherCharges;
     }
     /**
      * Set OtherCharges value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setOtherCharges(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges = null): self
+    public function setOtherCharges(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\OtherCharges $otherCharges = null): self
     {
         $this->OtherCharges = $otherCharges;
         
@@ -732,7 +732,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set PackageMarks value
      * @param string $packageMarks
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setPackageMarks(?string $packageMarks = null): self
     {
@@ -755,7 +755,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set PayerGSTVAT value
      * @param string $payerGSTVAT
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setPayerGSTVAT(?string $payerGSTVAT = null): self
     {
@@ -778,7 +778,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set RecipientReference value
      * @param string $recipientReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setRecipientReference(?string $recipientReference = null): self
     {
@@ -792,18 +792,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get Remarks value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks|null
      */
-    public function getRemarks(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks
+    public function getRemarks(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks
     {
         return $this->Remarks;
     }
     /**
      * Set Remarks value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks $remarks
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks $remarks
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setRemarks(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Remarks $remarks = null): self
+    public function setRemarks(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remarks $remarks = null): self
     {
         $this->Remarks = $remarks;
         
@@ -820,7 +820,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set TermsOfPayment value
      * @param string $termsOfPayment
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setTermsOfPayment(?string $termsOfPayment = null): self
     {
@@ -843,7 +843,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set InvoiceTotalNetWeight value
      * @param float $invoiceTotalNetWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setInvoiceTotalNetWeight(?float $invoiceTotalNetWeight = null): self
     {
@@ -866,7 +866,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set InvoiceTotalGrossWeight value
      * @param float $invoiceTotalGrossWeight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setInvoiceTotalGrossWeight(?float $invoiceTotalGrossWeight = null): self
     {
@@ -889,7 +889,7 @@ class ExportDeclaration extends AbstractStructBase
     /**
      * Set InvoiceInstructions value
      * @param string $invoiceInstructions
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
     public function setInvoiceInstructions(?string $invoiceInstructions = null): self
     {
@@ -907,18 +907,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get CustomerDataTextEntries value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries|null
      */
-    public function getCustomerDataTextEntries(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries
+    public function getCustomerDataTextEntries(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries
     {
         return $this->CustomerDataTextEntries;
     }
     /**
      * Set CustomerDataTextEntries value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setCustomerDataTextEntries(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries = null): self
+    public function setCustomerDataTextEntries(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntries $customerDataTextEntries = null): self
     {
         $this->CustomerDataTextEntries = $customerDataTextEntries;
         
@@ -926,18 +926,18 @@ class ExportDeclaration extends AbstractStructBase
     }
     /**
      * Get InvoiceReferences value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences|null
      */
-    public function getInvoiceReferences(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences
+    public function getInvoiceReferences(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences
     {
         return $this->InvoiceReferences;
     }
     /**
      * Set InvoiceReferences value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ExportDeclaration
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportDeclaration
      */
-    public function setInvoiceReferences(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences = null): self
+    public function setInvoiceReferences(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceReferences $invoiceReferences = null): self
     {
         $this->InvoiceReferences = $invoiceReferences;
         

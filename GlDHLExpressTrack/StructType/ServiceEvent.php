@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -55,7 +55,7 @@ class ServiceEvent extends AbstractStructBase
     /**
      * Set EventCode value
      * @param string $eventCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent
      */
     public function setEventCode(?string $eventCode = null): self
     {
@@ -82,7 +82,7 @@ class ServiceEvent extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent
      */
     public function setDescription(?string $description = null): self
     {

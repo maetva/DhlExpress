@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -122,7 +122,7 @@ class ArrayOfChildShipmentIdentificationNumbers extends AbstractStructArrayBase
      * Set ChildShipmentIdentificationNumber value
      * @throws InvalidArgumentException
      * @param string[] $childShipmentIdentificationNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
      */
     public function setChildShipmentIdentificationNumber(array $childShipmentIdentificationNumber): self
     {
@@ -198,7 +198,7 @@ class ArrayOfChildShipmentIdentificationNumbers extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
      */
     public function add($item): self
     {

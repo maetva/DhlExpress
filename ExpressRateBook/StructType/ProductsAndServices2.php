@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class ProductsAndServices2 extends AbstractStructBase
      * The ProductAndServices
      * Meta information extracted from the WSDL
      * - maxOccurs: 99
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices[]
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices[]
      */
     protected ?array $ProductAndServices = null;
     /**
      * Constructor method for ProductsAndServices2
      * @uses ProductsAndServices2::setProductAndServices()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices[] $productAndServices
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices[] $productAndServices
      */
     public function __construct(?array $productAndServices = null)
     {
@@ -32,7 +32,7 @@ class ProductsAndServices2 extends AbstractStructBase
     }
     /**
      * Get ProductAndServices value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices[]
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices[]
      */
     public function getProductAndServices(): ?array
     {
@@ -53,12 +53,12 @@ class ProductsAndServices2 extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $productsAndServices2ProductAndServicesItem) {
             // validation for constraint: itemType
-            if (!$productsAndServices2ProductAndServicesItem instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices) {
+            if (!$productsAndServices2ProductAndServicesItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices) {
                 $invalidValues[] = is_object($productsAndServices2ProductAndServicesItem) ? get_class($productsAndServices2ProductAndServicesItem) : sprintf('%s(%s)', gettype($productsAndServices2ProductAndServicesItem), var_export($productsAndServices2ProductAndServicesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ProductAndServices property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ProductAndServices property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class ProductsAndServices2 extends AbstractStructBase
     /**
      * Set ProductAndServices value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices[] $productAndServices
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductsAndServices2
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices[] $productAndServices
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductsAndServices2
      */
     public function setProductAndServices(?array $productAndServices = null): self
     {
@@ -87,14 +87,14 @@ class ProductsAndServices2 extends AbstractStructBase
     /**
      * Add item to ProductAndServices value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductsAndServices2
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices $item
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductsAndServices2
      */
-    public function addToProductAndServices(\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices $item): self
+    public function addToProductAndServices(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices) {
-            throw new InvalidArgumentException(sprintf('The ProductAndServices property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ProductAndServices, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices) {
+            throw new InvalidArgumentException(sprintf('The ProductAndServices property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ProductAndServices, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(99)
         if (is_array($this->ProductAndServices) && count($this->ProductAndServices) >= 99) {

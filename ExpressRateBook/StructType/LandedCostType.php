@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,16 +57,16 @@ class LandedCostType extends AbstractStructBase
     protected ?string $MerchantSelectedCarrierName = null;
     /**
      * The Items
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType $Items = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType $Items = null;
     /**
      * The ShipmentMonetaryAmount
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $ShipmentMonetaryAmount = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $ShipmentMonetaryAmount = null;
     /**
      * The GetTariffFormula
      * Meta information extracted from the WSDL
@@ -111,13 +111,13 @@ class LandedCostType extends AbstractStructBase
      * @param string $shipmentPurpose
      * @param string $shipmentTransportationMode
      * @param string $merchantSelectedCarrierName
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType $items
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType $items
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount
      * @param string $getTariffFormula
      * @param string $getQuotationID
      * @param string $getDetailedLineItemLevelStatus
      */
-    public function __construct(?string $getItemCostBreakdown = null, ?string $shipmentCurrencyCode = null, ?string $shipmentPurpose = null, ?string $shipmentTransportationMode = null, ?string $merchantSelectedCarrierName = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType $items = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount = null, ?string $getTariffFormula = null, ?string $getQuotationID = null, ?string $getDetailedLineItemLevelStatus = null)
+    public function __construct(?string $getItemCostBreakdown = null, ?string $shipmentCurrencyCode = null, ?string $shipmentPurpose = null, ?string $shipmentTransportationMode = null, ?string $merchantSelectedCarrierName = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType $items = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount = null, ?string $getTariffFormula = null, ?string $getQuotationID = null, ?string $getDetailedLineItemLevelStatus = null)
     {
         $this
             ->setGetItemCostBreakdown($getItemCostBreakdown)
@@ -141,17 +141,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set GetItemCostBreakdown value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $getItemCostBreakdown
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setGetItemCostBreakdown(?string $getItemCostBreakdown = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::valueIsValid($getItemCostBreakdown)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2', is_array($getItemCostBreakdown) ? implode(', ', $getItemCostBreakdown) : var_export($getItemCostBreakdown, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::valueIsValid($getItemCostBreakdown)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2', is_array($getItemCostBreakdown) ? implode(', ', $getItemCostBreakdown) : var_export($getItemCostBreakdown, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetItemCostBreakdown2::getValidValues())), __LINE__);
         }
         $this->GetItemCostBreakdown = $getItemCostBreakdown;
         
@@ -168,7 +168,7 @@ class LandedCostType extends AbstractStructBase
     /**
      * Set ShipmentCurrencyCode value
      * @param string $shipmentCurrencyCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setShipmentCurrencyCode(?string $shipmentCurrencyCode = null): self
     {
@@ -198,17 +198,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set ShipmentPurpose value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shipmentPurpose
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setShipmentPurpose(?string $shipmentPurpose = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::valueIsValid($shipmentPurpose)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2', is_array($shipmentPurpose) ? implode(', ', $shipmentPurpose) : var_export($shipmentPurpose, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::valueIsValid($shipmentPurpose)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2', is_array($shipmentPurpose) ? implode(', ', $shipmentPurpose) : var_export($shipmentPurpose, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentPurpose2::getValidValues())), __LINE__);
         }
         $this->ShipmentPurpose = $shipmentPurpose;
         
@@ -224,17 +224,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set ShipmentTransportationMode value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shipmentTransportationMode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setShipmentTransportationMode(?string $shipmentTransportationMode = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::valueIsValid($shipmentTransportationMode)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2', is_array($shipmentTransportationMode) ? implode(', ', $shipmentTransportationMode) : var_export($shipmentTransportationMode, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::valueIsValid($shipmentTransportationMode)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2', is_array($shipmentTransportationMode) ? implode(', ', $shipmentTransportationMode) : var_export($shipmentTransportationMode, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentTransportationMode2::getValidValues())), __LINE__);
         }
         $this->ShipmentTransportationMode = $shipmentTransportationMode;
         
@@ -250,17 +250,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set MerchantSelectedCarrierName value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $merchantSelectedCarrierName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setMerchantSelectedCarrierName(?string $merchantSelectedCarrierName = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::valueIsValid($merchantSelectedCarrierName)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2', is_array($merchantSelectedCarrierName) ? implode(', ', $merchantSelectedCarrierName) : var_export($merchantSelectedCarrierName, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::valueIsValid($merchantSelectedCarrierName)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2', is_array($merchantSelectedCarrierName) ? implode(', ', $merchantSelectedCarrierName) : var_export($merchantSelectedCarrierName, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MerchantSelectedCarrierName2::getValidValues())), __LINE__);
         }
         $this->MerchantSelectedCarrierName = $merchantSelectedCarrierName;
         
@@ -268,18 +268,18 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Get Items value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType|null
      */
-    public function getItems(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType
+    public function getItems(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType
     {
         return $this->Items;
     }
     /**
      * Set Items value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType $items
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType $items
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
-    public function setItems(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ItemsType $items = null): self
+    public function setItems(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemsType $items = null): self
     {
         $this->Items = $items;
         
@@ -287,18 +287,18 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Get ShipmentMonetaryAmount value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType|null
      */
-    public function getShipmentMonetaryAmount(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType
+    public function getShipmentMonetaryAmount(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType
     {
         return $this->ShipmentMonetaryAmount;
     }
     /**
      * Set ShipmentMonetaryAmount value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
-    public function setShipmentMonetaryAmount(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount = null): self
+    public function setShipmentMonetaryAmount(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType $shipmentMonetaryAmount = null): self
     {
         $this->ShipmentMonetaryAmount = $shipmentMonetaryAmount;
         
@@ -314,17 +314,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set GetTariffFormula value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\TariffFormula::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\TariffFormula::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TariffFormula::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TariffFormula::getValidValues()
      * @throws InvalidArgumentException
      * @param string $getTariffFormula
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setGetTariffFormula(?string $getTariffFormula = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\TariffFormula::valueIsValid($getTariffFormula)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\TariffFormula', is_array($getTariffFormula) ? implode(', ', $getTariffFormula) : var_export($getTariffFormula, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\TariffFormula::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TariffFormula::valueIsValid($getTariffFormula)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TariffFormula', is_array($getTariffFormula) ? implode(', ', $getTariffFormula) : var_export($getTariffFormula, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TariffFormula::getValidValues())), __LINE__);
         }
         $this->GetTariffFormula = $getTariffFormula;
         
@@ -340,17 +340,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set GetQuotationID value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetQuotationID::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetQuotationID::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetQuotationID::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetQuotationID::getValidValues()
      * @throws InvalidArgumentException
      * @param string $getQuotationID
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setGetQuotationID(?string $getQuotationID = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetQuotationID::valueIsValid($getQuotationID)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetQuotationID', is_array($getQuotationID) ? implode(', ', $getQuotationID) : var_export($getQuotationID, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetQuotationID::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetQuotationID::valueIsValid($getQuotationID)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetQuotationID', is_array($getQuotationID) ? implode(', ', $getQuotationID) : var_export($getQuotationID, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetQuotationID::getValidValues())), __LINE__);
         }
         $this->GetQuotationID = $getQuotationID;
         
@@ -366,17 +366,17 @@ class LandedCostType extends AbstractStructBase
     }
     /**
      * Set GetDetailedLineItemLevelStatus value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::getValidValues()
      * @throws InvalidArgumentException
      * @param string $getDetailedLineItemLevelStatus
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\LandedCostType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LandedCostType
      */
     public function setGetDetailedLineItemLevelStatus(?string $getDetailedLineItemLevelStatus = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::valueIsValid($getDetailedLineItemLevelStatus)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus', is_array($getDetailedLineItemLevelStatus) ? implode(', ', $getDetailedLineItemLevelStatus) : var_export($getDetailedLineItemLevelStatus, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::valueIsValid($getDetailedLineItemLevelStatus)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus', is_array($getDetailedLineItemLevelStatus) ? implode(', ', $getDetailedLineItemLevelStatus) : var_export($getDetailedLineItemLevelStatus, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\GetDetailedLineItemLevelStatus::getValidValues())), __LINE__);
         }
         $this->GetDetailedLineItemLevelStatus = $getDetailedLineItemLevelStatus;
         

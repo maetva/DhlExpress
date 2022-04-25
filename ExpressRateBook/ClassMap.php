@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook;
 
 /**
  * Class which returns the class map definition

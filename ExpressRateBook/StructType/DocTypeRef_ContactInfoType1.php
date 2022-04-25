@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,28 +15,28 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
 {
     /**
      * The Contact
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $Contact = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $Contact = null;
     /**
      * The Address
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $Address = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $Address = null;
     /**
      * The RegistrationNumbers
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $RegistrationNumbers = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $RegistrationNumbers = null;
     /**
      * The BankDetails
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $BankDetails = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $BankDetails = null;
     /**
      * The BusinessPartyTypeCode
      * Meta information extracted from the WSDL
@@ -54,13 +54,13 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
      * @uses DocTypeRef_ContactInfoType1::setRegistrationNumbers()
      * @uses DocTypeRef_ContactInfoType1::setBankDetails()
      * @uses DocTypeRef_ContactInfoType1::setBusinessPartyTypeCode()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails
      * @param string $businessPartyTypeCode
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails = null, ?string $businessPartyTypeCode = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails = null, ?string $businessPartyTypeCode = null)
     {
         $this
             ->setContact($contact)
@@ -71,18 +71,18 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1|null
      */
-    public function getContact(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1
+    public function getContact(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1
     {
         return $this->Contact;
     }
     /**
      * Set Contact value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
      */
-    public function setContact(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact = null): self
+    public function setContact(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType1 $contact = null): self
     {
         $this->Contact = $contact;
         
@@ -90,18 +90,18 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
     }
     /**
      * Get Address value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1|null
      */
-    public function getAddress(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1
+    public function getAddress(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1
     {
         return $this->Address;
     }
     /**
      * Set Address value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
      */
-    public function setAddress(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address = null): self
+    public function setAddress(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType1 $address = null): self
     {
         $this->Address = $address;
         
@@ -109,18 +109,18 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
     }
     /**
      * Get RegistrationNumbers value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers|null
      */
-    public function getRegistrationNumbers(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
+    public function getRegistrationNumbers(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
     {
         return $this->RegistrationNumbers;
     }
     /**
      * Set RegistrationNumbers value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
      */
-    public function setRegistrationNumbers(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers = null): self
+    public function setRegistrationNumbers(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers $registrationNumbers = null): self
     {
         $this->RegistrationNumbers = $registrationNumbers;
         
@@ -128,18 +128,18 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
     }
     /**
      * Get BankDetails value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails|null
      */
-    public function getBankDetails(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails
+    public function getBankDetails(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails
     {
         return $this->BankDetails;
     }
     /**
      * Set BankDetails value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
      */
-    public function setBankDetails(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails = null): self
+    public function setBankDetails(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails $bankDetails = null): self
     {
         $this->BankDetails = $bankDetails;
         
@@ -156,7 +156,7 @@ class DocTypeRef_ContactInfoType1 extends AbstractStructBase
     /**
      * Set BusinessPartyTypeCode value
      * @param string $businessPartyTypeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactInfoType1
      */
     public function setBusinessPartyTypeCode(?string $businessPartyTypeCode = null): self
     {

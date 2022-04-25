@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -68,7 +68,7 @@ class ShipmentPrepaidTotalCharge extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
      */
     public function setCurrencyCode(?string $currencyCode = null): self
     {
@@ -99,7 +99,7 @@ class ShipmentPrepaidTotalCharge extends AbstractStructBase
     /**
      * Set Amount value
      * @param float $amount
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
      */
     public function setAmount(?float $amount = null): self
     {
@@ -130,7 +130,7 @@ class ShipmentPrepaidTotalCharge extends AbstractStructBase
     /**
      * Set PaymentMethod value
      * @param string $paymentMethod
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentPrepaidTotalCharge
      */
     public function setPaymentMethod(?string $paymentMethod = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -108,7 +108,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set MessageTime value
      * @param string $messageTime
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setMessageTime(?string $messageTime = null): self
     {
@@ -131,7 +131,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set MessageReference value
      * @param string $messageReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setMessageReference(?string $messageReference = null): self
     {
@@ -162,7 +162,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set LanguageCode value
      * @param string $languageCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setLanguageCode(?string $languageCode = null): self
     {
@@ -193,7 +193,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set LanguageScriptCode value
      * @param string $languageScriptCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setLanguageScriptCode(?string $languageScriptCode = null): self
     {
@@ -224,7 +224,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set LanguageCountryCode value
      * @param string $languageCountryCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setLanguageCountryCode(?string $languageCountryCode = null): self
     {
@@ -255,7 +255,7 @@ class ResponseServiceHeader extends AbstractStructBase
     /**
      * Set ServiceInvocationID value
      * @param string $serviceInvocationID
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ResponseServiceHeader
      */
     public function setServiceInvocationID(?string $serviceInvocationID = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -25,9 +25,9 @@ class BarcodeInfo extends AbstractStructBase
      * The TrackingNumberBarcodes
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $TrackingNumberBarcodes = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $TrackingNumberBarcodes = null;
     /**
      * The OriginDestinationServiceTypeBarcodeContent
      * Meta information extracted from the WSDL
@@ -51,11 +51,11 @@ class BarcodeInfo extends AbstractStructBase
      * @uses BarcodeInfo::setOriginDestinationServiceTypeBarcodeContent()
      * @uses BarcodeInfo::setDHLRoutingBarcodeContent()
      * @param string $shipmentIdentificationNumberBarcodeContent
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes
      * @param string $originDestinationServiceTypeBarcodeContent
      * @param string $dHLRoutingBarcodeContent
      */
-    public function __construct(?string $shipmentIdentificationNumberBarcodeContent = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes = null, ?string $originDestinationServiceTypeBarcodeContent = null, ?string $dHLRoutingBarcodeContent = null)
+    public function __construct(?string $shipmentIdentificationNumberBarcodeContent = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes = null, ?string $originDestinationServiceTypeBarcodeContent = null, ?string $dHLRoutingBarcodeContent = null)
     {
         $this
             ->setShipmentIdentificationNumberBarcodeContent($shipmentIdentificationNumberBarcodeContent)
@@ -74,7 +74,7 @@ class BarcodeInfo extends AbstractStructBase
     /**
      * Set ShipmentIdentificationNumberBarcodeContent value
      * @param string $shipmentIdentificationNumberBarcodeContent
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BarcodeInfo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo
      */
     public function setShipmentIdentificationNumberBarcodeContent(?string $shipmentIdentificationNumberBarcodeContent = null): self
     {
@@ -88,18 +88,18 @@ class BarcodeInfo extends AbstractStructBase
     }
     /**
      * Get TrackingNumberBarcodes value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes|null
      */
-    public function getTrackingNumberBarcodes(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
+    public function getTrackingNumberBarcodes(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes
     {
         return $this->TrackingNumberBarcodes;
     }
     /**
      * Set TrackingNumberBarcodes value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BarcodeInfo
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo
      */
-    public function setTrackingNumberBarcodes(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes = null): self
+    public function setTrackingNumberBarcodes(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TrackingNumberBarcodes $trackingNumberBarcodes = null): self
     {
         $this->TrackingNumberBarcodes = $trackingNumberBarcodes;
         
@@ -116,7 +116,7 @@ class BarcodeInfo extends AbstractStructBase
     /**
      * Set OriginDestinationServiceTypeBarcodeContent value
      * @param string $originDestinationServiceTypeBarcodeContent
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BarcodeInfo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo
      */
     public function setOriginDestinationServiceTypeBarcodeContent(?string $originDestinationServiceTypeBarcodeContent = null): self
     {
@@ -139,7 +139,7 @@ class BarcodeInfo extends AbstractStructBase
     /**
      * Set DHLRoutingBarcodeContent value
      * @param string $dHLRoutingBarcodeContent
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BarcodeInfo
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo
      */
     public function setDHLRoutingBarcodeContent(?string $dHLRoutingBarcodeContent = null): self
     {

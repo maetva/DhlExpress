@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -70,7 +70,7 @@ class DocTypeRef_DimensionsType2 extends AbstractStructBase
     /**
      * Set Length value
      * @param float $length
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
      */
     public function setLength(?float $length = null): self
     {
@@ -101,7 +101,7 @@ class DocTypeRef_DimensionsType2 extends AbstractStructBase
     /**
      * Set Width value
      * @param float $width
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
      */
     public function setWidth(?float $width = null): self
     {
@@ -132,7 +132,7 @@ class DocTypeRef_DimensionsType2 extends AbstractStructBase
     /**
      * Set Height value
      * @param float $height
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType2
      */
     public function setHeight(?float $height = null): self
     {

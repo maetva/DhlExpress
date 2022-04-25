@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -129,9 +129,9 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
      * The Contact
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $Contact = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $Contact = null;
     /**
      * Constructor method for docTypeRef_AddressType2
      * @uses DocTypeRef_AddressType2::setStreetLines()
@@ -155,9 +155,9 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
      * @param string $stateOrProvinceCode
      * @param string $postalCode
      * @param string $countryCode
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact
      */
-    public function __construct(?string $streetLines = null, ?string $streetLines2 = null, ?string $streetLines3 = null, ?string $streetName = null, ?string $streetNumber = null, ?string $city = null, ?string $cityDistrict = null, ?string $stateOrProvinceCode = null, ?string $postalCode = null, ?string $countryCode = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact = null)
+    public function __construct(?string $streetLines = null, ?string $streetLines2 = null, ?string $streetLines3 = null, ?string $streetName = null, ?string $streetNumber = null, ?string $city = null, ?string $cityDistrict = null, ?string $stateOrProvinceCode = null, ?string $postalCode = null, ?string $countryCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact = null)
     {
         $this
             ->setStreetLines($streetLines)
@@ -183,7 +183,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StreetLines value
      * @param string $streetLines
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStreetLines(?string $streetLines = null): self
     {
@@ -214,7 +214,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StreetLines2 value
      * @param string $streetLines2
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStreetLines2(?string $streetLines2 = null): self
     {
@@ -245,7 +245,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StreetLines3 value
      * @param string $streetLines3
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStreetLines3(?string $streetLines3 = null): self
     {
@@ -276,7 +276,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StreetName value
      * @param string $streetName
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStreetName(?string $streetName = null): self
     {
@@ -307,7 +307,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StreetNumber value
      * @param string $streetNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStreetNumber(?string $streetNumber = null): self
     {
@@ -338,7 +338,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setCity(?string $city = null): self
     {
@@ -369,7 +369,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set CityDistrict value
      * @param string $cityDistrict
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setCityDistrict(?string $cityDistrict = null): self
     {
@@ -400,7 +400,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set StateOrProvinceCode value
      * @param string $stateOrProvinceCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setStateOrProvinceCode(?string $stateOrProvinceCode = null): self
     {
@@ -423,7 +423,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set PostalCode value
      * @param string $postalCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -454,7 +454,7 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     /**
      * Set CountryCode value
      * @param string $countryCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
     public function setCountryCode(?string $countryCode = null): self
     {
@@ -476,18 +476,18 @@ class DocTypeRef_AddressType2 extends AbstractStructBase
     }
     /**
      * Get Contact value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType|null
      */
-    public function getContact(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
+    public function getContact(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType
     {
         return $this->Contact;
     }
     /**
      * Set Contact value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_AddressType2
      */
-    public function setContact(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact = null): self
+    public function setContact(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ContactType $contact = null): self
     {
         $this->Contact = $contact;
         

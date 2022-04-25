@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -26,26 +26,26 @@ class ReferenceQuery extends AbstractStructBase
     protected ?string $ShipperAccountNumber = null;
     /**
      * The ShipmentReferences
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference $ShipmentReferences = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference $ShipmentReferences = null;
     /**
      * The ShipmentDateRange
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $ShipmentDateRange = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $ShipmentDateRange = null;
     /**
      * Constructor method for ReferenceQuery
      * @uses ReferenceQuery::setShipperAccountNumber()
      * @uses ReferenceQuery::setShipmentReferences()
      * @uses ReferenceQuery::setShipmentDateRange()
      * @param string $shipperAccountNumber
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange
      */
-    public function __construct(?string $shipperAccountNumber = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange = null)
+    public function __construct(?string $shipperAccountNumber = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange = null)
     {
         $this
             ->setShipperAccountNumber($shipperAccountNumber)
@@ -63,7 +63,7 @@ class ReferenceQuery extends AbstractStructBase
     /**
      * Set ShipperAccountNumber value
      * @param string $shipperAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
      */
     public function setShipperAccountNumber(?string $shipperAccountNumber = null): self
     {
@@ -85,18 +85,18 @@ class ReferenceQuery extends AbstractStructBase
     }
     /**
      * Get ShipmentReferences value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference|null
      */
-    public function getShipmentReferences(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference
+    public function getShipmentReferences(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference
     {
         return $this->ShipmentReferences;
     }
     /**
      * Set ShipmentReferences value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
      */
-    public function setShipmentReferences(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences = null): self
+    public function setShipmentReferences(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Reference $shipmentReferences = null): self
     {
         $this->ShipmentReferences = $shipmentReferences;
         
@@ -104,18 +104,18 @@ class ReferenceQuery extends AbstractStructBase
     }
     /**
      * Get ShipmentDateRange value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate|null
      */
-    public function getShipmentDateRange(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
+    public function getShipmentDateRange(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate
     {
         return $this->ShipmentDateRange;
     }
     /**
      * Set ShipmentDateRange value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ReferenceQuery
      */
-    public function setShipmentDateRange(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange = null): self
+    public function setShipmentDateRange(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentDate $shipmentDateRange = null): self
     {
         $this->ShipmentDateRange = $shipmentDateRange;
         

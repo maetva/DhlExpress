@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class QRCode extends AbstractStructBase
     /**
      * Set ImageFormat value
      * @param string $imageFormat
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode
      */
     public function setImageFormat(?string $imageFormat = null): self
     {
@@ -88,7 +88,7 @@ class QRCode extends AbstractStructBase
     /**
      * Set Image value
      * @param string $image
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\QRCode
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\QRCode
      */
     public function setImage(?string $image = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -53,7 +53,7 @@ class DocTypeRef_ServiceAreaType extends AbstractStructBase
     /**
      * Set FacilityCode value
      * @param string $facilityCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ServiceAreaType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ServiceAreaType
      */
     public function setFacilityCode(?string $facilityCode = null): self
     {
@@ -76,7 +76,7 @@ class DocTypeRef_ServiceAreaType extends AbstractStructBase
     /**
      * Set ServiceAreaCode value
      * @param string $serviceAreaCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_ServiceAreaType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ServiceAreaType
      */
     public function setServiceAreaCode(?string $serviceAreaCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -78,9 +78,9 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     protected ?string $PackageContentDescription = null;
     /**
      * The Dimensions
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $Dimensions = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $Dimensions = null;
     /**
      * The CustomerReferences
      * Meta information extracted from the WSDL
@@ -134,16 +134,16 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
      * The BespokeLabelData
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData $BespokeLabelData = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData $BespokeLabelData = null;
     /**
      * The PackageReferences
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences $PackageReferences = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences $PackageReferences = null;
     /**
      * The PieceIdentificationNumberDataIdentifier
      * Meta information extracted from the WSDL
@@ -177,16 +177,16 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
      * @param string $pieceIdentificationNumber
      * @param string $useOwnPieceIdentificationNumber
      * @param string $packageContentDescription
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions
      * @param string $customerReferences
      * @param string $parentPieceIdentificationNumber
      * @param string $customerReferenceType
      * @param string $packageTypeCode
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences
      * @param string $pieceIdentificationNumberDataIdentifier
      */
-    public function __construct(int $number, ?float $insuredValue = null, ?float $weight = null, ?string $pieceIdentificationNumber = null, ?string $useOwnPieceIdentificationNumber = null, ?string $packageContentDescription = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions = null, ?string $customerReferences = null, ?string $parentPieceIdentificationNumber = null, ?string $customerReferenceType = null, ?string $packageTypeCode = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData = null, ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences = null, ?string $pieceIdentificationNumberDataIdentifier = null)
+    public function __construct(int $number, ?float $insuredValue = null, ?float $weight = null, ?string $pieceIdentificationNumber = null, ?string $useOwnPieceIdentificationNumber = null, ?string $packageContentDescription = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions = null, ?string $customerReferences = null, ?string $parentPieceIdentificationNumber = null, ?string $customerReferenceType = null, ?string $packageTypeCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences = null, ?string $pieceIdentificationNumberDataIdentifier = null)
     {
         $this
             ->setNumber($number)
@@ -215,7 +215,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set number value
      * @param int $number
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setNumber(int $number): self
     {
@@ -246,7 +246,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set InsuredValue value
      * @param float $insuredValue
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setInsuredValue(?float $insuredValue = null): self
     {
@@ -277,7 +277,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set Weight value
      * @param float $weight
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setWeight(?float $weight = null): self
     {
@@ -300,7 +300,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set PieceIdentificationNumber value
      * @param string $pieceIdentificationNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setPieceIdentificationNumber(?string $pieceIdentificationNumber = null): self
     {
@@ -330,17 +330,17 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     }
     /**
      * Set UseOwnPieceIdentificationNumber value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::getValidValues()
      * @throws InvalidArgumentException
      * @param string $useOwnPieceIdentificationNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setUseOwnPieceIdentificationNumber(?string $useOwnPieceIdentificationNumber = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::valueIsValid($useOwnPieceIdentificationNumber)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber', is_array($useOwnPieceIdentificationNumber) ? implode(', ', $useOwnPieceIdentificationNumber) : var_export($useOwnPieceIdentificationNumber, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::valueIsValid($useOwnPieceIdentificationNumber)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber', is_array($useOwnPieceIdentificationNumber) ? implode(', ', $useOwnPieceIdentificationNumber) : var_export($useOwnPieceIdentificationNumber, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnPieceIdentificationNumber::getValidValues())), __LINE__);
         }
         $this->UseOwnPieceIdentificationNumber = $useOwnPieceIdentificationNumber;
         
@@ -357,7 +357,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set PackageContentDescription value
      * @param string $packageContentDescription
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setPackageContentDescription(?string $packageContentDescription = null): self
     {
@@ -379,18 +379,18 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     }
     /**
      * Get Dimensions value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType|null
      */
-    public function getDimensions(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType
+    public function getDimensions(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType
     {
         return $this->Dimensions;
     }
     /**
      * Set Dimensions value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
-    public function setDimensions(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions = null): self
+    public function setDimensions(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType $dimensions = null): self
     {
         $this->Dimensions = $dimensions;
         
@@ -407,7 +407,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set CustomerReferences value
      * @param string $customerReferences
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setCustomerReferences(?string $customerReferences = null): self
     {
@@ -438,7 +438,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set ParentPieceIdentificationNumber value
      * @param string $parentPieceIdentificationNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setParentPieceIdentificationNumber(?string $parentPieceIdentificationNumber = null): self
     {
@@ -469,7 +469,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set CustomerReferenceType value
      * @param string $customerReferenceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setCustomerReferenceType(?string $customerReferenceType = null): self
     {
@@ -500,7 +500,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set PackageTypeCode value
      * @param string $packageTypeCode
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setPackageTypeCode(?string $packageTypeCode = null): self
     {
@@ -522,18 +522,18 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     }
     /**
      * Get BespokeLabelData value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData|null
      */
-    public function getBespokeLabelData(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData
+    public function getBespokeLabelData(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData
     {
         return $this->BespokeLabelData;
     }
     /**
      * Set BespokeLabelData value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
-    public function setBespokeLabelData(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData = null): self
+    public function setBespokeLabelData(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData $bespokeLabelData = null): self
     {
         $this->BespokeLabelData = $bespokeLabelData;
         
@@ -541,18 +541,18 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     }
     /**
      * Get PackageReferences value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences|null
      */
-    public function getPackageReferences(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences
+    public function getPackageReferences(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences
     {
         return $this->PackageReferences;
     }
     /**
      * Set PackageReferences value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
-    public function setPackageReferences(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences = null): self
+    public function setPackageReferences(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences $packageReferences = null): self
     {
         $this->PackageReferences = $packageReferences;
         
@@ -569,7 +569,7 @@ class DocTypeRef_RequestedPackagesType extends AbstractStructBase
     /**
      * Set PieceIdentificationNumberDataIdentifier value
      * @param string $pieceIdentificationNumberDataIdentifier
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RequestedPackagesType
      */
     public function setPieceIdentificationNumberDataIdentifier(?string $pieceIdentificationNumberDataIdentifier = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class Request extends AbstractStructBase
      * The ServiceHeader
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $ServiceHeader = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $ServiceHeader = null;
     /**
      * Constructor method for Request
      * @uses Request::setServiceHeader()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader = null)
     {
         $this
             ->setServiceHeader($serviceHeader);
     }
     /**
      * Get ServiceHeader value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType|null
      */
-    public function getServiceHeader(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+    public function getServiceHeader(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
     {
         return $this->ServiceHeader;
     }
     /**
      * Set ServiceHeader value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\Request
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Request
      */
-    public function setServiceHeader(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader = null): self
+    public function setServiceHeader(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType $serviceHeader = null): self
     {
         $this->ServiceHeader = $serviceHeader;
         

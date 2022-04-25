@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class PackageReferences extends AbstractStructBase
      * The PackageReference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType $PackageReference = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType $PackageReference = null;
     /**
      * Constructor method for PackageReferences
      * @uses PackageReferences::setPackageReference()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference = null)
     {
         $this
             ->setPackageReference($packageReference);
     }
     /**
      * Get PackageReference value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType|null
      */
-    public function getPackageReference(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType
+    public function getPackageReference(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType
     {
         return $this->PackageReference;
     }
     /**
      * Set PackageReference value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferences
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferences
      */
-    public function setPackageReference(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference = null): self
+    public function setPackageReference(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PackageReferenceType $packageReference = null): self
     {
         $this->PackageReference = $packageReference;
         

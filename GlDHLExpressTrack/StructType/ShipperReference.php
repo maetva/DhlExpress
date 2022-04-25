@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -54,7 +54,7 @@ class ShipperReference extends AbstractStructBase
     /**
      * Set ReferenceID value
      * @param string $referenceID
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference
      */
     public function setReferenceID(?string $referenceID = null): self
     {
@@ -82,7 +82,7 @@ class ShipperReference extends AbstractStructBase
      * This property is removable from request (nillable=true+minOccurs=0), therefore
      * if the value assigned to this property is null, it is removed from this object
      * @param string $referenceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference
      */
     public function setReferenceType(?string $referenceType = null): self
     {

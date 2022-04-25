@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,14 +15,14 @@ class ShipmentInfo extends AbstractStructBase
 {
     /**
      * The OriginServiceArea
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $OriginServiceArea = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $OriginServiceArea = null;
     /**
      * The DestinationServiceArea
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $DestinationServiceArea = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $DestinationServiceArea = null;
     /**
      * The ShipperName
      * Meta information extracted from the WSDL
@@ -109,29 +109,29 @@ class ShipmentInfo extends AbstractStructBase
      * The Shipper
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper $Shipper = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper $Shipper = null;
     /**
      * The Consignee
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee $Consignee = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee $Consignee = null;
     /**
      * The ShipmentEvent
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $ShipmentEvent = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $ShipmentEvent = null;
     /**
      * The ShipperReference
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[]
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[]
      */
     protected ?array $ShipperReference = null;
     /**
@@ -146,9 +146,9 @@ class ShipmentInfo extends AbstractStructBase
      * The ArrayOfChildShipmentIdentificationNumbers
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers|null
+     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $ArrayOfChildShipmentIdentificationNumbers = null;
+    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $ArrayOfChildShipmentIdentificationNumbers = null;
     /**
      * Constructor method for ShipmentInfo
      * @uses ShipmentInfo::setOriginServiceArea()
@@ -168,8 +168,8 @@ class ShipmentInfo extends AbstractStructBase
      * @uses ShipmentInfo::setShipperReference()
      * @uses ShipmentInfo::setEstimatedDeliveryDate()
      * @uses ShipmentInfo::setArrayOfChildShipmentIdentificationNumbers()
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea
      * @param string $shipperName
      * @param int $shipperAccountNumber
      * @param string $consigneeName
@@ -179,14 +179,14 @@ class ShipmentInfo extends AbstractStructBase
      * @param string $weightUnit
      * @param string $serviceType
      * @param string $shipmentDescription
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[] $shipperReference
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[] $shipperReference
      * @param string $estimatedDeliveryDate
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea = null, ?string $shipperName = null, ?int $shipperAccountNumber = null, ?string $consigneeName = null, ?string $shipmentDate = null, ?string $pieces = null, ?string $weight = null, ?string $weightUnit = null, ?string $serviceType = null, ?string $shipmentDescription = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent = null, ?array $shipperReference = null, ?string $estimatedDeliveryDate = null, ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea = null, ?string $shipperName = null, ?int $shipperAccountNumber = null, ?string $consigneeName = null, ?string $shipmentDate = null, ?string $pieces = null, ?string $weight = null, ?string $weightUnit = null, ?string $serviceType = null, ?string $shipmentDescription = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent = null, ?array $shipperReference = null, ?string $estimatedDeliveryDate = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers = null)
     {
         $this
             ->setOriginServiceArea($originServiceArea)
@@ -209,18 +209,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get OriginServiceArea value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea|null
      */
-    public function getOriginServiceArea(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
+    public function getOriginServiceArea(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea
     {
         return $this->OriginServiceArea;
     }
     /**
      * Set OriginServiceArea value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setOriginServiceArea(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea = null): self
+    public function setOriginServiceArea(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\OriginServiceArea $originServiceArea = null): self
     {
         $this->OriginServiceArea = $originServiceArea;
         
@@ -228,18 +228,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get DestinationServiceArea value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea|null
      */
-    public function getDestinationServiceArea(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
+    public function getDestinationServiceArea(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea
     {
         return $this->DestinationServiceArea;
     }
     /**
      * Set DestinationServiceArea value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setDestinationServiceArea(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea = null): self
+    public function setDestinationServiceArea(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\DestinationServiceArea $destinationServiceArea = null): self
     {
         $this->DestinationServiceArea = $destinationServiceArea;
         
@@ -256,7 +256,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ShipperName value
      * @param string $shipperName
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setShipperName(?string $shipperName = null): self
     {
@@ -283,7 +283,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ShipperAccountNumber value
      * @param int $shipperAccountNumber
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setShipperAccountNumber(?int $shipperAccountNumber = null): self
     {
@@ -314,7 +314,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ConsigneeName value
      * @param string $consigneeName
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setConsigneeName(?string $consigneeName = null): self
     {
@@ -341,7 +341,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ShipmentDate value
      * @param string $shipmentDate
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setShipmentDate(?string $shipmentDate = null): self
     {
@@ -364,7 +364,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set Pieces value
      * @param string $pieces
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setPieces(?string $pieces = null): self
     {
@@ -387,7 +387,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set Weight value
      * @param string $weight
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setWeight(?string $weight = null): self
     {
@@ -409,17 +409,17 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Set WeightUnit value
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::valueIsValid()
-     * @uses \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::getValidValues()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::valueIsValid()
+     * @uses \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::getValidValues()
      * @throws InvalidArgumentException
      * @param string $weightUnit
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setWeightUnit(?string $weightUnit = null): self
     {
         // validation for constraint: enumeration
-        if (!\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::valueIsValid($weightUnit)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit', is_array($weightUnit) ? implode(', ', $weightUnit) : var_export($weightUnit, true), implode(', ', \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::valueIsValid($weightUnit)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit', is_array($weightUnit) ? implode(', ', $weightUnit) : var_export($weightUnit, true), implode(', ', \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\EnumType\WeightUnit::getValidValues())), __LINE__);
         }
         $this->WeightUnit = $weightUnit;
         
@@ -436,7 +436,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setServiceType(?string $serviceType = null): self
     {
@@ -467,7 +467,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ShipmentDescription value
      * @param string $shipmentDescription
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setShipmentDescription(?string $shipmentDescription = null): self
     {
@@ -481,18 +481,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get Shipper value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper|null
      */
-    public function getShipper(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper
+    public function getShipper(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper
     {
         return $this->Shipper;
     }
     /**
      * Set Shipper value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setShipper(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper = null): self
+    public function setShipper(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Shipper $shipper = null): self
     {
         $this->Shipper = $shipper;
         
@@ -500,18 +500,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get Consignee value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee|null
      */
-    public function getConsignee(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee
+    public function getConsignee(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
     {
         return $this->Consignee;
     }
     /**
      * Set Consignee value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setConsignee(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee = null): self
+    public function setConsignee(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee $consignee = null): self
     {
         $this->Consignee = $consignee;
         
@@ -519,18 +519,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get ShipmentEvent value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent|null
      */
-    public function getShipmentEvent(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent
+    public function getShipmentEvent(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent
     {
         return $this->ShipmentEvent;
     }
     /**
      * Set ShipmentEvent value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setShipmentEvent(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent = null): self
+    public function setShipmentEvent(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfShipmentEvent $shipmentEvent = null): self
     {
         $this->ShipmentEvent = $shipmentEvent;
         
@@ -538,7 +538,7 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get ShipperReference value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[]
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[]
      */
     public function getShipperReference(): ?array
     {
@@ -559,12 +559,12 @@ class ShipmentInfo extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shipmentInfoShipperReferenceItem) {
             // validation for constraint: itemType
-            if (!$shipmentInfoShipperReferenceItem instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference) {
+            if (!$shipmentInfoShipperReferenceItem instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference) {
                 $invalidValues[] = is_object($shipmentInfoShipperReferenceItem) ? get_class($shipmentInfoShipperReferenceItem) : sprintf('%s(%s)', gettype($shipmentInfoShipperReferenceItem), var_export($shipmentInfoShipperReferenceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ShipperReference property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ShipperReference property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -573,8 +573,8 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set ShipperReference value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[] $shipperReference
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference[] $shipperReference
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setShipperReference(?array $shipperReference = null): self
     {
@@ -593,14 +593,14 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Add item to ShipperReference value
      * @throws InvalidArgumentException
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference $item
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference $item
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function addToShipperReference(\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference $item): self
+    public function addToShipperReference(\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference) {
-            throw new InvalidArgumentException(sprintf('The ShipperReference property can only contain items of type \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipperReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference) {
+            throw new InvalidArgumentException(sprintf('The ShipperReference property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipperReference, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->ShipperReference) && count($this->ShipperReference) >= 999) {
@@ -621,7 +621,7 @@ class ShipmentInfo extends AbstractStructBase
     /**
      * Set EstimatedDeliveryDate value
      * @param string $estimatedDeliveryDate
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
     public function setEstimatedDeliveryDate(?string $estimatedDeliveryDate = null): self
     {
@@ -635,18 +635,18 @@ class ShipmentInfo extends AbstractStructBase
     }
     /**
      * Get ArrayOfChildShipmentIdentificationNumbers value
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers|null
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers|null
      */
-    public function getArrayOfChildShipmentIdentificationNumbers(): ?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
+    public function getArrayOfChildShipmentIdentificationNumbers(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers
     {
         return $this->ArrayOfChildShipmentIdentificationNumbers;
     }
     /**
      * Set ArrayOfChildShipmentIdentificationNumbers value
-     * @param \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers
-     * @return \Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
+     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers
+     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentInfo
      */
-    public function setArrayOfChildShipmentIdentificationNumbers(?\Drupal\commerce_dhl_express\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers = null): self
+    public function setArrayOfChildShipmentIdentificationNumbers(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfChildShipmentIdentificationNumbers $arrayOfChildShipmentIdentificationNumbers = null): self
     {
         $this->ArrayOfChildShipmentIdentificationNumbers = $arrayOfChildShipmentIdentificationNumbers;
         

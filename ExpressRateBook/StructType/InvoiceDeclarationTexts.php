@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class InvoiceDeclarationTexts extends AbstractStructBase
 {
     /**
      * The InvoiceDeclarationText
-     * @var \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText|null
+     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText|null
      */
-    protected ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $InvoiceDeclarationText = null;
+    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $InvoiceDeclarationText = null;
     /**
      * Constructor method for InvoiceDeclarationTexts
      * @uses InvoiceDeclarationTexts::setInvoiceDeclarationText()
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText
      */
-    public function __construct(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText = null)
+    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText = null)
     {
         $this
             ->setInvoiceDeclarationText($invoiceDeclarationText);
     }
     /**
      * Get InvoiceDeclarationText value
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText|null
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText|null
      */
-    public function getInvoiceDeclarationText(): ?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText
+    public function getInvoiceDeclarationText(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText
     {
         return $this->InvoiceDeclarationText;
     }
     /**
      * Set InvoiceDeclarationText value
-     * @param \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText
-     * @return \Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts
+     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText
+     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationTexts
      */
-    public function setInvoiceDeclarationText(?\Drupal\commerce_dhl_express\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText = null): self
+    public function setInvoiceDeclarationText(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText $invoiceDeclarationText = null): self
     {
         $this->InvoiceDeclarationText = $invoiceDeclarationText;
         
