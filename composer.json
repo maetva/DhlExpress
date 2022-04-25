@@ -1,0 +1,23 @@
+{
+    "name": "maetva/dhl_express",
+    "description": "Provides a PHP Soap API consumer for DHL Express.",
+    "keywords": [
+        "DHL"
+    ],
+    "homepage": "https://github.com/maetva/DhlExpress",
+    "license": "GPL-2.0+",
+    "minimum-stability": "dev",
+    "extra": {
+        "branch-alias": {
+            "1.x": "1.x-dev"
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-dom": "*",
+        "ext-mbstring": "*",
+        "ext-soap": "*",
+        "wsdltophp/packagebase": "~5.0",
+        "wsdltophp/wssecurity": "^2.0"
+    }
+}
