@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -62,7 +62,7 @@ class ShipmentReferenceType extends AbstractStructBase
     /**
      * Set ShipmentReference value
      * @param string $shipmentReference
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType
      */
     public function setShipmentReference(?string $shipmentReference = null): self
     {
@@ -93,7 +93,7 @@ class ShipmentReferenceType extends AbstractStructBase
     /**
      * Set ShipmentReferenceType value
      * @param string $shipmentReferenceType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType
      */
     public function setShipmentReferenceType(?string $shipmentReferenceType = null): self
     {

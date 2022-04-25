@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -153,7 +153,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set MessageTime value
      * @param string $messageTime
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setMessageTime(?string $messageTime = null): self
     {
@@ -176,7 +176,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set MessageReference value
      * @param string $messageReference
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setMessageReference(?string $messageReference = null): self
     {
@@ -207,7 +207,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set WebstorePlatform value
      * @param string $webstorePlatform
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setWebstorePlatform(?string $webstorePlatform = null): self
     {
@@ -234,7 +234,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set WebstorePlatformVersion value
      * @param string $webstorePlatformVersion
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setWebstorePlatformVersion(?string $webstorePlatformVersion = null): self
     {
@@ -261,7 +261,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set ShippingSystemPlatform value
      * @param string $shippingSystemPlatform
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setShippingSystemPlatform(?string $shippingSystemPlatform = null): self
     {
@@ -288,7 +288,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set ShippingSystemPlatformVersion value
      * @param string $shippingSystemPlatformVersion
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setShippingSystemPlatformVersion(?string $shippingSystemPlatformVersion = null): self
     {
@@ -315,7 +315,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set PlugIn value
      * @param string $plugIn
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setPlugIn(?string $plugIn = null): self
     {
@@ -342,7 +342,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set PlugInVersion value
      * @param string $plugInVersion
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setPlugInVersion(?string $plugInVersion = null): self
     {
@@ -369,7 +369,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set ServiceInvocationID value
      * @param string $serviceInvocationID
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setServiceInvocationID(?string $serviceInvocationID = null): self
     {
@@ -392,7 +392,7 @@ class ServiceHeaderType extends AbstractStructBase
     /**
      * Set QuotationID value
      * @param string $quotationID
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHeaderType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHeaderType
      */
     public function setQuotationID(?string $quotationID = null): self
     {

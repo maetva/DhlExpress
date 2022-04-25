@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -24,7 +24,7 @@ class DocTypeRef_ChargesType extends AbstractStructBase
      * The Charge
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     protected ?array $Charge = null;
     /**
@@ -40,7 +40,7 @@ class DocTypeRef_ChargesType extends AbstractStructBase
      * @uses DocTypeRef_ChargesType::setCharge()
      * @uses DocTypeRef_ChargesType::setType()
      * @param string $currency
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
      * @param string $type
      */
     public function __construct(?string $currency = null, ?array $charge = null, ?string $type = null)
@@ -61,7 +61,7 @@ class DocTypeRef_ChargesType extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargesType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargesType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -75,7 +75,7 @@ class DocTypeRef_ChargesType extends AbstractStructBase
     }
     /**
      * Get Charge value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType[]
      */
     public function getCharge(): ?array
     {
@@ -96,12 +96,12 @@ class DocTypeRef_ChargesType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ChargesTypeChargeItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ChargesTypeChargeItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            if (!$docTypeRef_ChargesTypeChargeItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
                 $invalidValues[] = is_object($docTypeRef_ChargesTypeChargeItem) ? get_class($docTypeRef_ChargesTypeChargeItem) : sprintf('%s(%s)', gettype($docTypeRef_ChargesTypeChargeItem), var_export($docTypeRef_ChargesTypeChargeItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -110,8 +110,8 @@ class DocTypeRef_ChargesType extends AbstractStructBase
     /**
      * Set Charge value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargesType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType[] $charge
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargesType
      */
     public function setCharge(?array $charge = null): self
     {
@@ -130,14 +130,14 @@ class DocTypeRef_ChargesType extends AbstractStructBase
     /**
      * Add item to Charge value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargesType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargesType
      */
-    public function addToCharge(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
+    public function addToCharge(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
-            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType) {
+            throw new InvalidArgumentException(sprintf('The Charge property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->Charge) && count($this->Charge) >= 999) {
@@ -158,7 +158,7 @@ class DocTypeRef_ChargesType extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargesType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargesType
      */
     public function setType(?string $type = null): self
     {

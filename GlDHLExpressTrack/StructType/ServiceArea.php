@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -56,7 +56,7 @@ class ServiceArea extends AbstractStructBase
     /**
      * Set ServiceAreaCode value
      * @param string $serviceAreaCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea
      */
     public function setServiceAreaCode(?string $serviceAreaCode = null): self
     {
@@ -83,7 +83,7 @@ class ServiceArea extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea
      */
     public function setDescription(?string $description = null): self
     {

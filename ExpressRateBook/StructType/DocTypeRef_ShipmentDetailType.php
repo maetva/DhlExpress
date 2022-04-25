@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,14 +17,14 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
      * The Response
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response $Response = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response $Response = null;
     /**
      * The Notification
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2[]
      */
     protected ?array $Notification = null;
     /**
@@ -32,31 +32,31 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 999
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType[]
      */
     protected ?array $Warning = null;
     /**
      * The PackagesResult
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $PackagesResult = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $PackagesResult = null;
     /**
      * The LabelImage
      * Meta information extracted from the WSDL
      * - maxOccurs: 2000
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType[]
      */
     protected ?array $LabelImage = null;
     /**
      * The Documents
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents $Documents = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents $Documents = null;
     /**
      * The ShipmentIdentificationNumber
      * Meta information extracted from the WSDL
@@ -90,37 +90,37 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 3
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet[]
      */
     protected ?array $TotalNet = null;
     /**
      * The AdditionalInformation
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $AdditionalInformation = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $AdditionalInformation = null;
     /**
      * The BarcodeInfo
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo $BarcodeInfo = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo $BarcodeInfo = null;
     /**
      * The EstimatedDeliveryDate
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate $EstimatedDeliveryDate = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate $EstimatedDeliveryDate = null;
     /**
      * The PickupDetails
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails $PickupDetails = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails $PickupDetails = null;
     /**
      * Constructor method for docTypeRef_ShipmentDetailType
      * @uses DocTypeRef_ShipmentDetailType::setResponse()
@@ -137,22 +137,22 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
      * @uses DocTypeRef_ShipmentDetailType::setBarcodeInfo()
      * @uses DocTypeRef_ShipmentDetailType::setEstimatedDeliveryDate()
      * @uses DocTypeRef_ShipmentDetailType::setPickupDetails()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response $response
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2[] $notification
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType[] $warning
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType[] $labelImage
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents $documents
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response $response
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2[] $notification
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType[] $warning
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType[] $labelImage
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents $documents
      * @param string $shipmentIdentificationNumber
      * @param string $dispatchConfirmationNumber
      * @param string $onDemandDeliveryURL
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet[] $totalNet
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails $pickupDetails
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet[] $totalNet
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails $pickupDetails
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response $response = null, ?array $notification = null, ?array $warning = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult = null, ?array $labelImage = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents $documents = null, ?string $shipmentIdentificationNumber = null, ?string $dispatchConfirmationNumber = null, ?string $onDemandDeliveryURL = null, ?array $totalNet = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails $pickupDetails = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response $response = null, ?array $notification = null, ?array $warning = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult = null, ?array $labelImage = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents $documents = null, ?string $shipmentIdentificationNumber = null, ?string $dispatchConfirmationNumber = null, ?string $onDemandDeliveryURL = null, ?array $totalNet = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails $pickupDetails = null)
     {
         $this
             ->setResponse($response)
@@ -172,18 +172,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get Response value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response|null
      */
-    public function getResponse(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response
+    public function getResponse(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response
     {
         return $this->Response;
     }
     /**
      * Set Response value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response $response
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response $response
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setResponse(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Response $response = null): self
+    public function setResponse(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Response $response = null): self
     {
         $this->Response = $response;
         
@@ -191,7 +191,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get Notification value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2[]
      */
     public function getNotification(): ?array
     {
@@ -212,12 +212,12 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ShipmentDetailTypeNotificationItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ShipmentDetailTypeNotificationItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2) {
+            if (!$docTypeRef_ShipmentDetailTypeNotificationItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2) {
                 $invalidValues[] = is_object($docTypeRef_ShipmentDetailTypeNotificationItem) ? get_class($docTypeRef_ShipmentDetailTypeNotificationItem) : sprintf('%s(%s)', gettype($docTypeRef_ShipmentDetailTypeNotificationItem), var_export($docTypeRef_ShipmentDetailTypeNotificationItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Notification property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Notification property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -226,8 +226,8 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set Notification value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2[] $notification
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2[] $notification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setNotification(?array $notification = null): self
     {
@@ -246,14 +246,14 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Add item to Notification value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2 $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2 $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function addToNotification(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2 $item): self
+    public function addToNotification(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2 $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2) {
-            throw new InvalidArgumentException(sprintf('The Notification property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_NotificationType2, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2) {
+            throw new InvalidArgumentException(sprintf('The Notification property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_NotificationType2, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->Notification) && count($this->Notification) >= 999) {
@@ -265,7 +265,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get Warning value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType[]
      */
     public function getWarning(): ?array
     {
@@ -286,12 +286,12 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ShipmentDetailTypeWarningItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ShipmentDetailTypeWarningItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType) {
+            if (!$docTypeRef_ShipmentDetailTypeWarningItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType) {
                 $invalidValues[] = is_object($docTypeRef_ShipmentDetailTypeWarningItem) ? get_class($docTypeRef_ShipmentDetailTypeWarningItem) : sprintf('%s(%s)', gettype($docTypeRef_ShipmentDetailTypeWarningItem), var_export($docTypeRef_ShipmentDetailTypeWarningItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Warning property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Warning property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -300,8 +300,8 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set Warning value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType[] $warning
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType[] $warning
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setWarning(?array $warning = null): self
     {
@@ -320,14 +320,14 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Add item to Warning value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function addToWarning(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType $item): self
+    public function addToWarning(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType) {
-            throw new InvalidArgumentException(sprintf('The Warning property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType) {
+            throw new InvalidArgumentException(sprintf('The Warning property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(999)
         if (is_array($this->Warning) && count($this->Warning) >= 999) {
@@ -339,18 +339,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get PackagesResult value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType|null
      */
-    public function getPackagesResult(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType
+    public function getPackagesResult(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType
     {
         return $this->PackagesResult;
     }
     /**
      * Set PackagesResult value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setPackagesResult(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult = null): self
+    public function setPackagesResult(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_PackagesResultsType $packagesResult = null): self
     {
         $this->PackagesResult = $packagesResult;
         
@@ -358,7 +358,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get LabelImage value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType[]
      */
     public function getLabelImage(): ?array
     {
@@ -379,12 +379,12 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ShipmentDetailTypeLabelImageItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ShipmentDetailTypeLabelImageItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType) {
+            if (!$docTypeRef_ShipmentDetailTypeLabelImageItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType) {
                 $invalidValues[] = is_object($docTypeRef_ShipmentDetailTypeLabelImageItem) ? get_class($docTypeRef_ShipmentDetailTypeLabelImageItem) : sprintf('%s(%s)', gettype($docTypeRef_ShipmentDetailTypeLabelImageItem), var_export($docTypeRef_ShipmentDetailTypeLabelImageItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The LabelImage property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The LabelImage property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -393,8 +393,8 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set LabelImage value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType[] $labelImage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType[] $labelImage
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setLabelImage(?array $labelImage = null): self
     {
@@ -413,14 +413,14 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Add item to LabelImage value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function addToLabelImage(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType $item): self
+    public function addToLabelImage(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType) {
-            throw new InvalidArgumentException(sprintf('The LabelImage property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType) {
+            throw new InvalidArgumentException(sprintf('The LabelImage property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(2000)
         if (is_array($this->LabelImage) && count($this->LabelImage) >= 2000) {
@@ -432,18 +432,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get Documents value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents|null
      */
-    public function getDocuments(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents
+    public function getDocuments(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents
     {
         return $this->Documents;
     }
     /**
      * Set Documents value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents $documents
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents $documents
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setDocuments(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Documents $documents = null): self
+    public function setDocuments(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Documents $documents = null): self
     {
         $this->Documents = $documents;
         
@@ -460,7 +460,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set ShipmentIdentificationNumber value
      * @param string $shipmentIdentificationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setShipmentIdentificationNumber(?string $shipmentIdentificationNumber = null): self
     {
@@ -491,7 +491,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set DispatchConfirmationNumber value
      * @param string $dispatchConfirmationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setDispatchConfirmationNumber(?string $dispatchConfirmationNumber = null): self
     {
@@ -514,7 +514,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set OnDemandDeliveryURL value
      * @param string $onDemandDeliveryURL
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setOnDemandDeliveryURL(?string $onDemandDeliveryURL = null): self
     {
@@ -528,7 +528,7 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get TotalNet value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet[]
      */
     public function getTotalNet(): ?array
     {
@@ -549,12 +549,12 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ShipmentDetailTypeTotalNetItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ShipmentDetailTypeTotalNetItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet) {
+            if (!$docTypeRef_ShipmentDetailTypeTotalNetItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet) {
                 $invalidValues[] = is_object($docTypeRef_ShipmentDetailTypeTotalNetItem) ? get_class($docTypeRef_ShipmentDetailTypeTotalNetItem) : sprintf('%s(%s)', gettype($docTypeRef_ShipmentDetailTypeTotalNetItem), var_export($docTypeRef_ShipmentDetailTypeTotalNetItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The TotalNet property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The TotalNet property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -563,8 +563,8 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Set TotalNet value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet[] $totalNet
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet[] $totalNet
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function setTotalNet(?array $totalNet = null): self
     {
@@ -583,14 +583,14 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     /**
      * Add item to TotalNet value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function addToTotalNet(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet $item): self
+    public function addToTotalNet(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet) {
-            throw new InvalidArgumentException(sprintf('The TotalNet property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet) {
+            throw new InvalidArgumentException(sprintf('The TotalNet property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(3)
         if (is_array($this->TotalNet) && count($this->TotalNet) >= 3) {
@@ -602,18 +602,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get AdditionalInformation value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation|null
      */
-    public function getAdditionalInformation(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+    public function getAdditionalInformation(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
     {
         return $this->AdditionalInformation;
     }
     /**
      * Set AdditionalInformation value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setAdditionalInformation(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null): self
+    public function setAdditionalInformation(?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null): self
     {
         $this->AdditionalInformation = $additionalInformation;
         
@@ -621,18 +621,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get BarcodeInfo value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo|null
      */
-    public function getBarcodeInfo(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo
+    public function getBarcodeInfo(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo
     {
         return $this->BarcodeInfo;
     }
     /**
      * Set BarcodeInfo value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setBarcodeInfo(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo = null): self
+    public function setBarcodeInfo(?\Maetva\DhlExpress\ExpressRateBook\StructType\BarcodeInfo $barcodeInfo = null): self
     {
         $this->BarcodeInfo = $barcodeInfo;
         
@@ -640,18 +640,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get EstimatedDeliveryDate value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate|null
      */
-    public function getEstimatedDeliveryDate(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate
+    public function getEstimatedDeliveryDate(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate
     {
         return $this->EstimatedDeliveryDate;
     }
     /**
      * Set EstimatedDeliveryDate value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setEstimatedDeliveryDate(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate = null): self
+    public function setEstimatedDeliveryDate(?\Maetva\DhlExpress\ExpressRateBook\StructType\EstimatedDeliveryDate $estimatedDeliveryDate = null): self
     {
         $this->EstimatedDeliveryDate = $estimatedDeliveryDate;
         
@@ -659,18 +659,18 @@ class DocTypeRef_ShipmentDetailType extends AbstractStructBase
     }
     /**
      * Get PickupDetails value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails|null
      */
-    public function getPickupDetails(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails
+    public function getPickupDetails(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails
     {
         return $this->PickupDetails;
     }
     /**
      * Set PickupDetails value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails $pickupDetails
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails $pickupDetails
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
-    public function setPickupDetails(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PickupDetails $pickupDetails = null): self
+    public function setPickupDetails(?\Maetva\DhlExpress\ExpressRateBook\StructType\PickupDetails $pickupDetails = null): self
     {
         $this->PickupDetails = $pickupDetails;
         

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class DocTypeRef_RegistrationNumbers extends AbstractStructBase
      * The RegistrationNumber
      * Meta information extracted from the WSDL
      * - maxOccurs: 50
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[]
      */
     protected ?array $RegistrationNumber = null;
     /**
      * Constructor method for docTypeRef_RegistrationNumbers
      * @uses DocTypeRef_RegistrationNumbers::setRegistrationNumber()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[] $registrationNumber
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[] $registrationNumber
      */
     public function __construct(?array $registrationNumber = null)
     {
@@ -32,7 +32,7 @@ class DocTypeRef_RegistrationNumbers extends AbstractStructBase
     }
     /**
      * Get RegistrationNumber value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[]
      */
     public function getRegistrationNumber(): ?array
     {
@@ -53,12 +53,12 @@ class DocTypeRef_RegistrationNumbers extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_RegistrationNumbersRegistrationNumberItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_RegistrationNumbersRegistrationNumberItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber) {
+            if (!$docTypeRef_RegistrationNumbersRegistrationNumberItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber) {
                 $invalidValues[] = is_object($docTypeRef_RegistrationNumbersRegistrationNumberItem) ? get_class($docTypeRef_RegistrationNumbersRegistrationNumberItem) : sprintf('%s(%s)', gettype($docTypeRef_RegistrationNumbersRegistrationNumberItem), var_export($docTypeRef_RegistrationNumbersRegistrationNumberItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The RegistrationNumber property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The RegistrationNumber property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class DocTypeRef_RegistrationNumbers extends AbstractStructBase
     /**
      * Set RegistrationNumber value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[] $registrationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber[] $registrationNumber
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
      */
     public function setRegistrationNumber(?array $registrationNumber = null): self
     {
@@ -87,14 +87,14 @@ class DocTypeRef_RegistrationNumbers extends AbstractStructBase
     /**
      * Add item to RegistrationNumber value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumbers
      */
-    public function addToRegistrationNumber(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber $item): self
+    public function addToRegistrationNumber(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber) {
-            throw new InvalidArgumentException(sprintf('The RegistrationNumber property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber) {
+            throw new InvalidArgumentException(sprintf('The RegistrationNumber property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RegistrationNumber, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(50)
         if (is_array($this->RegistrationNumber) && count($this->RegistrationNumber) >= 50) {

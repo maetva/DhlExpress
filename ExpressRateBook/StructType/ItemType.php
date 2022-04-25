@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,9 +18,9 @@ class ItemType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Additional goods characteristics associated to the line item.
      * - minOccurs: 1
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType
      */
-    protected \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType $GoodsCharacteristics;
+    protected \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType $GoodsCharacteristics;
     /**
      * The ItemNumber
      * Meta information extracted from the WSDL
@@ -193,9 +193,9 @@ class ItemType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Additional quantity and UOM types associated to the line item.
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $AdditionalQuantityDefinitions = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $AdditionalQuantityDefinitions = null;
     /**
      * The EstimatedTariffRateType
      * Meta information extracted from the WSDL
@@ -229,7 +229,7 @@ class ItemType extends AbstractStructBase
      * @uses ItemType::setBrand()
      * @uses ItemType::setAdditionalQuantityDefinitions()
      * @uses ItemType::setEstimatedTariffRateType()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics
      * @param int $itemNumber
      * @param string $description
      * @param string $remark
@@ -246,10 +246,10 @@ class ItemType extends AbstractStructBase
      * @param string $itemWeightUnitofMeasurement
      * @param string $category
      * @param string $brand
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions
      * @param string $estimatedTariffRateType
      */
-    public function __construct(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics, ?int $itemNumber = null, ?string $description = null, ?string $remark = null, ?string $manufacturingCountryCode = null, ?string $sKUPartNumber = null, ?float $quantity = null, ?string $quantityType = null, ?float $unitPrice = null, ?string $unitPriceCurrencyCode = null, ?float $customsValue = null, ?string $customsValueCurrencyCode = null, ?string $harmonizedSystemCode = null, ?float $itemWeight = null, ?string $itemWeightUnitofMeasurement = null, ?string $category = null, ?string $brand = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions = null, ?string $estimatedTariffRateType = null)
+    public function __construct(\Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics, ?int $itemNumber = null, ?string $description = null, ?string $remark = null, ?string $manufacturingCountryCode = null, ?string $sKUPartNumber = null, ?float $quantity = null, ?string $quantityType = null, ?float $unitPrice = null, ?string $unitPriceCurrencyCode = null, ?float $customsValue = null, ?string $customsValueCurrencyCode = null, ?string $harmonizedSystemCode = null, ?float $itemWeight = null, ?string $itemWeightUnitofMeasurement = null, ?string $category = null, ?string $brand = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions = null, ?string $estimatedTariffRateType = null)
     {
         $this
             ->setGoodsCharacteristics($goodsCharacteristics)
@@ -274,18 +274,18 @@ class ItemType extends AbstractStructBase
     }
     /**
      * Get GoodsCharacteristics value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType
      */
-    public function getGoodsCharacteristics(): \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType
+    public function getGoodsCharacteristics(): \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType
     {
         return $this->GoodsCharacteristics;
     }
     /**
      * Set GoodsCharacteristics value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
-    public function setGoodsCharacteristics(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics): self
+    public function setGoodsCharacteristics(\Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicsType $goodsCharacteristics): self
     {
         $this->GoodsCharacteristics = $goodsCharacteristics;
 
@@ -302,7 +302,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set ItemNumber value
      * @param int $itemNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setItemNumber(?int $itemNumber = null): self
     {
@@ -325,7 +325,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setDescription(?string $description = null): self
     {
@@ -356,7 +356,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set Remark value
      * @param string $remark
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setRemark(?string $remark = null): self
     {
@@ -387,7 +387,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set ManufacturingCountryCode value
      * @param string $manufacturingCountryCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setManufacturingCountryCode(?string $manufacturingCountryCode = null): self
     {
@@ -414,7 +414,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set SKUPartNumber value
      * @param string $sKUPartNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setSKUPartNumber(?string $sKUPartNumber = null): self
     {
@@ -445,7 +445,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set Quantity value
      * @param float $quantity
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setQuantity(?float $quantity = null): self
     {
@@ -476,7 +476,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set QuantityType value
      * @param string $quantityType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setQuantityType(?string $quantityType = null): self
     {
@@ -507,7 +507,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set UnitPrice value
      * @param float $unitPrice
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setUnitPrice(?float $unitPrice = null): self
     {
@@ -538,7 +538,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set UnitPriceCurrencyCode value
      * @param string $unitPriceCurrencyCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setUnitPriceCurrencyCode(?string $unitPriceCurrencyCode = null): self
     {
@@ -569,7 +569,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set CustomsValue value
      * @param float $customsValue
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setCustomsValue(?float $customsValue = null): self
     {
@@ -600,7 +600,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set CustomsValueCurrencyCode value
      * @param string $customsValueCurrencyCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setCustomsValueCurrencyCode(?string $customsValueCurrencyCode = null): self
     {
@@ -631,7 +631,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set HarmonizedSystemCode value
      * @param string $harmonizedSystemCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setHarmonizedSystemCode(?string $harmonizedSystemCode = null): self
     {
@@ -658,7 +658,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set ItemWeight value
      * @param float $itemWeight
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setItemWeight(?float $itemWeight = null): self
     {
@@ -688,17 +688,17 @@ class ItemType extends AbstractStructBase
     }
     /**
      * Set ItemWeightUnitofMeasurement value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement2::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement2::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement2::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement2::getValidValues()
      * @throws InvalidArgumentException
      * @param string $itemWeightUnitofMeasurement
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setItemWeightUnitofMeasurement(?string $itemWeightUnitofMeasurement = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement2::valueIsValid($itemWeightUnitofMeasurement)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement2', is_array($itemWeightUnitofMeasurement) ? implode(', ', $itemWeightUnitofMeasurement) : var_export($itemWeightUnitofMeasurement, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement2::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement2::valueIsValid($itemWeightUnitofMeasurement)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement2', is_array($itemWeightUnitofMeasurement) ? implode(', ', $itemWeightUnitofMeasurement) : var_export($itemWeightUnitofMeasurement, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement2::getValidValues())), __LINE__);
         }
         $this->ItemWeightUnitofMeasurement = $itemWeightUnitofMeasurement;
 
@@ -715,7 +715,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set Category value
      * @param string $category
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setCategory(?string $category = null): self
     {
@@ -742,7 +742,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set Brand value
      * @param string $brand
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setBrand(?string $brand = null): self
     {
@@ -760,18 +760,18 @@ class ItemType extends AbstractStructBase
     }
     /**
      * Get AdditionalQuantityDefinitions value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType|null
      */
-    public function getAdditionalQuantityDefinitions(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
+    public function getAdditionalQuantityDefinitions(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType
     {
         return $this->AdditionalQuantityDefinitions;
     }
     /**
      * Set AdditionalQuantityDefinitions value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
-    public function setAdditionalQuantityDefinitions(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions = null): self
+    public function setAdditionalQuantityDefinitions(?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionsType $additionalQuantityDefinitions = null): self
     {
         $this->AdditionalQuantityDefinitions = $additionalQuantityDefinitions;
 
@@ -788,7 +788,7 @@ class ItemType extends AbstractStructBase
     /**
      * Set EstimatedTariffRateType value
      * @param string $estimatedTariffRateType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemType
      */
     public function setEstimatedTariffRateType(?string $estimatedTariffRateType = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\ServiceType;
+namespace Maetva\DhlExpress\ExpressRateBook\ServiceType;
 
 use SoapFault;
 use WsdlToPhp\PackageBase\AbstractSoapClientBase;
@@ -18,10 +18,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType|bool
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType|bool
      */
-    public function createShipmentRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters)
+    public function createShipmentRequest(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ProcessShipmentRequestType $parameters)
     {
         try {
             $this->setResult($resultCreateShipmentRequest = $this->getSoapClient()->__soapCall('createShipmentRequest', [
@@ -40,10 +40,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|bool
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RateResponseType|bool
      */
-    public function getRateRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters)
+    public function getRateRequest(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RateRequestType $parameters)
     {
         try {
             $this->setResult($resultGetRateRequest = $this->getSoapClient()->__soapCall('getRateRequest', [
@@ -62,10 +62,10 @@ class Service extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::getSoapClient()
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|bool
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|bool
      */
-    public function deleteShipmentRequest(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters)
+    public function deleteShipmentRequest(\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType $parameters)
     {
         try {
             $this->setResult($resultDeleteShipmentRequest = $this->getSoapClient()->__soapCall('deleteShipmentRequest', [
@@ -82,7 +82,7 @@ class Service extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_RateResponseType|\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteResponseType|\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_RateResponseType|\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentDetailType
      */
     public function getResult()
     {

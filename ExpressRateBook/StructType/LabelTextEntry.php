@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -74,7 +74,7 @@ class LabelTextEntry extends AbstractStructBase
     /**
      * Set LabelNumber value
      * @param string $labelNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntry
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntry
      */
     public function setLabelNumber(?string $labelNumber = null): self
     {
@@ -109,7 +109,7 @@ class LabelTextEntry extends AbstractStructBase
     /**
      * Set LabelCaption value
      * @param string $labelCaption
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntry
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntry
      */
     public function setLabelCaption(?string $labelCaption = null): self
     {
@@ -136,7 +136,7 @@ class LabelTextEntry extends AbstractStructBase
     /**
      * Set LabelDescription value
      * @param string $labelDescription
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntry
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntry
      */
     public function setLabelDescription(?string $labelDescription = null): self
     {

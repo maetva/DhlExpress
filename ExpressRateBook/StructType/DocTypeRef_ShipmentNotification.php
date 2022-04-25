@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -100,17 +100,17 @@ class DocTypeRef_ShipmentNotification extends AbstractStructBase
     }
     /**
      * Set NotificationMethod value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\NotificationMethod::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\NotificationMethod::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\NotificationMethod::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\NotificationMethod::getValidValues()
      * @throws InvalidArgumentException
      * @param string $notificationMethod
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
      */
     public function setNotificationMethod(string $notificationMethod): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\NotificationMethod::valueIsValid($notificationMethod)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\NotificationMethod', is_array($notificationMethod) ? implode(', ', $notificationMethod) : var_export($notificationMethod, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\NotificationMethod::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\NotificationMethod::valueIsValid($notificationMethod)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\NotificationMethod', is_array($notificationMethod) ? implode(', ', $notificationMethod) : var_export($notificationMethod, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\NotificationMethod::getValidValues())), __LINE__);
         }
         $this->NotificationMethod = $notificationMethod;
         
@@ -127,7 +127,7 @@ class DocTypeRef_ShipmentNotification extends AbstractStructBase
     /**
      * Set EmailAddress value
      * @param string $emailAddress
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
      */
     public function setEmailAddress(?string $emailAddress = null): self
     {
@@ -158,7 +158,7 @@ class DocTypeRef_ShipmentNotification extends AbstractStructBase
     /**
      * Set BespokeMessage value
      * @param string $bespokeMessage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
      */
     public function setBespokeMessage(?string $bespokeMessage = null): self
     {
@@ -185,7 +185,7 @@ class DocTypeRef_ShipmentNotification extends AbstractStructBase
     /**
      * Set LanguageCode value
      * @param string $languageCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
      */
     public function setLanguageCode(?string $languageCode = 'eng'): self
     {
@@ -216,7 +216,7 @@ class DocTypeRef_ShipmentNotification extends AbstractStructBase
     /**
      * Set LanguageCountryCode value
      * @param string $languageCountryCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentNotification
      */
     public function setLanguageCountryCode(?string $languageCountryCode = null): self
     {

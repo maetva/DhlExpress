@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -65,7 +65,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set PieceID value
      * @param string $pieceID
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setPieceID(?string $pieceID = null): self
     {
@@ -96,7 +96,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set ConditionCode value
      * @param string $conditionCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setConditionCode(?string $conditionCode = null): self
     {
@@ -119,7 +119,7 @@ class PieceFault extends AbstractStructBase
     /**
      * Set ConditionData value
      * @param string $conditionData
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
      */
     public function setConditionData(?string $conditionData = null): self
     {

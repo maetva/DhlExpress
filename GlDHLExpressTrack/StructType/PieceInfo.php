@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -15,24 +15,24 @@ class PieceInfo extends AbstractStructBase
 {
     /**
      * The PieceDetails
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails|null
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails $PieceDetails = null;
+    protected ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails $PieceDetails = null;
     /**
      * The PieceEvent
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent|null
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $PieceEvent = null;
+    protected ?\Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $PieceEvent = null;
     /**
      * Constructor method for PieceInfo
      * @uses PieceInfo::setPieceDetails()
      * @uses PieceInfo::setPieceEvent()
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent = null)
+    public function __construct(?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails = null, ?\Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent = null)
     {
         $this
             ->setPieceDetails($pieceDetails)
@@ -40,18 +40,18 @@ class PieceInfo extends AbstractStructBase
     }
     /**
      * Get PieceDetails value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails|null
      */
-    public function getPieceDetails(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails
+    public function getPieceDetails(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails
     {
         return $this->PieceDetails;
     }
     /**
      * Set PieceDetails value
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceInfo
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceInfo
      */
-    public function setPieceDetails(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails = null): self
+    public function setPieceDetails(?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceDetails $pieceDetails = null): self
     {
         $this->PieceDetails = $pieceDetails;
         
@@ -59,18 +59,18 @@ class PieceInfo extends AbstractStructBase
     }
     /**
      * Get PieceEvent value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent|null
      */
-    public function getPieceEvent(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
+    public function getPieceEvent(): ?\Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent
     {
         return $this->PieceEvent;
     }
     /**
      * Set PieceEvent value
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceInfo
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceInfo
      */
-    public function setPieceEvent(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent = null): self
+    public function setPieceEvent(?\Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceEvent $pieceEvent = null): self
     {
         $this->PieceEvent = $pieceEvent;
         

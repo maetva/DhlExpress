@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -36,23 +36,23 @@ class AdditionalInformation extends AbstractStructBase
      * The OriginServiceArea
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $OriginServiceArea = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $OriginServiceArea = null;
     /**
      * The DestinationServiceArea
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $DestinationServiceArea = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $DestinationServiceArea = null;
     /**
      * The Ship
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType $Ship = null;
     /**
      * The VolumetricWeight
      * Meta information extracted from the WSDL
@@ -95,9 +95,9 @@ class AdditionalInformation extends AbstractStructBase
      * The ServiceHandlingFeatureCodes
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $ServiceHandlingFeatureCodes = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $ServiceHandlingFeatureCodes = null;
     /**
      * The DeliveryDateCode
      * Meta information extracted from the WSDL
@@ -130,18 +130,18 @@ class AdditionalInformation extends AbstractStructBase
      * @uses AdditionalInformation::setDeliveryTimeCode()
      * @param string $additionalInformationText
      * @param string $billingCode
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
      * @param float $volumetricWeight
      * @param string $dHLRoutingCode
      * @param string $dHLRoutingDataID
      * @param string $serviceContentCode
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
      * @param string $deliveryDateCode
      * @param string $deliveryTimeCode
      */
-    public function __construct(?string $additionalInformationText = null, ?string $billingCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?float $volumetricWeight = null, ?string $dHLRoutingCode = null, ?string $dHLRoutingDataID = null, ?string $serviceContentCode = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null, ?string $deliveryDateCode = null, ?string $deliveryTimeCode = null)
+    public function __construct(?string $additionalInformationText = null, ?string $billingCode = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null, ?float $volumetricWeight = null, ?string $dHLRoutingCode = null, ?string $dHLRoutingDataID = null, ?string $serviceContentCode = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null, ?string $deliveryDateCode = null, ?string $deliveryTimeCode = null)
     {
         $this
             ->setAdditionalInformationText($additionalInformationText)
@@ -168,7 +168,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set AdditionalInformationText value
      * @param string $additionalInformationText
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setAdditionalInformationText(?string $additionalInformationText = null): self
     {
@@ -191,7 +191,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set BillingCode value
      * @param string $billingCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setBillingCode(?string $billingCode = null): self
     {
@@ -209,18 +209,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get OriginServiceArea value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType|null
      */
-    public function getOriginServiceArea(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
+    public function getOriginServiceArea(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
     {
         return $this->OriginServiceArea;
     }
     /**
      * Set OriginServiceArea value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setOriginServiceArea(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null): self
+    public function setOriginServiceArea(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType $originServiceArea = null): self
     {
         $this->OriginServiceArea = $originServiceArea;
 
@@ -228,18 +228,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get DestinationServiceArea value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType|null
      */
-    public function getDestinationServiceArea(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType
+    public function getDestinationServiceArea(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType
     {
         return $this->DestinationServiceArea;
     }
     /**
      * Set DestinationServiceArea value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setDestinationServiceArea(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null): self
+    public function setDestinationServiceArea(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DestinationServiceAreaType $destinationServiceArea = null): self
     {
         $this->DestinationServiceArea = $destinationServiceArea;
 
@@ -247,18 +247,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get Ship value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType|null
      */
-    public function getShip(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType
+    public function getShip(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType
     {
         return $this->Ship;
     }
     /**
      * Set Ship value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType $ship
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setShip(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
+    public function setShip(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipType $ship = null): self
     {
         $this->Ship = $ship;
 
@@ -275,7 +275,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set VolumetricWeight value
      * @param float $volumetricWeight
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setVolumetricWeight(?float $volumetricWeight = null): self
     {
@@ -306,7 +306,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DHLRoutingCode value
      * @param string $dHLRoutingCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDHLRoutingCode(?string $dHLRoutingCode = null): self
     {
@@ -329,7 +329,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DHLRoutingDataID value
      * @param string $dHLRoutingDataID
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDHLRoutingDataID(?string $dHLRoutingDataID = null): self
     {
@@ -352,7 +352,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set ServiceContentCode value
      * @param string $serviceContentCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setServiceContentCode(?string $serviceContentCode = null): self
     {
@@ -370,18 +370,18 @@ class AdditionalInformation extends AbstractStructBase
     }
     /**
      * Get ServiceHandlingFeatureCodes value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes|null
      */
-    public function getServiceHandlingFeatureCodes(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
+    public function getServiceHandlingFeatureCodes(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
     {
         return $this->ServiceHandlingFeatureCodes;
     }
     /**
      * Set ServiceHandlingFeatureCodes value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
-    public function setServiceHandlingFeatureCodes(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null): self
+    public function setServiceHandlingFeatureCodes(?\Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes $serviceHandlingFeatureCodes = null): self
     {
         $this->ServiceHandlingFeatureCodes = $serviceHandlingFeatureCodes;
 
@@ -398,7 +398,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DeliveryDateCode value
      * @param string $deliveryDateCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDeliveryDateCode(?string $deliveryDateCode = null): self
     {
@@ -421,7 +421,7 @@ class AdditionalInformation extends AbstractStructBase
     /**
      * Set DeliveryTimeCode value
      * @param string $deliveryTimeCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
      */
     public function setDeliveryTimeCode(?string $deliveryTimeCode = null): self
     {

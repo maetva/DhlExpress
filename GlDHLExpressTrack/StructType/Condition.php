@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -52,7 +52,7 @@ class Condition extends AbstractStructBase
     /**
      * Set ConditionCode value
      * @param string $conditionCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Condition
      */
     public function setConditionCode(?string $conditionCode = null): self
     {
@@ -75,7 +75,7 @@ class Condition extends AbstractStructBase
     /**
      * Set ConditionData value
      * @param string $conditionData
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Condition
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Condition
      */
     public function setConditionData(?string $conditionData = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType;
+namespace Maetva\DhlExpress\ExpressRateBook\EnumType;
 
 use WsdlToPhp\PackageBase\AbstractStructEnumBase;
 

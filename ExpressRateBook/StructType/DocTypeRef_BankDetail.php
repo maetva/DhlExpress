@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -64,7 +64,7 @@ class DocTypeRef_BankDetail extends AbstractStructBase
     /**
      * Set BankName value
      * @param string $bankName
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail
      */
     public function setBankName(?string $bankName = null): self
     {
@@ -87,7 +87,7 @@ class DocTypeRef_BankDetail extends AbstractStructBase
     /**
      * Set BankSettlementAccountNumberInLocalCurrency value
      * @param string $bankSettlementAccountNumberInLocalCurrency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail
      */
     public function setBankSettlementAccountNumberInLocalCurrency(?string $bankSettlementAccountNumberInLocalCurrency = null): self
     {
@@ -110,7 +110,7 @@ class DocTypeRef_BankDetail extends AbstractStructBase
     /**
      * Set BankSettlementAccountNumberInForeignCurrency value
      * @param string $bankSettlementAccountNumberInForeignCurrency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail
      */
     public function setBankSettlementAccountNumberInForeignCurrency(?string $bankSettlementAccountNumberInForeignCurrency = null): self
     {

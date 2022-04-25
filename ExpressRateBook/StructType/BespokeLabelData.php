@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class BespokeLabelData extends AbstractStructBase
      * The LabelBarcodes
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes $LabelBarcodes = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes $LabelBarcodes = null;
     /**
      * The LabelTextEntries
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries $LabelTextEntries = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries $LabelTextEntries = null;
     /**
      * The LabelDescription
      * Meta information extracted from the WSDL
@@ -43,11 +43,11 @@ class BespokeLabelData extends AbstractStructBase
      * @uses BespokeLabelData::setLabelBarcodes()
      * @uses BespokeLabelData::setLabelTextEntries()
      * @uses BespokeLabelData::setLabelDescription()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries
      * @param string $labelDescription
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries = null, ?string $labelDescription = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries = null, ?string $labelDescription = null)
     {
         $this
             ->setLabelBarcodes($labelBarcodes)
@@ -56,18 +56,18 @@ class BespokeLabelData extends AbstractStructBase
     }
     /**
      * Get LabelBarcodes value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes|null
      */
-    public function getLabelBarcodes(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes
+    public function getLabelBarcodes(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes
     {
         return $this->LabelBarcodes;
     }
     /**
      * Set LabelBarcodes value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\BespokeLabelData
      */
-    public function setLabelBarcodes(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes = null): self
+    public function setLabelBarcodes(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes $labelBarcodes = null): self
     {
         $this->LabelBarcodes = $labelBarcodes;
         
@@ -75,18 +75,18 @@ class BespokeLabelData extends AbstractStructBase
     }
     /**
      * Get LabelTextEntries value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries|null
      */
-    public function getLabelTextEntries(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries
+    public function getLabelTextEntries(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries
     {
         return $this->LabelTextEntries;
     }
     /**
      * Set LabelTextEntries value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\BespokeLabelData
      */
-    public function setLabelTextEntries(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries = null): self
+    public function setLabelTextEntries(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelTextEntries $labelTextEntries = null): self
     {
         $this->LabelTextEntries = $labelTextEntries;
         
@@ -103,7 +103,7 @@ class BespokeLabelData extends AbstractStructBase
     /**
      * Set LabelDescription value
      * @param string $labelDescription
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\BespokeLabelData
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\BespokeLabelData
      */
     public function setLabelDescription(?string $labelDescription = null): self
     {

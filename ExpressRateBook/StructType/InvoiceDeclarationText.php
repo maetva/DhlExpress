@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -45,7 +45,7 @@ class InvoiceDeclarationText extends AbstractStructBase
     /**
      * Set DeclarationText value
      * @param string $declarationText
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\InvoiceDeclarationText
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\InvoiceDeclarationText
      */
     public function setDeclarationText(?string $declarationText = null): self
     {

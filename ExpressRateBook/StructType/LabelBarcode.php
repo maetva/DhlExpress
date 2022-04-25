@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -79,7 +79,7 @@ class LabelBarcode extends AbstractStructBase
     /**
      * Set BarcodeNumber value
      * @param string $barcodeNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode
      */
     public function setBarcodeNumber(?string $barcodeNumber = null): self
     {
@@ -114,7 +114,7 @@ class LabelBarcode extends AbstractStructBase
     /**
      * Set BarcodeType value
      * @param string $barcodeType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode
      */
     public function setBarcodeType(?string $barcodeType = null): self
     {
@@ -137,7 +137,7 @@ class LabelBarcode extends AbstractStructBase
     /**
      * Set BarcodeContent value
      * @param string $barcodeContent
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode
      */
     public function setBarcodeContent(?string $barcodeContent = null): self
     {
@@ -160,7 +160,7 @@ class LabelBarcode extends AbstractStructBase
     /**
      * Set TextBelowBarcode value
      * @param string $textBelowBarcode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode
      */
     public function setTextBelowBarcode(?string $textBelowBarcode = null): self
     {

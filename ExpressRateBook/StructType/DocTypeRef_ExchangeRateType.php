@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class DocTypeRef_ExchangeRateType extends AbstractStructBase
      * The ExchangeRate
      * Meta information extracted from the WSDL
      * - maxOccurs: 3
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate[]
      */
     protected ?array $ExchangeRate = null;
     /**
      * Constructor method for docTypeRef_ExchangeRateType
      * @uses DocTypeRef_ExchangeRateType::setExchangeRate()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate[] $exchangeRate
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate[] $exchangeRate
      */
     public function __construct(?array $exchangeRate = null)
     {
@@ -32,7 +32,7 @@ class DocTypeRef_ExchangeRateType extends AbstractStructBase
     }
     /**
      * Get ExchangeRate value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate[]
      */
     public function getExchangeRate(): ?array
     {
@@ -53,12 +53,12 @@ class DocTypeRef_ExchangeRateType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $docTypeRef_ExchangeRateTypeExchangeRateItem) {
             // validation for constraint: itemType
-            if (!$docTypeRef_ExchangeRateTypeExchangeRateItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate) {
+            if (!$docTypeRef_ExchangeRateTypeExchangeRateItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate) {
                 $invalidValues[] = is_object($docTypeRef_ExchangeRateTypeExchangeRateItem) ? get_class($docTypeRef_ExchangeRateTypeExchangeRateItem) : sprintf('%s(%s)', gettype($docTypeRef_ExchangeRateTypeExchangeRateItem), var_export($docTypeRef_ExchangeRateTypeExchangeRateItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ExchangeRate property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ExchangeRate property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class DocTypeRef_ExchangeRateType extends AbstractStructBase
     /**
      * Set ExchangeRate value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate[] $exchangeRate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ExchangeRateType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate[] $exchangeRate
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ExchangeRateType
      */
     public function setExchangeRate(?array $exchangeRate = null): self
     {
@@ -87,14 +87,14 @@ class DocTypeRef_ExchangeRateType extends AbstractStructBase
     /**
      * Add item to ExchangeRate value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ExchangeRateType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ExchangeRateType
      */
-    public function addToExchangeRate(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate $item): self
+    public function addToExchangeRate(\Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate) {
-            throw new InvalidArgumentException(sprintf('The ExchangeRate property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate) {
+            throw new InvalidArgumentException(sprintf('The ExchangeRate property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(3)
         if (is_array($this->ExchangeRate) && count($this->ExchangeRate) >= 3) {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,13 +17,13 @@ class Services extends AbstractStructBase
      * The Service
      * Meta information extracted from the WSDL
      * - maxOccurs: 99
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\Service[]
      */
     protected ?array $Service = null;
     /**
      * Constructor method for Services
      * @uses Services::setService()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service[] $service
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Service[] $service
      */
     public function __construct(?array $service = null)
     {
@@ -32,7 +32,7 @@ class Services extends AbstractStructBase
     }
     /**
      * Get Service value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service[]
      */
     public function getService(): ?array
     {
@@ -53,12 +53,12 @@ class Services extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $servicesServiceItem) {
             // validation for constraint: itemType
-            if (!$servicesServiceItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service) {
+            if (!$servicesServiceItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\Service) {
                 $invalidValues[] = is_object($servicesServiceItem) ? get_class($servicesServiceItem) : sprintf('%s(%s)', gettype($servicesServiceItem), var_export($servicesServiceItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Service property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Service property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\Service, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class Services extends AbstractStructBase
     /**
      * Set Service value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service[] $service
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Service[] $service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Services
      */
     public function setService(?array $service = null): self
     {
@@ -87,14 +87,14 @@ class Services extends AbstractStructBase
     /**
      * Add item to Service value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Service $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Services
      */
-    public function addToService(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service $item): self
+    public function addToService(\Maetva\DhlExpress\ExpressRateBook\StructType\Service $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service) {
-            throw new InvalidArgumentException(sprintf('The Service property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\Service) {
+            throw new InvalidArgumentException(sprintf('The Service property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\Service, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(99)
         if (is_array($this->Service) && count($this->Service) >= 99) {

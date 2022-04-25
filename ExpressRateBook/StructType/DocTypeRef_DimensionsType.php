@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -73,7 +73,7 @@ class DocTypeRef_DimensionsType extends AbstractStructBase
     /**
      * Set Length value
      * @param float $length
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DimensionsType
      */
     public function setLength(?float $length = null): self
     {
@@ -104,7 +104,7 @@ class DocTypeRef_DimensionsType extends AbstractStructBase
     /**
      * Set Width value
      * @param float $width
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DimensionsType
      */
     public function setWidth(?float $width = null): self
     {
@@ -135,7 +135,7 @@ class DocTypeRef_DimensionsType extends AbstractStructBase
     /**
      * Set Height value
      * @param float $height
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DimensionsType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DimensionsType
      */
     public function setHeight(?float $height = null): self
     {

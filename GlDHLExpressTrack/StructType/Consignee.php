@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -97,7 +97,7 @@ class Consignee extends AbstractStructBase
     /**
      * Set City value
      * @param string $city
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Consignee
      */
     public function setCity(?string $city = null): self
     {
@@ -124,7 +124,7 @@ class Consignee extends AbstractStructBase
     /**
      * Set Suburb value
      * @param string $suburb
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Consignee
      */
     public function setSuburb(?string $suburb = null): self
     {
@@ -151,7 +151,7 @@ class Consignee extends AbstractStructBase
     /**
      * Set StateOrProvinceCode value
      * @param string $stateOrProvinceCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Consignee
      */
     public function setStateOrProvinceCode(?string $stateOrProvinceCode = null): self
     {
@@ -178,7 +178,7 @@ class Consignee extends AbstractStructBase
     /**
      * Set PostalCode value
      * @param string $postalCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Consignee
      */
     public function setPostalCode(?string $postalCode = null): self
     {
@@ -201,7 +201,7 @@ class Consignee extends AbstractStructBase
     /**
      * Set CountryCode value
      * @param string $countryCode
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\Consignee
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\Consignee
      */
     public function setCountryCode(?string $countryCode = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -74,7 +74,7 @@ class DocTypeRef_OriginServiceAreaType extends AbstractStructBase
     /**
      * Set FacilityCode value
      * @param string $facilityCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
      */
     public function setFacilityCode(?string $facilityCode = null): self
     {
@@ -101,7 +101,7 @@ class DocTypeRef_OriginServiceAreaType extends AbstractStructBase
     /**
      * Set ServiceAreaCode value
      * @param string $serviceAreaCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
      */
     public function setServiceAreaCode(?string $serviceAreaCode = null): self
     {
@@ -128,7 +128,7 @@ class DocTypeRef_OriginServiceAreaType extends AbstractStructBase
     /**
      * Set OutboundSortCode value
      * @param string $outboundSortCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_OriginServiceAreaType
      */
     public function setOutboundSortCode(?string $outboundSortCode = null): self
     {

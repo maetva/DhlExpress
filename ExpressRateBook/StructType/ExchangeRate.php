@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class ExchangeRate extends AbstractStructBase
     /**
      * Set Rate value
      * @param string $rate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate
      */
     public function setRate(?string $rate = null): self
     {
@@ -84,7 +84,7 @@ class ExchangeRate extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -107,7 +107,7 @@ class ExchangeRate extends AbstractStructBase
     /**
      * Set BaseCurrency value
      * @param string $baseCurrency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExchangeRate
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExchangeRate
      */
     public function setBaseCurrency(?string $baseCurrency = null): self
     {

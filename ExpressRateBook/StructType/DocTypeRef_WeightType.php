@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -44,7 +44,7 @@ class DocTypeRef_WeightType extends AbstractStructBase
     /**
      * Set Value value
      * @param float $value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WeightType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WeightType
      */
     public function setValue(?float $value = null): self
     {

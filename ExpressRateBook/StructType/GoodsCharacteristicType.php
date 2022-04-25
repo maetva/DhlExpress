@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -61,7 +61,7 @@ class GoodsCharacteristicType extends AbstractStructBase
     /**
      * Set CharacteristicCode value
      * @param string $characteristicCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicType
      */
     public function setCharacteristicCode(string $characteristicCode): self
     {
@@ -92,7 +92,7 @@ class GoodsCharacteristicType extends AbstractStructBase
     /**
      * Set CharacteristicValue value
      * @param string $characteristicValue
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\GoodsCharacteristicType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\GoodsCharacteristicType
      */
     public function setCharacteristicValue(string $characteristicValue): self
     {

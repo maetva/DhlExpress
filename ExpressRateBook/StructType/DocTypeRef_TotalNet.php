@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -38,9 +38,9 @@ class DocTypeRef_TotalNet extends AbstractStructBase
      * The Charges
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges $Charges = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges $Charges = null;
     /**
      * Constructor method for docTypeRef_TotalNet
      * @uses DocTypeRef_TotalNet::setType()
@@ -50,9 +50,9 @@ class DocTypeRef_TotalNet extends AbstractStructBase
      * @param string $type
      * @param string $currency
      * @param string $amount
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges $charges
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges $charges
      */
-    public function __construct(string $type, ?string $currency = null, ?string $amount = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges $charges = null)
+    public function __construct(string $type, ?string $currency = null, ?string $amount = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges $charges = null)
     {
         $this
             ->setType($type)
@@ -71,7 +71,7 @@ class DocTypeRef_TotalNet extends AbstractStructBase
     /**
      * Set type value
      * @param string $type
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet
      */
     public function setType(string $type): self
     {
@@ -94,7 +94,7 @@ class DocTypeRef_TotalNet extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -117,7 +117,7 @@ class DocTypeRef_TotalNet extends AbstractStructBase
     /**
      * Set Amount value
      * @param string $amount
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet
      */
     public function setAmount(?string $amount = null): self
     {
@@ -131,18 +131,18 @@ class DocTypeRef_TotalNet extends AbstractStructBase
     }
     /**
      * Get Charges value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges|null
      */
-    public function getCharges(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges
+    public function getCharges(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges
     {
         return $this->Charges;
     }
     /**
      * Set Charges value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges $charges
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_TotalNet
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges $charges
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_TotalNet
      */
-    public function setCharges(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Charges $charges = null): self
+    public function setCharges(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Charges $charges = null): self
     {
         $this->Charges = $charges;
         

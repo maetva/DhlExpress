@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class CustomsDocuments extends AbstractStructBase
      * The CustomsDocument
      * Meta information extracted from the WSDL
      * - documentation: Export Declaration's Customs Document entry
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument $CustomsDocument = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument $CustomsDocument = null;
     /**
      * Constructor method for CustomsDocuments
      * @uses CustomsDocuments::setCustomsDocument()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument $customsDocument
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument $customsDocument
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument $customsDocument = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument $customsDocument = null)
     {
         $this
             ->setCustomsDocument($customsDocument);
     }
     /**
      * Get CustomsDocument value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument|null
      */
-    public function getCustomsDocument(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument
+    public function getCustomsDocument(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument
     {
         return $this->CustomsDocument;
     }
     /**
      * Set CustomsDocument value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument $customsDocument
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocuments
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument $customsDocument
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocuments
      */
-    public function setCustomsDocument(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsDocument $customsDocument = null): self
+    public function setCustomsDocument(?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsDocument $customsDocument = null): self
     {
         $this->CustomsDocument = $customsDocument;
         

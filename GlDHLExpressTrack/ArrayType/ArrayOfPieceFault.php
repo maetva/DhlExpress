@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -17,13 +17,13 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
      * The ArrayOfPieceFaultItem
      * Meta information extracted from the WSDL
      * - maxOccurs: 100
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault[]
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault[]
      */
     protected ?array $ArrayOfPieceFaultItem = null;
     /**
      * Constructor method for ArrayOfPieceFault
      * @uses ArrayOfPieceFault::setArrayOfPieceFaultItem()
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault[] $arrayOfPieceFaultItem
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault[] $arrayOfPieceFaultItem
      */
     public function __construct(?array $arrayOfPieceFaultItem = null)
     {
@@ -32,7 +32,7 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
     }
     /**
      * Get ArrayOfPieceFaultItem value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault[]
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault[]
      */
     public function getArrayOfPieceFaultItem(): ?array
     {
@@ -53,12 +53,12 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
         $invalidValues = [];
         foreach ($values as $arrayOfPieceFaultArrayOfPieceFaultItemItem) {
             // validation for constraint: itemType
-            if (!$arrayOfPieceFaultArrayOfPieceFaultItemItem instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault) {
+            if (!$arrayOfPieceFaultArrayOfPieceFaultItemItem instanceof \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault) {
                 $invalidValues[] = is_object($arrayOfPieceFaultArrayOfPieceFaultItemItem) ? get_class($arrayOfPieceFaultArrayOfPieceFaultItemItem) : sprintf('%s(%s)', gettype($arrayOfPieceFaultArrayOfPieceFaultItemItem), var_export($arrayOfPieceFaultArrayOfPieceFaultItemItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The ArrayOfPieceFaultItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The ArrayOfPieceFaultItem property can only contain items of type \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -67,8 +67,8 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
     /**
      * Set ArrayOfPieceFaultItem value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault[] $arrayOfPieceFaultItem
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceFault
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault[] $arrayOfPieceFaultItem
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceFault
      */
     public function setArrayOfPieceFaultItem(?array $arrayOfPieceFaultItem = null): self
     {
@@ -87,9 +87,9 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
     /**
      * Returns the current element
      * @see AbstractStructArrayBase::current()
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault|null
      */
-    public function current(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+    public function current(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
     {
         return parent::current();
     }
@@ -97,27 +97,27 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
      * Returns the indexed element
      * @see AbstractStructArrayBase::item()
      * @param int $index
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault|null
      */
-    public function item($index): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+    public function item($index): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
     {
         return parent::item($index);
     }
     /**
      * Returns the first element
      * @see AbstractStructArrayBase::first()
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault|null
      */
-    public function first(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+    public function first(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
     {
         return parent::first();
     }
     /**
      * Returns the last element
      * @see AbstractStructArrayBase::last()
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault|null
      */
-    public function last(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+    public function last(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
     {
         return parent::last();
     }
@@ -125,9 +125,9 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
      * Returns the element at the offset
      * @see AbstractStructArrayBase::offsetGet()
      * @param int $offset
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault|null
      */
-    public function offsetGet($offset): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault
+    public function offsetGet($offset): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault
     {
         return parent::offsetGet($offset);
     }
@@ -135,14 +135,14 @@ class ArrayOfPieceFault extends AbstractStructArrayBase
      * Add element to array
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault $item
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfPieceFault
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault $item
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfPieceFault
      */
     public function add($item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault) {
-            throw new InvalidArgumentException(sprintf('The ArrayOfPieceFaultItem property can only contain items of type \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\PieceFault, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault) {
+            throw new InvalidArgumentException(sprintf('The ArrayOfPieceFaultItem property can only contain items of type \Maetva\DhlExpress\GlDHLExpressTrack\StructType\PieceFault, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         return parent::add($item);
     }

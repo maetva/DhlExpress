@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -64,7 +64,7 @@ class DocTypeRef_Document extends AbstractStructBase
     /**
      * Set DocumentName value
      * @param string $documentName
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Document
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Document
      */
     public function setDocumentName(?string $documentName = null): self
     {
@@ -87,7 +87,7 @@ class DocTypeRef_Document extends AbstractStructBase
     /**
      * Set DocumentFormat value
      * @param string $documentFormat
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Document
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Document
      */
     public function setDocumentFormat(?string $documentFormat = null): self
     {
@@ -114,7 +114,7 @@ class DocTypeRef_Document extends AbstractStructBase
     /**
      * Set DocumentImage value
      * @param string $documentImage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Document
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Document
      */
     public function setDocumentImage(?string $documentImage = null): self
     {

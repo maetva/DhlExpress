@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class DocTypeRef_ClientDetailType3 extends AbstractStructBase
     /**
      * Set sso value
      * @param string $sso
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType3
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType3
      */
     public function setSso(?string $sso = null): self
     {
@@ -84,7 +84,7 @@ class DocTypeRef_ClientDetailType3 extends AbstractStructBase
     /**
      * Set plant value
      * @param string $plant
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType3
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType3
      */
     public function setPlant(?string $plant = null): self
     {

@@ -21,16 +21,16 @@
  */
 $options = [
     WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://wsbexpress.dhl.com/sndpt/glDHLExpressTrack?wsdl',
-    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ClassMap::get(),
+    WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \Maetva\DhlExpress\GlDHLExpressTrack\ClassMap::get(),
 ];
 /**
  * Samples for Service ServiceType
  */
-$service = new \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ServiceType\Service($options);
+$service = new \Maetva\DhlExpress\GlDHLExpressTrack\ServiceType\Service($options);
 /**
  * Sample call for trackShipmentRequest operation/method
  */
-if ($service->trackShipmentRequest(new \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\TrackShipmentRequest()) !== false) {
+if ($service->trackShipmentRequest(new \Maetva\DhlExpress\GlDHLExpressTrack\StructType\TrackShipmentRequest()) !== false) {
     print_r($service->getResult());
 } else {
     print_r($service->getLastError());

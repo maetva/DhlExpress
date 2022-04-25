@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -121,7 +121,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
      * Set ArrayOfAWBNumberItem value
      * @throws InvalidArgumentException
      * @param string[] $arrayOfAWBNumberItem
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
      */
     public function setArrayOfAWBNumberItem(?array $arrayOfAWBNumberItem = null): self
     {
@@ -197,7 +197,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
      */
     public function add($item): self
     {

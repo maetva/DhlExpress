@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -57,7 +57,7 @@ class AdditionalQuantityDefinitionType extends AbstractStructBase
     /**
      * Set AdditionalQuantity value
      * @param float $additionalQuantity
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionType
      */
     public function setAdditionalQuantity(?float $additionalQuantity = null): self
     {
@@ -88,7 +88,7 @@ class AdditionalQuantityDefinitionType extends AbstractStructBase
     /**
      * Set AdditionalQuantityType value
      * @param string $additionalQuantityType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalQuantityDefinitionType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalQuantityDefinitionType
      */
     public function setAdditionalQuantityType(?string $additionalQuantityType = null): self
     {

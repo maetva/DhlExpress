@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class ChargeBreakdown extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - maxOccurs: 99
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown[]
      */
     protected ?array $Breakdown = null;
     /**
      * Constructor method for ChargeBreakdown
      * @uses ChargeBreakdown::setBreakdown()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown[] $breakdown
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown[] $breakdown
      */
     public function __construct(?array $breakdown = null)
     {
@@ -33,7 +33,7 @@ class ChargeBreakdown extends AbstractStructBase
     }
     /**
      * Get Breakdown value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown[]
      */
     public function getBreakdown(): ?array
     {
@@ -54,12 +54,12 @@ class ChargeBreakdown extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $chargeBreakdownBreakdownItem) {
             // validation for constraint: itemType
-            if (!$chargeBreakdownBreakdownItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown) {
+            if (!$chargeBreakdownBreakdownItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown) {
                 $invalidValues[] = is_object($chargeBreakdownBreakdownItem) ? get_class($chargeBreakdownBreakdownItem) : sprintf('%s(%s)', gettype($chargeBreakdownBreakdownItem), var_export($chargeBreakdownBreakdownItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Breakdown property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Breakdown property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class ChargeBreakdown extends AbstractStructBase
     /**
      * Set Breakdown value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown[] $breakdown
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown[] $breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown
      */
     public function setBreakdown(?array $breakdown = null): self
     {
@@ -88,14 +88,14 @@ class ChargeBreakdown extends AbstractStructBase
     /**
      * Add item to Breakdown value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown
      */
-    public function addToBreakdown(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown $item): self
+    public function addToBreakdown(\Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown) {
-            throw new InvalidArgumentException(sprintf('The Breakdown property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown) {
+            throw new InvalidArgumentException(sprintf('The Breakdown property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(99)
         if (is_array($this->Breakdown) && count($this->Breakdown) >= 99) {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -75,7 +75,7 @@ class DocTypeRef_Content extends AbstractStructBase
     /**
      * Set ContentID value
      * @param string $contentID
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Content
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Content
      */
     public function setContentID(?string $contentID = null): self
     {
@@ -138,7 +138,7 @@ class DocTypeRef_Content extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
      * @param string $dryIceTotalNetWeight
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Content
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Content
      */
     public function setDryIceTotalNetWeight(?string $dryIceTotalNetWeight = null): self
     {
@@ -209,7 +209,7 @@ class DocTypeRef_Content extends AbstractStructBase
      * property is null, the property is removed from this object
      * @throws InvalidArgumentException
      * @param string $uNCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_Content
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_Content
      */
     public function setUNCode(?string $uNCode = null): self
     {

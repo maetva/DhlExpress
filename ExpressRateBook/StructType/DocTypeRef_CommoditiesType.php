@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -72,7 +72,7 @@ class DocTypeRef_CommoditiesType extends AbstractStructBase
     /**
      * Set Description value
      * @param string $description
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
      */
     public function setDescription(?string $description = null): self
     {
@@ -103,7 +103,7 @@ class DocTypeRef_CommoditiesType extends AbstractStructBase
     /**
      * Set CustomsValue value
      * @param float $customsValue
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
      */
     public function setCustomsValue(?float $customsValue = null): self
     {
@@ -126,7 +126,7 @@ class DocTypeRef_CommoditiesType extends AbstractStructBase
     /**
      * Set USFilingTypeValue value
      * @param string $uSFilingTypeValue
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_CommoditiesType
      */
     public function setUSFilingTypeValue(?string $uSFilingTypeValue = null): self
     {

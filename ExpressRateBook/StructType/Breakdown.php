@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -86,7 +86,7 @@ class Breakdown extends AbstractStructBase
     /**
      * Set ChargeType value
      * @param string $chargeType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown
      */
     public function setChargeType(?string $chargeType = null): self
     {
@@ -109,7 +109,7 @@ class Breakdown extends AbstractStructBase
     /**
      * Set Type value
      * @param string $type
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown
      */
     public function setType(?string $type = null): self
     {
@@ -132,7 +132,7 @@ class Breakdown extends AbstractStructBase
     /**
      * Set Amount value
      * @param string $amount
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown
      */
     public function setAmount(?string $amount = null): self
     {
@@ -155,7 +155,7 @@ class Breakdown extends AbstractStructBase
     /**
      * Set Rate value
      * @param string $rate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown
      */
     public function setRate(?string $rate = null): self
     {
@@ -178,7 +178,7 @@ class Breakdown extends AbstractStructBase
     /**
      * Set BaseAmount value
      * @param string $baseAmount
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Breakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Breakdown
      */
     public function setBaseAmount(?string $baseAmount = null): self
     {

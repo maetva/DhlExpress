@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -91,9 +91,9 @@ class Service extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: To indicate the payment method code
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods $PaymentMethods = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods $PaymentMethods = null;
     /**
      * Constructor method for Service
      * @uses Service::setServiceType()
@@ -111,9 +111,9 @@ class Service extends AbstractStructBase
      * @param string $startDate
      * @param string $endDate
      * @param string $textInstruction
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods $paymentMethods
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods $paymentMethods
      */
-    public function __construct(?string $serviceType = null, ?float $serviceValue = null, ?string $currencyCode = null, ?string $paymentCode = null, ?string $startDate = null, ?string $endDate = null, ?string $textInstruction = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods $paymentMethods = null)
+    public function __construct(?string $serviceType = null, ?float $serviceValue = null, ?string $currencyCode = null, ?string $paymentCode = null, ?string $startDate = null, ?string $endDate = null, ?string $textInstruction = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods $paymentMethods = null)
     {
         $this
             ->setServiceType($serviceType)
@@ -136,7 +136,7 @@ class Service extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setServiceType(?string $serviceType = null): self
     {
@@ -167,7 +167,7 @@ class Service extends AbstractStructBase
     /**
      * Set ServiceValue value
      * @param float $serviceValue
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setServiceValue(?float $serviceValue = null): self
     {
@@ -198,7 +198,7 @@ class Service extends AbstractStructBase
     /**
      * Set CurrencyCode value
      * @param string $currencyCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setCurrencyCode(?string $currencyCode = null): self
     {
@@ -229,7 +229,7 @@ class Service extends AbstractStructBase
     /**
      * Set PaymentCode value
      * @param string $paymentCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setPaymentCode(?string $paymentCode = null): self
     {
@@ -260,7 +260,7 @@ class Service extends AbstractStructBase
     /**
      * Set StartDate value
      * @param string $startDate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setStartDate(?string $startDate = null): self
     {
@@ -283,7 +283,7 @@ class Service extends AbstractStructBase
     /**
      * Set EndDate value
      * @param string $endDate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setEndDate(?string $endDate = null): self
     {
@@ -306,7 +306,7 @@ class Service extends AbstractStructBase
     /**
      * Set TextInstruction value
      * @param string $textInstruction
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
     public function setTextInstruction(?string $textInstruction = null): self
     {
@@ -324,18 +324,18 @@ class Service extends AbstractStructBase
     }
     /**
      * Get PaymentMethods value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods|null
      */
-    public function getPaymentMethods(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods
+    public function getPaymentMethods(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods
     {
         return $this->PaymentMethods;
     }
     /**
      * Set PaymentMethods value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods $paymentMethods
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Service
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods $paymentMethods
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Service
      */
-    public function setPaymentMethods(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods $paymentMethods = null): self
+    public function setPaymentMethods(?\Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods $paymentMethods = null): self
     {
         $this->PaymentMethods = $paymentMethods;
         

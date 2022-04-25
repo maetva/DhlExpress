@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class LabelBarcodes extends AbstractStructBase
      * The LabelBarcode
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode $LabelBarcode = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode $LabelBarcode = null;
     /**
      * Constructor method for LabelBarcodes
      * @uses LabelBarcodes::setLabelBarcode()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode $labelBarcode
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode $labelBarcode
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode $labelBarcode = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode $labelBarcode = null)
     {
         $this
             ->setLabelBarcode($labelBarcode);
     }
     /**
      * Get LabelBarcode value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode|null
      */
-    public function getLabelBarcode(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode
+    public function getLabelBarcode(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode
     {
         return $this->LabelBarcode;
     }
     /**
      * Set LabelBarcode value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode $labelBarcode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcodes
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode $labelBarcode
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcodes
      */
-    public function setLabelBarcode(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelBarcode $labelBarcode = null): self
+    public function setLabelBarcode(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelBarcode $labelBarcode = null): self
     {
         $this->LabelBarcode = $labelBarcode;
         

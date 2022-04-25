@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class ItemReferences extends AbstractStructBase
      * The ItemReference
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice Reference entry
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference $ItemReference = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference $ItemReference = null;
     /**
      * Constructor method for ItemReferences
      * @uses ItemReferences::setItemReference()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference $itemReference
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference $itemReference
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference $itemReference = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference $itemReference = null)
     {
         $this
             ->setItemReference($itemReference);
     }
     /**
      * Get ItemReference value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference|null
      */
-    public function getItemReference(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference
+    public function getItemReference(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference
     {
         return $this->ItemReference;
     }
     /**
      * Set ItemReference value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference $itemReference
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference $itemReference
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences
      */
-    public function setItemReference(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReference $itemReference = null): self
+    public function setItemReference(?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReference $itemReference = null): self
     {
         $this->ItemReference = $itemReference;
         

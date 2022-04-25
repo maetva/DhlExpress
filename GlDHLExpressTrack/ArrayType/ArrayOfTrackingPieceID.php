@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\ArrayType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructArrayBase;
@@ -121,7 +121,7 @@ class ArrayOfTrackingPieceID extends AbstractStructArrayBase
      * Set ArrayOfTrackingPieceIDItem value
      * @throws InvalidArgumentException
      * @param string[] $arrayOfTrackingPieceIDItem
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
      */
     public function setArrayOfTrackingPieceIDItem(?array $arrayOfTrackingPieceIDItem = null): self
     {
@@ -197,7 +197,7 @@ class ArrayOfTrackingPieceID extends AbstractStructArrayBase
      * @see AbstractStructArrayBase::add()
      * @throws InvalidArgumentException
      * @param string $item
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfTrackingPieceID
      */
     public function add($item): self
     {

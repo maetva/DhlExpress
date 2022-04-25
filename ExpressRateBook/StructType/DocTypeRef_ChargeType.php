@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -103,9 +103,9 @@ class DocTypeRef_ChargeType extends AbstractStructBase
      * The ChargeBreakdown
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown $ChargeBreakdown = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown $ChargeBreakdown = null;
     /**
      * The TariffRateFormula
      * Meta information extracted from the WSDL
@@ -138,10 +138,10 @@ class DocTypeRef_ChargeType extends AbstractStructBase
      * @param string $billingServiceInd
      * @param string $customerAgreementInd
      * @param string $marketedServiceInd
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown
      * @param string $tariffRateFormula
      */
-    public function __construct(?string $chargeCode = null, ?string $localChargeCode = null, ?string $chargeType = null, ?string $chargeAmount = null, ?string $chargeName = null, ?string $chargeCurrencyCode = null, ?string $chargeCodeTypeCode = null, ?string $billingServiceInd = null, ?string $customerAgreementInd = null, ?string $marketedServiceInd = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown = null, ?string $tariffRateFormula = null)
+    public function __construct(?string $chargeCode = null, ?string $localChargeCode = null, ?string $chargeType = null, ?string $chargeAmount = null, ?string $chargeName = null, ?string $chargeCurrencyCode = null, ?string $chargeCodeTypeCode = null, ?string $billingServiceInd = null, ?string $customerAgreementInd = null, ?string $marketedServiceInd = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown = null, ?string $tariffRateFormula = null)
     {
         $this
             ->setChargeCode($chargeCode)
@@ -168,7 +168,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeCode value
      * @param string $chargeCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeCode(?string $chargeCode = null): self
     {
@@ -195,7 +195,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set LocalChargeCode value
      * @param string $localChargeCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setLocalChargeCode(?string $localChargeCode = null): self
     {
@@ -222,7 +222,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeType value
      * @param string $chargeType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeType(?string $chargeType = null): self
     {
@@ -245,7 +245,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeAmount value
      * @param string $chargeAmount
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeAmount(?string $chargeAmount = null): self
     {
@@ -268,7 +268,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeName value
      * @param string $chargeName
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeName(?string $chargeName = null): self
     {
@@ -299,7 +299,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeCurrencyCode value
      * @param string $chargeCurrencyCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeCurrencyCode(?string $chargeCurrencyCode = null): self
     {
@@ -330,7 +330,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set ChargeCodeTypeCode value
      * @param string $chargeCodeTypeCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setChargeCodeTypeCode(?string $chargeCodeTypeCode = null): self
     {
@@ -353,7 +353,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set BillingServiceInd value
      * @param string $billingServiceInd
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setBillingServiceInd(?string $billingServiceInd = null): self
     {
@@ -375,17 +375,17 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     }
     /**
      * Set CustomerAgreementInd value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\CustomerAgreementInd::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\CustomerAgreementInd::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\CustomerAgreementInd::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\CustomerAgreementInd::getValidValues()
      * @throws InvalidArgumentException
      * @param string $customerAgreementInd
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setCustomerAgreementInd(?string $customerAgreementInd = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\CustomerAgreementInd::valueIsValid($customerAgreementInd)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\CustomerAgreementInd', is_array($customerAgreementInd) ? implode(', ', $customerAgreementInd) : var_export($customerAgreementInd, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\CustomerAgreementInd::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\CustomerAgreementInd::valueIsValid($customerAgreementInd)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\CustomerAgreementInd', is_array($customerAgreementInd) ? implode(', ', $customerAgreementInd) : var_export($customerAgreementInd, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\CustomerAgreementInd::getValidValues())), __LINE__);
         }
         $this->CustomerAgreementInd = $customerAgreementInd;
         
@@ -401,17 +401,17 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     }
     /**
      * Set MarketedServiceInd value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MarketedServiceInd::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MarketedServiceInd::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\MarketedServiceInd::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\MarketedServiceInd::getValidValues()
      * @throws InvalidArgumentException
      * @param string $marketedServiceInd
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setMarketedServiceInd(?string $marketedServiceInd = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MarketedServiceInd::valueIsValid($marketedServiceInd)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MarketedServiceInd', is_array($marketedServiceInd) ? implode(', ', $marketedServiceInd) : var_export($marketedServiceInd, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\MarketedServiceInd::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\MarketedServiceInd::valueIsValid($marketedServiceInd)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\MarketedServiceInd', is_array($marketedServiceInd) ? implode(', ', $marketedServiceInd) : var_export($marketedServiceInd, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\MarketedServiceInd::getValidValues())), __LINE__);
         }
         $this->MarketedServiceInd = $marketedServiceInd;
         
@@ -419,18 +419,18 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     }
     /**
      * Get ChargeBreakdown value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown|null
      */
-    public function getChargeBreakdown(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown
+    public function getChargeBreakdown(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown
     {
         return $this->ChargeBreakdown;
     }
     /**
      * Set ChargeBreakdown value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
-    public function setChargeBreakdown(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown = null): self
+    public function setChargeBreakdown(?\Maetva\DhlExpress\ExpressRateBook\StructType\ChargeBreakdown $chargeBreakdown = null): self
     {
         $this->ChargeBreakdown = $chargeBreakdown;
         
@@ -447,7 +447,7 @@ class DocTypeRef_ChargeType extends AbstractStructBase
     /**
      * Set TariffRateFormula value
      * @param string $tariffRateFormula
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ChargeType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ChargeType
      */
     public function setTariffRateFormula(?string $tariffRateFormula = null): self
     {

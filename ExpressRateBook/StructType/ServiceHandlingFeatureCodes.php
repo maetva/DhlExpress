@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -45,7 +45,7 @@ class ServiceHandlingFeatureCodes extends AbstractStructBase
     /**
      * Set ServiceHandlingFeatureCode value
      * @param string $serviceHandlingFeatureCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ServiceHandlingFeatureCodes
      */
     public function setServiceHandlingFeatureCode(?string $serviceHandlingFeatureCode = null): self
     {

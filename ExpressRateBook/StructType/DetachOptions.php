@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -87,17 +87,17 @@ class DetachOptions extends AbstractStructBase
     }
     /**
      * Set AllInOnePDF value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\AllInOnePDF::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\AllInOnePDF::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\AllInOnePDF::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\AllInOnePDF::getValidValues()
      * @throws InvalidArgumentException
      * @param string $allInOnePDF
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DetachOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DetachOptions
      */
     public function setAllInOnePDF(?string $allInOnePDF = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\AllInOnePDF::valueIsValid($allInOnePDF)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\AllInOnePDF', is_array($allInOnePDF) ? implode(', ', $allInOnePDF) : var_export($allInOnePDF, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\AllInOnePDF::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\AllInOnePDF::valueIsValid($allInOnePDF)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\AllInOnePDF', is_array($allInOnePDF) ? implode(', ', $allInOnePDF) : var_export($allInOnePDF, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\AllInOnePDF::getValidValues())), __LINE__);
         }
         $this->AllInOnePDF = $allInOnePDF;
         
@@ -113,17 +113,17 @@ class DetachOptions extends AbstractStructBase
     }
     /**
      * Set SplitShipmentReceiptAndCustomsInvoice value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::getValidValues()
      * @throws InvalidArgumentException
      * @param string $splitShipmentReceiptAndCustomsInvoice
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DetachOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DetachOptions
      */
     public function setSplitShipmentReceiptAndCustomsInvoice(?string $splitShipmentReceiptAndCustomsInvoice = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::valueIsValid($splitShipmentReceiptAndCustomsInvoice)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice', is_array($splitShipmentReceiptAndCustomsInvoice) ? implode(', ', $splitShipmentReceiptAndCustomsInvoice) : var_export($splitShipmentReceiptAndCustomsInvoice, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::valueIsValid($splitShipmentReceiptAndCustomsInvoice)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice', is_array($splitShipmentReceiptAndCustomsInvoice) ? implode(', ', $splitShipmentReceiptAndCustomsInvoice) : var_export($splitShipmentReceiptAndCustomsInvoice, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitShipmentReceiptAndCustomsInvoice::getValidValues())), __LINE__);
         }
         $this->SplitShipmentReceiptAndCustomsInvoice = $splitShipmentReceiptAndCustomsInvoice;
         
@@ -139,17 +139,17 @@ class DetachOptions extends AbstractStructBase
     }
     /**
      * Set SplitTransportLabelAndWaybillDocument value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::getValidValues()
      * @throws InvalidArgumentException
      * @param string $splitTransportLabelAndWaybillDocument
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DetachOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DetachOptions
      */
     public function setSplitTransportLabelAndWaybillDocument(?string $splitTransportLabelAndWaybillDocument = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::valueIsValid($splitTransportLabelAndWaybillDocument)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument', is_array($splitTransportLabelAndWaybillDocument) ? implode(', ', $splitTransportLabelAndWaybillDocument) : var_export($splitTransportLabelAndWaybillDocument, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::valueIsValid($splitTransportLabelAndWaybillDocument)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument', is_array($splitTransportLabelAndWaybillDocument) ? implode(', ', $splitTransportLabelAndWaybillDocument) : var_export($splitTransportLabelAndWaybillDocument, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitTransportLabelAndWaybillDocument::getValidValues())), __LINE__);
         }
         $this->SplitTransportLabelAndWaybillDocument = $splitTransportLabelAndWaybillDocument;
         
@@ -165,17 +165,17 @@ class DetachOptions extends AbstractStructBase
     }
     /**
      * Set SplitLabelsByPieces value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitLabelsByPieces::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitLabelsByPieces::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitLabelsByPieces::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitLabelsByPieces::getValidValues()
      * @throws InvalidArgumentException
      * @param string $splitLabelsByPieces
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DetachOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DetachOptions
      */
     public function setSplitLabelsByPieces(?string $splitLabelsByPieces = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitLabelsByPieces::valueIsValid($splitLabelsByPieces)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitLabelsByPieces', is_array($splitLabelsByPieces) ? implode(', ', $splitLabelsByPieces) : var_export($splitLabelsByPieces, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\SplitLabelsByPieces::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\SplitLabelsByPieces::valueIsValid($splitLabelsByPieces)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitLabelsByPieces', is_array($splitLabelsByPieces) ? implode(', ', $splitLabelsByPieces) : var_export($splitLabelsByPieces, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\SplitLabelsByPieces::getValidValues())), __LINE__);
         }
         $this->SplitLabelsByPieces = $splitLabelsByPieces;
         
@@ -191,17 +191,17 @@ class DetachOptions extends AbstractStructBase
     }
     /**
      * Set ShipmentReceiptWithLabels value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::getValidValues()
      * @throws InvalidArgumentException
      * @param string $shipmentReceiptWithLabels
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DetachOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DetachOptions
      */
     public function setShipmentReceiptWithLabels(?string $shipmentReceiptWithLabels = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::valueIsValid($shipmentReceiptWithLabels)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentReceiptWithLabels', is_array($shipmentReceiptWithLabels) ? implode(', ', $shipmentReceiptWithLabels) : var_export($shipmentReceiptWithLabels, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::valueIsValid($shipmentReceiptWithLabels)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\ShipmentReceiptWithLabels', is_array($shipmentReceiptWithLabels) ? implode(', ', $shipmentReceiptWithLabels) : var_export($shipmentReceiptWithLabels, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\ShipmentReceiptWithLabels::getValidValues())), __LINE__);
         }
         $this->ShipmentReceiptWithLabels = $shipmentReceiptWithLabels;
         

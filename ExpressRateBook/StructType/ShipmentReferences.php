@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -19,33 +19,33 @@ class ShipmentReferences extends AbstractStructBase
      * The ShipmentReference
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType $ShipmentReference = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType $ShipmentReference = null;
     /**
      * Constructor method for ShipmentReferences
      * @uses ShipmentReferences::setShipmentReference()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference = null)
     {
         $this
             ->setShipmentReference($shipmentReference);
     }
     /**
      * Get ShipmentReference value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType|null
      */
-    public function getShipmentReference(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType
+    public function getShipmentReference(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType
     {
         return $this->ShipmentReference;
     }
     /**
      * Set ShipmentReference value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences
      */
-    public function setShipmentReference(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference = null): self
+    public function setShipmentReference(?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferenceType $shipmentReference = null): self
     {
         $this->ShipmentReference = $shipmentReference;
         

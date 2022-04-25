@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -44,7 +44,7 @@ class Remark extends AbstractStructBase
     /**
      * Set RemarkDescription value
      * @param string $remarkDescription
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Remark
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Remark
      */
     public function setRemarkDescription(?string $remarkDescription = null): self
     {

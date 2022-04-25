@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,16 +17,16 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
      * The ClientDetail
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $ClientDetail = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $ClientDetail = null;
     /**
      * The Request
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\RequestType|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType $Request = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\RequestType $Request = null;
     /**
      * The PickupDate
      * Meta information extracted from the WSDL
@@ -86,15 +86,15 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
      * @uses DocTypeRef_DeleteRequestType::setDispatchConfirmationNumber()
      * @uses DocTypeRef_DeleteRequestType::setRequestorName()
      * @uses DocTypeRef_DeleteRequestType::setReason()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType $request
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\RequestType $request
      * @param string $pickupDate
      * @param string $pickupCountry
      * @param string $dispatchConfirmationNumber
      * @param string $requestorName
      * @param string $reason
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType $request = null, ?string $pickupDate = null, ?string $pickupCountry = null, ?string $dispatchConfirmationNumber = null, ?string $requestorName = null, ?string $reason = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\RequestType $request = null, ?string $pickupDate = null, ?string $pickupCountry = null, ?string $dispatchConfirmationNumber = null, ?string $requestorName = null, ?string $reason = null)
     {
         $this
             ->setClientDetail($clientDetail)
@@ -107,18 +107,18 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     }
     /**
      * Get ClientDetail value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType|null
      */
-    public function getClientDetail(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType
+    public function getClientDetail(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType
     {
         return $this->ClientDetail;
     }
     /**
      * Set ClientDetail value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
-    public function setClientDetail(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail = null): self
+    public function setClientDetail(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ClientDetailType $clientDetail = null): self
     {
         $this->ClientDetail = $clientDetail;
         
@@ -126,18 +126,18 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     }
     /**
      * Get Request value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\RequestType|null
      */
-    public function getRequest(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType
+    public function getRequest(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\RequestType
     {
         return $this->Request;
     }
     /**
      * Set Request value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType $request
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\RequestType $request
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
-    public function setRequest(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\RequestType $request = null): self
+    public function setRequest(?\Maetva\DhlExpress\ExpressRateBook\StructType\RequestType $request = null): self
     {
         $this->Request = $request;
         
@@ -154,7 +154,7 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     /**
      * Set PickupDate value
      * @param string $pickupDate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
     public function setPickupDate(?string $pickupDate = null): self
     {
@@ -177,7 +177,7 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     /**
      * Set PickupCountry value
      * @param string $pickupCountry
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
     public function setPickupCountry(?string $pickupCountry = null): self
     {
@@ -208,7 +208,7 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     /**
      * Set DispatchConfirmationNumber value
      * @param string $dispatchConfirmationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
     public function setDispatchConfirmationNumber(?string $dispatchConfirmationNumber = null): self
     {
@@ -231,7 +231,7 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     /**
      * Set RequestorName value
      * @param string $requestorName
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
     public function setRequestorName(?string $requestorName = null): self
     {
@@ -262,7 +262,7 @@ class DocTypeRef_DeleteRequestType extends AbstractStructBase
     /**
      * Set Reason value
      * @param string $reason
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_DeleteRequestType
      */
     public function setReason(?string $reason = null): self
     {

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -60,7 +60,7 @@ class CustomerDataTextEntry extends AbstractStructBase
     /**
      * Set CustomerDataTextNumber value
      * @param string $customerDataTextNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntry
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomerDataTextEntry
      */
     public function setCustomerDataTextNumber(?string $customerDataTextNumber = null): self
     {
@@ -95,7 +95,7 @@ class CustomerDataTextEntry extends AbstractStructBase
     /**
      * Set CustomerDataText value
      * @param string $customerDataText
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomerDataTextEntry
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomerDataTextEntry
      */
     public function setCustomerDataText(?string $customerDataText = null): self
     {

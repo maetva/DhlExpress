@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -129,9 +129,9 @@ class ExportLineItemType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Customs Invoice's Export Declaration Line Item's Additional Information Texts. This will be printed in Customs Invoice's template COMMERCIAL_INVOICE_04 or COMMERCIAL_INVOICE_P_10 or COMMERCIAL_INVOICE_L_10
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $AdditionalInformation = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $AdditionalInformation = null;
     /**
      * The LicenseNumber
      * Meta information extracted from the WSDL
@@ -147,17 +147,17 @@ class ExportLineItemType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: Invoice line item level reference numbers and their type codes.
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences $ItemReferences = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences $ItemReferences = null;
     /**
      * The CustomsPaperworks
      * Meta information extracted from the WSDL
      * - documentation: Invoice line item level Customs documents and their type codes
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks $CustomsPaperworks = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks $CustomsPaperworks = null;
     /**
      * Constructor method for ExportLineItemType
      * @uses ExportLineItemType::setCommodityCode()
@@ -188,12 +188,12 @@ class ExportLineItemType extends AbstractStructBase
      * @param float $grossWeight
      * @param string $manufacturingCountryCode
      * @param string $taxesPaid
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
      * @param string $licenseNumber
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences $itemReferences
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences $itemReferences
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks
      */
-    public function __construct(?string $commodityCode = null, ?string $importCommodityCode = null, ?string $exportReasonType = null, ?int $itemNumber = null, ?int $quantity = null, ?string $quantityUnitOfMeasurement = null, ?string $itemDescription = null, ?float $unitPrice = null, ?float $netWeight = null, ?float $grossWeight = null, ?string $manufacturingCountryCode = null, ?string $taxesPaid = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null, ?string $licenseNumber = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences $itemReferences = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks = null)
+    public function __construct(?string $commodityCode = null, ?string $importCommodityCode = null, ?string $exportReasonType = null, ?int $itemNumber = null, ?int $quantity = null, ?string $quantityUnitOfMeasurement = null, ?string $itemDescription = null, ?float $unitPrice = null, ?float $netWeight = null, ?float $grossWeight = null, ?string $manufacturingCountryCode = null, ?string $taxesPaid = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null, ?string $licenseNumber = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences $itemReferences = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks = null)
     {
         $this
             ->setCommodityCode($commodityCode)
@@ -224,7 +224,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set CommodityCode value
      * @param string $commodityCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setCommodityCode(?string $commodityCode = null): self
     {
@@ -247,7 +247,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set ImportCommodityCode value
      * @param string $importCommodityCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setImportCommodityCode(?string $importCommodityCode = null): self
     {
@@ -278,7 +278,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set ExportReasonType value
      * @param string $exportReasonType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setExportReasonType(?string $exportReasonType = null): self
     {
@@ -301,7 +301,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set ItemNumber value
      * @param int $itemNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setItemNumber(?int $itemNumber = null): self
     {
@@ -332,7 +332,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set Quantity value
      * @param int $quantity
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setQuantity(?int $quantity = null): self
     {
@@ -362,17 +362,17 @@ class ExportLineItemType extends AbstractStructBase
     }
     /**
      * Set QuantityUnitOfMeasurement value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::getValidValues()
      * @throws InvalidArgumentException
      * @param string $quantityUnitOfMeasurement
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setQuantityUnitOfMeasurement(?string $quantityUnitOfMeasurement = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::valueIsValid($quantityUnitOfMeasurement)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\QuantityUnitOfMeasurement', is_array($quantityUnitOfMeasurement) ? implode(', ', $quantityUnitOfMeasurement) : var_export($quantityUnitOfMeasurement, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::valueIsValid($quantityUnitOfMeasurement)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\QuantityUnitOfMeasurement', is_array($quantityUnitOfMeasurement) ? implode(', ', $quantityUnitOfMeasurement) : var_export($quantityUnitOfMeasurement, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\QuantityUnitOfMeasurement::getValidValues())), __LINE__);
         }
         $this->QuantityUnitOfMeasurement = $quantityUnitOfMeasurement;
         
@@ -389,7 +389,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set ItemDescription value
      * @param string $itemDescription
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setItemDescription(?string $itemDescription = null): self
     {
@@ -416,7 +416,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set UnitPrice value
      * @param float $unitPrice
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setUnitPrice(?float $unitPrice = null): self
     {
@@ -439,7 +439,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set NetWeight value
      * @param float $netWeight
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setNetWeight(?float $netWeight = null): self
     {
@@ -462,7 +462,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set GrossWeight value
      * @param float $grossWeight
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setGrossWeight(?float $grossWeight = null): self
     {
@@ -485,7 +485,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set ManufacturingCountryCode value
      * @param string $manufacturingCountryCode
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setManufacturingCountryCode(?string $manufacturingCountryCode = null): self
     {
@@ -515,17 +515,17 @@ class ExportLineItemType extends AbstractStructBase
     }
     /**
      * Set TaxesPaid value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TaxesPaid::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TaxesPaid::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\TaxesPaid::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\TaxesPaid::getValidValues()
      * @throws InvalidArgumentException
      * @param string $taxesPaid
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setTaxesPaid(?string $taxesPaid = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TaxesPaid::valueIsValid($taxesPaid)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TaxesPaid', is_array($taxesPaid) ? implode(', ', $taxesPaid) : var_export($taxesPaid, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\TaxesPaid::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\TaxesPaid::valueIsValid($taxesPaid)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\TaxesPaid', is_array($taxesPaid) ? implode(', ', $taxesPaid) : var_export($taxesPaid, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\TaxesPaid::getValidValues())), __LINE__);
         }
         $this->TaxesPaid = $taxesPaid;
         
@@ -533,18 +533,18 @@ class ExportLineItemType extends AbstractStructBase
     }
     /**
      * Get AdditionalInformation value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation|null
      */
-    public function getAdditionalInformation(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation
+    public function getAdditionalInformation(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation
     {
         return $this->AdditionalInformation;
     }
     /**
      * Set AdditionalInformation value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
-    public function setAdditionalInformation(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null): self
+    public function setAdditionalInformation(?\Maetva\DhlExpress\ExpressRateBook\StructType\AdditionalInformation $additionalInformation = null): self
     {
         $this->AdditionalInformation = $additionalInformation;
         
@@ -561,7 +561,7 @@ class ExportLineItemType extends AbstractStructBase
     /**
      * Set LicenseNumber value
      * @param string $licenseNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
     public function setLicenseNumber(?string $licenseNumber = null): self
     {
@@ -579,18 +579,18 @@ class ExportLineItemType extends AbstractStructBase
     }
     /**
      * Get ItemReferences value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences|null
      */
-    public function getItemReferences(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences
+    public function getItemReferences(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences
     {
         return $this->ItemReferences;
     }
     /**
      * Set ItemReferences value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences $itemReferences
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences $itemReferences
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
-    public function setItemReferences(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ItemReferences $itemReferences = null): self
+    public function setItemReferences(?\Maetva\DhlExpress\ExpressRateBook\StructType\ItemReferences $itemReferences = null): self
     {
         $this->ItemReferences = $itemReferences;
         
@@ -598,18 +598,18 @@ class ExportLineItemType extends AbstractStructBase
     }
     /**
      * Get CustomsPaperworks value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks|null
      */
-    public function getCustomsPaperworks(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks
+    public function getCustomsPaperworks(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks
     {
         return $this->CustomsPaperworks;
     }
     /**
      * Set CustomsPaperworks value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ExportLineItemType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ExportLineItemType
      */
-    public function setCustomsPaperworks(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks = null): self
+    public function setCustomsPaperworks(?\Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperworks $customsPaperworks = null): self
     {
         $this->CustomsPaperworks = $customsPaperworks;
         

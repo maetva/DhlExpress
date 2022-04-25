@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -18,13 +18,13 @@ class ShipmentMonetaryAmountType extends AbstractStructBase
      * Meta information extracted from the WSDL
      * - documentation: The additional charges from merchant that they would like to aggregate and sum up as part of Total Landed Cost; Additional charges from the merchant e.g Insurance charge, freight charge
      * - maxOccurs: 20
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType[]
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType[]
      */
     protected ?array $Charges = null;
     /**
      * Constructor method for ShipmentMonetaryAmountType
      * @uses ShipmentMonetaryAmountType::setCharges()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType[] $charges
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType[] $charges
      */
     public function __construct(?array $charges = null)
     {
@@ -33,7 +33,7 @@ class ShipmentMonetaryAmountType extends AbstractStructBase
     }
     /**
      * Get Charges value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType[]
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType[]
      */
     public function getCharges(): ?array
     {
@@ -54,12 +54,12 @@ class ShipmentMonetaryAmountType extends AbstractStructBase
         $invalidValues = [];
         foreach ($values as $shipmentMonetaryAmountTypeChargesItem) {
             // validation for constraint: itemType
-            if (!$shipmentMonetaryAmountTypeChargesItem instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType) {
+            if (!$shipmentMonetaryAmountTypeChargesItem instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType) {
                 $invalidValues[] = is_object($shipmentMonetaryAmountTypeChargesItem) ? get_class($shipmentMonetaryAmountTypeChargesItem) : sprintf('%s(%s)', gettype($shipmentMonetaryAmountTypeChargesItem), var_export($shipmentMonetaryAmountTypeChargesItem, true));
             }
         }
         if (!empty($invalidValues)) {
-            $message = sprintf('The Charges property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
+            $message = sprintf('The Charges property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
         
@@ -68,8 +68,8 @@ class ShipmentMonetaryAmountType extends AbstractStructBase
     /**
      * Set Charges value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType[] $charges
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType[] $charges
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentMonetaryAmountType
      */
     public function setCharges(?array $charges = null): self
     {
@@ -88,14 +88,14 @@ class ShipmentMonetaryAmountType extends AbstractStructBase
     /**
      * Add item to Charges value
      * @throws InvalidArgumentException
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType $item
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentMonetaryAmountType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType $item
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentMonetaryAmountType
      */
-    public function addToCharges(\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType $item): self
+    public function addToCharges(\Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType $item): self
     {
         // validation for constraint: itemType
-        if (!$item instanceof \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType) {
-            throw new InvalidArgumentException(sprintf('The Charges property can only contain items of type \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ChargesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
+        if (!$item instanceof \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType) {
+            throw new InvalidArgumentException(sprintf('The Charges property can only contain items of type \Maetva\DhlExpress\ExpressRateBook\StructType\ChargesType, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
         // validation for constraint: maxOccurs(20)
         if (is_array($this->Charges) && count($this->Charges) >= 20) {

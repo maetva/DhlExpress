@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -54,7 +54,7 @@ class DocTypeRef_WarningType extends AbstractStructBase
     /**
      * Set Message value
      * @param string $message
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType
      */
     public function setMessage(?string $message = null): self
     {
@@ -77,7 +77,7 @@ class DocTypeRef_WarningType extends AbstractStructBase
     /**
      * Set code value
      * @param string $code
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_WarningType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_WarningType
      */
     public function setCode(?string $code = null): self
     {

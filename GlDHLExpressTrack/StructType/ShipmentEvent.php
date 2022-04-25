@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType;
+namespace Maetva\DhlExpress\GlDHLExpressTrack\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -29,9 +29,9 @@ class ShipmentEvent extends AbstractStructBase
     protected ?string $Time = null;
     /**
      * The ServiceEvent
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent|null
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent $ServiceEvent = null;
+    protected ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent $ServiceEvent = null;
     /**
      * The Signatory
      * Meta information extracted from the WSDL
@@ -46,14 +46,14 @@ class ShipmentEvent extends AbstractStructBase
      * The EventRemarks
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks|null
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks $EventRemarks = null;
+    protected ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks $EventRemarks = null;
     /**
      * The ServiceArea
-     * @var \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea|null
+     * @var \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea $ServiceArea = null;
+    protected ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea $ServiceArea = null;
     /**
      * Constructor method for ShipmentEvent
      * @uses ShipmentEvent::setDate()
@@ -64,12 +64,12 @@ class ShipmentEvent extends AbstractStructBase
      * @uses ShipmentEvent::setServiceArea()
      * @param string $date
      * @param string $time
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent
      * @param string $signatory
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea $serviceArea
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea $serviceArea
      */
-    public function __construct(?string $date = null, ?string $time = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent = null, ?string $signatory = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks = null, ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea $serviceArea = null)
+    public function __construct(?string $date = null, ?string $time = null, ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent = null, ?string $signatory = null, ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks = null, ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea $serviceArea = null)
     {
         $this
             ->setDate($date)
@@ -90,7 +90,7 @@ class ShipmentEvent extends AbstractStructBase
     /**
      * Set Date value
      * @param string $date
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
     public function setDate(?string $date = null): self
     {
@@ -113,7 +113,7 @@ class ShipmentEvent extends AbstractStructBase
     /**
      * Set Time value
      * @param string $time
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
     public function setTime(?string $time = null): self
     {
@@ -127,18 +127,18 @@ class ShipmentEvent extends AbstractStructBase
     }
     /**
      * Get ServiceEvent value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent|null
      */
-    public function getServiceEvent(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent
+    public function getServiceEvent(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent
     {
         return $this->ServiceEvent;
     }
     /**
      * Set ServiceEvent value
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
-    public function setServiceEvent(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent = null): self
+    public function setServiceEvent(?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceEvent $serviceEvent = null): self
     {
         $this->ServiceEvent = $serviceEvent;
         
@@ -155,7 +155,7 @@ class ShipmentEvent extends AbstractStructBase
     /**
      * Set Signatory value
      * @param string $signatory
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
     public function setSignatory(?string $signatory = null): self
     {
@@ -169,18 +169,18 @@ class ShipmentEvent extends AbstractStructBase
     }
     /**
      * Get EventRemarks value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks|null
      */
-    public function getEventRemarks(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks
+    public function getEventRemarks(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks
     {
         return $this->EventRemarks;
     }
     /**
      * Set EventRemarks value
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
-    public function setEventRemarks(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks = null): self
+    public function setEventRemarks(?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\EventRemarks $eventRemarks = null): self
     {
         $this->EventRemarks = $eventRemarks;
         
@@ -188,18 +188,18 @@ class ShipmentEvent extends AbstractStructBase
     }
     /**
      * Get ServiceArea value
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea|null
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea|null
      */
-    public function getServiceArea(): ?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea
+    public function getServiceArea(): ?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea
     {
         return $this->ServiceArea;
     }
     /**
      * Set ServiceArea value
-     * @param \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea $serviceArea
-     * @return \Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ShipmentEvent
+     * @param \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea $serviceArea
+     * @return \Maetva\DhlExpress\GlDHLExpressTrack\StructType\ShipmentEvent
      */
-    public function setServiceArea(?\Maetva\DhlExpress\Endpoint\GlDHLExpressTrack\StructType\ServiceArea $serviceArea = null): self
+    public function setServiceArea(?\Maetva\DhlExpress\GlDHLExpressTrack\StructType\ServiceArea $serviceArea = null): self
     {
         $this->ServiceArea = $serviceArea;
         

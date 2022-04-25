@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -50,16 +50,16 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
      * The Billing
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\Billing|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing $Billing = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\Billing $Billing = null;
     /**
      * The SpecialServices
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\Services|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services $SpecialServices = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\Services $SpecialServices = null;
     /**
      * The Currency
      * Meta information extracted from the WSDL
@@ -189,23 +189,23 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
      * The DocumentImages
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages $DocumentImages = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages $DocumentImages = null;
     /**
      * The LabelOptions
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions $LabelOptions = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions $LabelOptions = null;
     /**
      * The ShipmentReferences
      * Meta information extracted from the WSDL
      * - minOccurs: 0
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences $ShipmentReferences = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences $ShipmentReferences = null;
     /**
      * The ParentShipmentIdentificationNumber
      * Meta information extracted from the WSDL
@@ -318,8 +318,8 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
      * @param string $serviceType
      * @param string $localServiceType
      * @param string $account
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing $billing
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services $specialServices
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Billing $billing
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Services $specialServices
      * @param string $currency
      * @param string $unitOfMeasurement
      * @param string $shipmentIdentificationNumber
@@ -333,9 +333,9 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
      * @param string $shipmentReceiptTemplate
      * @param bool $paperlessTradeEnabled
      * @param string $paperlessTradeImage
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages $documentImages
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions $labelOptions
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages $documentImages
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions $labelOptions
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences
      * @param string $parentShipmentIdentificationNumber
      * @param string $requestTransliterateResponse
      * @param string $requestAdditionalInformation
@@ -345,7 +345,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
      * @param string $parentShipmentServiceType
      * @param int $parentShipmentPackagesCount
      */
-    public function __construct(?string $dropOffType = null, ?string $serviceType = null, ?string $localServiceType = null, ?string $account = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing $billing = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services $specialServices = null, ?string $currency = null, ?string $unitOfMeasurement = null, ?string $shipmentIdentificationNumber = null, ?string $useOwnShipmentIdentificationNumber = null, ?string $labelType = null, ?string $labelTemplate = null, ?string $archiveLabelTemplate = null, ?string $qRCodeTemplate = null, ?string $qRCodeImageFormat = null, ?string $customsInvoiceTemplate = null, ?string $shipmentReceiptTemplate = null, ?bool $paperlessTradeEnabled = null, ?string $paperlessTradeImage = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages $documentImages = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions $labelOptions = null, ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences = null, ?string $parentShipmentIdentificationNumber = null, ?string $requestTransliterateResponse = null, ?string $requestAdditionalInformation = null, ?string $requestEstimatedDeliveryDate = null, ?string $estimatedDeliveryDateType = null, ?string $requestPickupDetails = null, ?string $parentShipmentServiceType = null, ?int $parentShipmentPackagesCount = null)
+    public function __construct(?string $dropOffType = null, ?string $serviceType = null, ?string $localServiceType = null, ?string $account = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\Billing $billing = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\Services $specialServices = null, ?string $currency = null, ?string $unitOfMeasurement = null, ?string $shipmentIdentificationNumber = null, ?string $useOwnShipmentIdentificationNumber = null, ?string $labelType = null, ?string $labelTemplate = null, ?string $archiveLabelTemplate = null, ?string $qRCodeTemplate = null, ?string $qRCodeImageFormat = null, ?string $customsInvoiceTemplate = null, ?string $shipmentReceiptTemplate = null, ?bool $paperlessTradeEnabled = null, ?string $paperlessTradeImage = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages $documentImages = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions $labelOptions = null, ?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences = null, ?string $parentShipmentIdentificationNumber = null, ?string $requestTransliterateResponse = null, ?string $requestAdditionalInformation = null, ?string $requestEstimatedDeliveryDate = null, ?string $estimatedDeliveryDateType = null, ?string $requestPickupDetails = null, ?string $parentShipmentServiceType = null, ?int $parentShipmentPackagesCount = null)
     {
         $this
             ->setDropOffType($dropOffType)
@@ -389,17 +389,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set DropOffType value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DropOffType::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DropOffType::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\DropOffType::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\DropOffType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $dropOffType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setDropOffType(?string $dropOffType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DropOffType::valueIsValid($dropOffType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DropOffType', is_array($dropOffType) ? implode(', ', $dropOffType) : var_export($dropOffType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\DropOffType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\DropOffType::valueIsValid($dropOffType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\DropOffType', is_array($dropOffType) ? implode(', ', $dropOffType) : var_export($dropOffType, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\DropOffType::getValidValues())), __LINE__);
         }
         $this->DropOffType = $dropOffType;
         
@@ -416,7 +416,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ServiceType value
      * @param string $serviceType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setServiceType(?string $serviceType = null): self
     {
@@ -439,7 +439,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set LocalServiceType value
      * @param string $localServiceType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setLocalServiceType(?string $localServiceType = null): self
     {
@@ -462,7 +462,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set Account value
      * @param string $account
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setAccount(?string $account = null): self
     {
@@ -484,18 +484,18 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Get Billing value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Billing|null
      */
-    public function getBilling(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing
+    public function getBilling(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\Billing
     {
         return $this->Billing;
     }
     /**
      * Set Billing value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing $billing
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Billing $billing
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
-    public function setBilling(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Billing $billing = null): self
+    public function setBilling(?\Maetva\DhlExpress\ExpressRateBook\StructType\Billing $billing = null): self
     {
         $this->Billing = $billing;
         
@@ -503,18 +503,18 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Get SpecialServices value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\Services|null
      */
-    public function getSpecialServices(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services
+    public function getSpecialServices(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\Services
     {
         return $this->SpecialServices;
     }
     /**
      * Set SpecialServices value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services $specialServices
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\Services $specialServices
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
-    public function setSpecialServices(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\Services $specialServices = null): self
+    public function setSpecialServices(?\Maetva\DhlExpress\ExpressRateBook\StructType\Services $specialServices = null): self
     {
         $this->SpecialServices = $specialServices;
         
@@ -531,7 +531,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set Currency value
      * @param string $currency
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setCurrency(?string $currency = null): self
     {
@@ -561,17 +561,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set UnitOfMeasurement value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement::getValidValues()
      * @throws InvalidArgumentException
      * @param string $unitOfMeasurement
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setUnitOfMeasurement(?string $unitOfMeasurement = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement::valueIsValid($unitOfMeasurement)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement', is_array($unitOfMeasurement) ? implode(', ', $unitOfMeasurement) : var_export($unitOfMeasurement, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UnitOfMeasurement::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement::valueIsValid($unitOfMeasurement)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement', is_array($unitOfMeasurement) ? implode(', ', $unitOfMeasurement) : var_export($unitOfMeasurement, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\UnitOfMeasurement::getValidValues())), __LINE__);
         }
         $this->UnitOfMeasurement = $unitOfMeasurement;
         
@@ -588,7 +588,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ShipmentIdentificationNumber value
      * @param string $shipmentIdentificationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setShipmentIdentificationNumber(?string $shipmentIdentificationNumber = null): self
     {
@@ -610,17 +610,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set UseOwnShipmentIdentificationNumber value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::getValidValues()
      * @throws InvalidArgumentException
      * @param string $useOwnShipmentIdentificationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setUseOwnShipmentIdentificationNumber(?string $useOwnShipmentIdentificationNumber = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::valueIsValid($useOwnShipmentIdentificationNumber)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber', is_array($useOwnShipmentIdentificationNumber) ? implode(', ', $useOwnShipmentIdentificationNumber) : var_export($useOwnShipmentIdentificationNumber, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::valueIsValid($useOwnShipmentIdentificationNumber)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber', is_array($useOwnShipmentIdentificationNumber) ? implode(', ', $useOwnShipmentIdentificationNumber) : var_export($useOwnShipmentIdentificationNumber, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\UseOwnShipmentIdentificationNumber::getValidValues())), __LINE__);
         }
         $this->UseOwnShipmentIdentificationNumber = $useOwnShipmentIdentificationNumber;
         
@@ -636,17 +636,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set LabelType value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LabelType::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LabelType::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\LabelType::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\LabelType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $labelType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setLabelType(?string $labelType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LabelType::valueIsValid($labelType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LabelType', is_array($labelType) ? implode(', ', $labelType) : var_export($labelType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\LabelType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\LabelType::valueIsValid($labelType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\LabelType', is_array($labelType) ? implode(', ', $labelType) : var_export($labelType, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\LabelType::getValidValues())), __LINE__);
         }
         $this->LabelType = $labelType;
         
@@ -663,7 +663,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set LabelTemplate value
      * @param string $labelTemplate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setLabelTemplate(?string $labelTemplate = null): self
     {
@@ -690,7 +690,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ArchiveLabelTemplate value
      * @param string $archiveLabelTemplate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setArchiveLabelTemplate(?string $archiveLabelTemplate = null): self
     {
@@ -717,7 +717,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set QRCodeTemplate value
      * @param string $qRCodeTemplate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setQRCodeTemplate(?string $qRCodeTemplate = null): self
     {
@@ -744,7 +744,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set QRCodeImageFormat value
      * @param string $qRCodeImageFormat
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setQRCodeImageFormat(?string $qRCodeImageFormat = null): self
     {
@@ -775,7 +775,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set CustomsInvoiceTemplate value
      * @param string $customsInvoiceTemplate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setCustomsInvoiceTemplate(?string $customsInvoiceTemplate = null): self
     {
@@ -802,7 +802,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ShipmentReceiptTemplate value
      * @param string $shipmentReceiptTemplate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setShipmentReceiptTemplate(?string $shipmentReceiptTemplate = null): self
     {
@@ -829,7 +829,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set PaperlessTradeEnabled value
      * @param bool $paperlessTradeEnabled
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setPaperlessTradeEnabled(?bool $paperlessTradeEnabled = null): self
     {
@@ -852,7 +852,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set PaperlessTradeImage value
      * @param string $paperlessTradeImage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setPaperlessTradeImage(?string $paperlessTradeImage = null): self
     {
@@ -866,18 +866,18 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Get DocumentImages value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages|null
      */
-    public function getDocumentImages(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages
+    public function getDocumentImages(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages
     {
         return $this->DocumentImages;
     }
     /**
      * Set DocumentImages value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages $documentImages
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages $documentImages
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
-    public function setDocumentImages(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocumentImages $documentImages = null): self
+    public function setDocumentImages(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocumentImages $documentImages = null): self
     {
         $this->DocumentImages = $documentImages;
         
@@ -885,18 +885,18 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Get LabelOptions value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions|null
      */
-    public function getLabelOptions(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions
+    public function getLabelOptions(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions
     {
         return $this->LabelOptions;
     }
     /**
      * Set LabelOptions value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions $labelOptions
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions $labelOptions
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
-    public function setLabelOptions(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\LabelOptions $labelOptions = null): self
+    public function setLabelOptions(?\Maetva\DhlExpress\ExpressRateBook\StructType\LabelOptions $labelOptions = null): self
     {
         $this->LabelOptions = $labelOptions;
         
@@ -904,18 +904,18 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Get ShipmentReferences value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences|null
      */
-    public function getShipmentReferences(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences
+    public function getShipmentReferences(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences
     {
         return $this->ShipmentReferences;
     }
     /**
      * Set ShipmentReferences value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
-    public function setShipmentReferences(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences = null): self
+    public function setShipmentReferences(?\Maetva\DhlExpress\ExpressRateBook\StructType\ShipmentReferences $shipmentReferences = null): self
     {
         $this->ShipmentReferences = $shipmentReferences;
         
@@ -932,7 +932,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ParentShipmentIdentificationNumber value
      * @param string $parentShipmentIdentificationNumber
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setParentShipmentIdentificationNumber(?string $parentShipmentIdentificationNumber = null): self
     {
@@ -954,17 +954,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set RequestTransliterateResponse value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestTransliterateResponse::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestTransliterateResponse::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestTransliterateResponse::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestTransliterateResponse::getValidValues()
      * @throws InvalidArgumentException
      * @param string $requestTransliterateResponse
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setRequestTransliterateResponse(?string $requestTransliterateResponse = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestTransliterateResponse::valueIsValid($requestTransliterateResponse)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestTransliterateResponse', is_array($requestTransliterateResponse) ? implode(', ', $requestTransliterateResponse) : var_export($requestTransliterateResponse, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestTransliterateResponse::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\RequestTransliterateResponse::valueIsValid($requestTransliterateResponse)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestTransliterateResponse', is_array($requestTransliterateResponse) ? implode(', ', $requestTransliterateResponse) : var_export($requestTransliterateResponse, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestTransliterateResponse::getValidValues())), __LINE__);
         }
         $this->RequestTransliterateResponse = $requestTransliterateResponse;
         
@@ -980,17 +980,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set RequestAdditionalInformation value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestAdditionalInformation::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestAdditionalInformation::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestAdditionalInformation::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestAdditionalInformation::getValidValues()
      * @throws InvalidArgumentException
      * @param string $requestAdditionalInformation
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setRequestAdditionalInformation(?string $requestAdditionalInformation = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestAdditionalInformation::valueIsValid($requestAdditionalInformation)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestAdditionalInformation', is_array($requestAdditionalInformation) ? implode(', ', $requestAdditionalInformation) : var_export($requestAdditionalInformation, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestAdditionalInformation::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\RequestAdditionalInformation::valueIsValid($requestAdditionalInformation)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestAdditionalInformation', is_array($requestAdditionalInformation) ? implode(', ', $requestAdditionalInformation) : var_export($requestAdditionalInformation, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestAdditionalInformation::getValidValues())), __LINE__);
         }
         $this->RequestAdditionalInformation = $requestAdditionalInformation;
         
@@ -1006,17 +1006,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set RequestEstimatedDeliveryDate value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::getValidValues()
      * @throws InvalidArgumentException
      * @param string $requestEstimatedDeliveryDate
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setRequestEstimatedDeliveryDate(?string $requestEstimatedDeliveryDate = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::valueIsValid($requestEstimatedDeliveryDate)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate', is_array($requestEstimatedDeliveryDate) ? implode(', ', $requestEstimatedDeliveryDate) : var_export($requestEstimatedDeliveryDate, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::valueIsValid($requestEstimatedDeliveryDate)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate', is_array($requestEstimatedDeliveryDate) ? implode(', ', $requestEstimatedDeliveryDate) : var_export($requestEstimatedDeliveryDate, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestEstimatedDeliveryDate::getValidValues())), __LINE__);
         }
         $this->RequestEstimatedDeliveryDate = $requestEstimatedDeliveryDate;
         
@@ -1032,17 +1032,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set EstimatedDeliveryDateType value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryDateType::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryDateType::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\EstimatedDeliveryDateType::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\EstimatedDeliveryDateType::getValidValues()
      * @throws InvalidArgumentException
      * @param string $estimatedDeliveryDateType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setEstimatedDeliveryDateType(?string $estimatedDeliveryDateType = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryDateType::valueIsValid($estimatedDeliveryDateType)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryDateType', is_array($estimatedDeliveryDateType) ? implode(', ', $estimatedDeliveryDateType) : var_export($estimatedDeliveryDateType, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\EstimatedDeliveryDateType::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\EstimatedDeliveryDateType::valueIsValid($estimatedDeliveryDateType)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\EstimatedDeliveryDateType', is_array($estimatedDeliveryDateType) ? implode(', ', $estimatedDeliveryDateType) : var_export($estimatedDeliveryDateType, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\EstimatedDeliveryDateType::getValidValues())), __LINE__);
         }
         $this->EstimatedDeliveryDateType = $estimatedDeliveryDateType;
         
@@ -1058,17 +1058,17 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     }
     /**
      * Set RequestPickupDetails value
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestPickupDetails::valueIsValid()
-     * @uses \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestPickupDetails::getValidValues()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestPickupDetails::valueIsValid()
+     * @uses \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestPickupDetails::getValidValues()
      * @throws InvalidArgumentException
      * @param string $requestPickupDetails
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setRequestPickupDetails(?string $requestPickupDetails = null): self
     {
         // validation for constraint: enumeration
-        if (!\Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestPickupDetails::valueIsValid($requestPickupDetails)) {
-            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestPickupDetails', is_array($requestPickupDetails) ? implode(', ', $requestPickupDetails) : var_export($requestPickupDetails, true), implode(', ', \Maetva\DhlExpress\Endpoint\ExpressRateBook\EnumType\RequestPickupDetails::getValidValues())), __LINE__);
+        if (!\Maetva\DhlExpress\ExpressRateBook\EnumType\RequestPickupDetails::valueIsValid($requestPickupDetails)) {
+            throw new InvalidArgumentException(sprintf('Invalid value(s) %s, please use one of: %s from enumeration class \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestPickupDetails', is_array($requestPickupDetails) ? implode(', ', $requestPickupDetails) : var_export($requestPickupDetails, true), implode(', ', \Maetva\DhlExpress\ExpressRateBook\EnumType\RequestPickupDetails::getValidValues())), __LINE__);
         }
         $this->RequestPickupDetails = $requestPickupDetails;
         
@@ -1085,7 +1085,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ParentShipmentServiceType value
      * @param string $parentShipmentServiceType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setParentShipmentServiceType(?string $parentShipmentServiceType = null): self
     {
@@ -1116,7 +1116,7 @@ class DocTypeRef_ShipmentInfoType extends AbstractStructBase
     /**
      * Set ParentShipmentPackagesCount value
      * @param int $parentShipmentPackagesCount
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_ShipmentInfoType
      */
     public function setParentShipmentPackagesCount(?int $parentShipmentPackagesCount = null): self
     {

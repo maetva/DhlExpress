@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -64,7 +64,7 @@ class DocTypeRef_LabelImageType extends AbstractStructBase
     /**
      * Set LabelImageFormat value
      * @param string $labelImageFormat
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType
      */
     public function setLabelImageFormat(?string $labelImageFormat = null): self
     {
@@ -91,7 +91,7 @@ class DocTypeRef_LabelImageType extends AbstractStructBase
     /**
      * Set GraphicImage value
      * @param string $graphicImage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType
      */
     public function setGraphicImage(?string $graphicImage = null): self
     {
@@ -114,7 +114,7 @@ class DocTypeRef_LabelImageType extends AbstractStructBase
     /**
      * Set HTMLImage value
      * @param string $hTMLImage
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_LabelImageType
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_LabelImageType
      */
     public function setHTMLImage(?string $hTMLImage = null): self
     {

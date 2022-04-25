@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -17,33 +17,33 @@ class DocTypeRef_BankDetails extends AbstractStructBase
      * The BankDetail
      * Meta information extracted from the WSDL
      * - maxOccurs: 1
-     * @var \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail|null
+     * @var \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail|null
      */
-    protected ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail $BankDetail = null;
+    protected ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail $BankDetail = null;
     /**
      * Constructor method for docTypeRef_BankDetails
      * @uses DocTypeRef_BankDetails::setBankDetail()
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail
      */
-    public function __construct(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail = null)
+    public function __construct(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail = null)
     {
         $this
             ->setBankDetail($bankDetail);
     }
     /**
      * Get BankDetail value
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail|null
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail|null
      */
-    public function getBankDetail(): ?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail
+    public function getBankDetail(): ?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail
     {
         return $this->BankDetail;
     }
     /**
      * Set BankDetail value
-     * @param \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetails
+     * @param \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetails
      */
-    public function setBankDetail(?\Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail = null): self
+    public function setBankDetail(?\Maetva\DhlExpress\ExpressRateBook\StructType\DocTypeRef_BankDetail $bankDetail = null): self
     {
         $this->BankDetail = $bankDetail;
         

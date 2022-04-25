@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -64,7 +64,7 @@ class CustomsPaperwork extends AbstractStructBase
     /**
      * Set CustomsPaperworkType value
      * @param string $customsPaperworkType
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperwork
      */
     public function setCustomsPaperworkType(?string $customsPaperworkType = null): self
     {
@@ -95,7 +95,7 @@ class CustomsPaperwork extends AbstractStructBase
     /**
      * Set CustomsPaperworkID value
      * @param string $customsPaperworkID
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\CustomsPaperwork
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\CustomsPaperwork
      */
     public function setCustomsPaperworkID(?string $customsPaperworkID = null): self
     {

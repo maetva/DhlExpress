@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType;
+namespace Maetva\DhlExpress\ExpressRateBook\StructType;
 
 use InvalidArgumentException;
 use WsdlToPhp\PackageBase\AbstractStructBase;
@@ -44,7 +44,7 @@ class PaymentMethods extends AbstractStructBase
     /**
      * Set PaymentMethod value
      * @param string $paymentMethod
-     * @return \Maetva\DhlExpress\Endpoint\ExpressRateBook\StructType\PaymentMethods
+     * @return \Maetva\DhlExpress\ExpressRateBook\StructType\PaymentMethods
      */
     public function setPaymentMethod(?string $paymentMethod = null): self
     {
