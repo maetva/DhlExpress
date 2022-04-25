@@ -5,7 +5,7 @@
         "DHL"
     ],
     "homepage": "https://github.com/maetva/DhlExpress",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "minimum-stability": "dev",
     "extra": {
         "branch-alias": {
