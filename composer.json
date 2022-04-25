@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-          "Maetva\\Chronopost\\": "src/"
+          "Maetva\\DhlExpress\\": "src/"
         }
     }
 }
