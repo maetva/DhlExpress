@@ -22,13 +22,13 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
      * - maxOccurs: 100
      * - minLength: 10
      * - whiteSpace: preserve
-     * @var string[]
+     * @var string[]|null
      */
     protected ?array $ArrayOfAWBNumberItem = null;
     /**
      * Constructor method for ArrayOfAWBNumber
      * @uses ArrayOfAWBNumber::setArrayOfAWBNumberItem()
-     * @param string[] $arrayOfAWBNumberItem
+     * @param string[]|null $arrayOfAWBNumberItem
      */
     public function __construct(?array $arrayOfAWBNumberItem = null)
     {
@@ -37,7 +37,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
     }
     /**
      * Get ArrayOfAWBNumberItem value
-     * @return string[]
+     * @return string[]|null
      */
     public function getArrayOfAWBNumberItem(): ?array
     {
@@ -66,7 +66,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
             $message = sprintf('The ArrayOfAWBNumberItem property can only contain items of type string, %s given', is_object($invalidValues) ? get_class($invalidValues) : (is_array($invalidValues) ? implode(', ', $invalidValues) : gettype($invalidValues)));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
     /**
@@ -90,7 +90,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
             $message = sprintf('Invalid length for value(s) %s, the number of characters/octets contained by the literal must be less than or equal to 11', implode(', ', $invalidValues));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
     /**
@@ -114,13 +114,13 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
             $message = sprintf('Invalid length for value(s) %s, the number of characters/octets contained by the literal must be greater than or equal to 10', implode(', ', $invalidValues));
         }
         unset($invalidValues);
-        
+
         return $message;
     }
     /**
      * Set ArrayOfAWBNumberItem value
      * @throws InvalidArgumentException
-     * @param string[] $arrayOfAWBNumberItem
+     * @param string[]|null $arrayOfAWBNumberItem
      * @return \Maetva\DhlExpress\GlDHLExpressTrack\ArrayType\ArrayOfAWBNumber
      */
     public function setArrayOfAWBNumberItem(?array $arrayOfAWBNumberItem = null): self
@@ -142,7 +142,7 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
             throw new InvalidArgumentException($arrayOfAWBNumberItemMinLengthErrorMessage, __LINE__);
         }
         $this->ArrayOfAWBNumberItem = $arrayOfAWBNumberItem;
-        
+
         return $this;
     }
     /**
