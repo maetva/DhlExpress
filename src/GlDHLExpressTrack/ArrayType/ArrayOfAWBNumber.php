@@ -46,10 +46,10 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
     /**
      * This method is responsible for validating the values passed to the setArrayOfAWBNumberItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setArrayOfAWBNumberItem method
-     * @param array $values
+     * @param array|null $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateArrayOfAWBNumberItemForArrayConstraintsFromSetArrayOfAWBNumberItem(?array $values = []): string
+    public static function validateArrayOfAWBNumberItemForArrayConstraintsFromSetArrayOfAWBNumberItem(?array $values = null): string
     {
         if (!is_array($values)) {
             return '';
@@ -73,11 +73,14 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
      * This method is responsible for validating the value passed to the setArrayOfAWBNumberItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setArrayOfAWBNumberItem method
      * This has to validate that the items contained by the array match the length constraint
-     * @param mixed $values
+     * @param array|null $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateArrayOfAWBNumberItemForMaxLengthConstraintFromSetArrayOfAWBNumberItem($values): string
+    public static function validateArrayOfAWBNumberItemForMaxLengthConstraintFromSetArrayOfAWBNumberItem(?array $values = null): string
     {
+        if (!is_array($values)) {
+            return '';
+        }
         $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfAWBNumberArrayOfAWBNumberItemItem) {
@@ -97,11 +100,14 @@ class ArrayOfAWBNumber extends AbstractStructArrayBase
      * This method is responsible for validating the value passed to the setArrayOfAWBNumberItem method
      * This method is willingly generated in order to preserve the one-line inline validation within the setArrayOfAWBNumberItem method
      * This has to validate that the items contained by the array match the length constraint
-     * @param mixed $values
+     * @param array|null $values
      * @return string A non-empty message if the values does not match the validation rules
      */
-    public static function validateArrayOfAWBNumberItemForMinLengthConstraintFromSetArrayOfAWBNumberItem($values): string
+    public static function validateArrayOfAWBNumberItemForMinLengthConstraintFromSetArrayOfAWBNumberItem(?array $values = null): string
     {
+        if (!is_array($values)) {
+            return '';
+        }
         $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfAWBNumberArrayOfAWBNumberItemItem) {
